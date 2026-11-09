@@ -17,13 +17,13 @@
 ## Implementation backlog
 
 ### P0 — Reference Intelligence foundation
-- [ ] Define local-file-only reference input contract and workspace containment.
+- [ ] Define reference input contract for local files and intentionally acquired online sources, with workspace containment and explicit provenance.
 - [ ] Build ffprobe preflight, source hashing, proxy generation and contact sheets.
 - [ ] Implement deterministic shot segmentation and per-shot duration/pacing summaries.
 - [ ] Add camera-motion and visual-look summaries; document confidence/known failure modes.
 - [ ] Add optional local audio/beat analysis from supplied media only.
 - [ ] Write versioned `reference_report.json` and fingerprint schema; cache by source hash + analysis version + settings.
-- [ ] Add tests for local files, malformed media, interrupted analysis, cache hit/invalidation and paths containing spaces/non-ASCII.
+- [ ] Add tests for local and acquired references, malformed media, interrupted analysis, cache hit/invalidation and paths containing spaces/non-ASCII.
 - [ ] Audit reference-ingestion dependencies, network calls, source provenance and rights; allow yt-dlp where useful but keep acquisition separate from final-render assets.
 - [ ] Add a final-render asset validator that rejects photographic/video source assets and verifies that visual scene inputs are code-authored/generated.
 
