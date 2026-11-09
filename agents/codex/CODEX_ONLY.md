@@ -14,7 +14,7 @@ Read first:
 - Prefer building a reusable helper over repeating a manual operation.
 - Batch file/media work and return compact summaries.
 - Preserve the offline-first default. No paid API, hosted generation credits or cloud uploads by default.
-- No ComfyUI. No yt-dlp.
+- No ComfyUI. Internet tools/yt-dlp are allowed when useful for reference research/acquisition; downloaded media is analysis-only, never final footage.
 - Do not claim backlog scripts or enforcement exist until implemented and tested.
 - Keep project state, decisions, manifests and QA reports in the project.
 - Stop after two failures using the same method and diagnose the cause.
@@ -25,4 +25,4 @@ Read first:
 For each production task, produce a clear plan, identify deterministic stages, define inputs/outputs and cache invalidation, execute local workers, inspect representative results, report exceptions and update project state. Use creative judgement where it matters; do not micromanage every file operation.
 
 ## v4 synchronization
-Read the full [Codex Playbook](./CODEX_ONLY_PLAYBOOK.md) and repository [Master Playbook](../../docs/MASTER_PLAYBOOK.md). v4 adds six animation recipe families to port into existing renderers, an advisory code-review pilot for meaningful/high-risk diffs, and independent audio-first storyboard QA using local transcription. Ray Sticker Shop remains separate; medical-paper skills are excluded. These are documented decisions/pilots, not installed or production-validated capabilities. Preserve offline-first rules, no ComfyUI, no yt-dlp and approval gates. Do not bulk-install skills.
+Read the full [Codex Playbook](./CODEX_ONLY_PLAYBOOK.md) and repository [Master Playbook](../../docs/MASTER_PLAYBOOK.md). v4 adds six animation recipe families to port into existing renderers, an advisory code-review pilot for meaningful/high-risk diffs, and independent audio-first storyboard QA using local transcription. Ray Sticker Shop remains separate; medical-paper skills are excluded. These are documented decisions/pilots, not installed or production-validated capabilities. Preserve local-first execution, no ComfyUI, code-generated final visuals only, and approval gates. Internet acquisition is allowed for references; never place downloaded photos/videos in final renders. Do not bulk-install skills.
