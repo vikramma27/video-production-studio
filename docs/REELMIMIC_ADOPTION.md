@@ -63,7 +63,7 @@ Its analysis/perception code also exposes a useful direction for measuring simil
 ## Proposed implementation sequence
 
 ### R0 — Safe reference-analysis adapter
-- Define a local-file-only input contract; reject URL inputs.
+- Define a controlled reference-input contract for local files and intentionally acquired online sources; record source URL, acquisition method, rights/provenance and local content hash.
 - Probe metadata with ffprobe and generate normalized proxy/contact sheets.
 - Detect cuts and compute shot durations, pacing, colour/look summaries and camera-motion estimates.
 - Extract audio/beat cues only from supplied local audio/video.
@@ -114,4 +114,4 @@ The final video must be composed entirely from code-authored/generated visuals. 
 
 ## Current status
 
-**Approved for selective study and implementation planning. Not installed, not vendored, and not production-validated in our studio.** The first implementation should be our own local-file-only reference-analysis adapter, not a full ReelMimic clone.
+**Approved for selective study and implementation planning. Not installed, not vendored, and not production-validated in our studio.** The first implementation should be our own reference-analysis adapter with audited local/online ingestion, not a full ReelMimic clone.
