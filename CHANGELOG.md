@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-09 — ReelMimic reference intelligence assessment
+- Added a source-reviewed adoption assessment for edenfunf/reelmimic.
+- Approved selective adoption of local reference analysis, shot fingerprints, approval-first storyboards, isolated parallel shot production and evidence-backed QA.
+- Added explicit blockers: no yt-dlp, no wholesale install, no default full-access agent sandbox and no assumption that local orchestration means local inference.
+- Preserved existing HyperFrames/GSAP, Remotion, Blender/Three.js and FFmpeg responsibilities.
+- Added Reference Intelligence Engine phases and acceptance criteria to the master playbook, architecture, roadmap, README and both agent playbooks.
+- Kept implementation status honest: assessment and design are documented; no ReelMimic code is installed or production-validated.
+
 ## 2026-11-09 — v4 skill and repository synchronization
 - Added the v4 master playbook and separate Claude/Codex playbooks.
 - Documented six animation recipe families and the planned local Animation Recipe Engine.
