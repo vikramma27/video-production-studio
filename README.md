@@ -1,10 +1,12 @@
 # VIDEO PRODUCTION STUDIO — v5.0 direction
 
-### A local-first, AI-orchestrated cinematic production system.
+### Story Foundry — an interactive map of a local-first, AI-orchestrated cinematic production system.
+
+The landing page is an interactive creative control room: explore two original channel worlds, experiment with a temporary identity profile, inspect each creative department and navigate the v5.0 production blueprint.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
-[Explore the Studio](https://vikramma27.github.io/video-production-studio/) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
+[Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
 
 
 
