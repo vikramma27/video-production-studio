@@ -202,6 +202,18 @@ button{font:inherit}
  .reveal{opacity:1;transform:none}
  .hero-art{transform:none!important}
 }
+
+/* v4 skill architecture */
+.v4-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);margin-top:48px}
+.v4-card{background:var(--night-2);padding:clamp(20px,3vw,34px);min-height:235px}
+.v4-card .micro-label{color:var(--acid)}
+.v4-card h3{font-family:var(--display);font-size:clamp(24px,3vw,38px);line-height:.95;text-transform:uppercase;margin:20px 0 13px;letter-spacing:-.025em}
+.v4-card p{font-size:13px;line-height:1.75;color:#aeb5a8;margin:0}
+.v4-status{display:inline-block;margin-top:20px;padding:7px 9px;border:1px solid rgba(216,255,87,.4);color:var(--acid);font-size:8px;letter-spacing:.15em;text-transform:uppercase}
+.v4-foot{margin-top:30px;color:#8c9587;font-size:10px;line-height:1.7;max-width:780px}
+@media(max-width:850px){.v4-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.v4-grid{grid-template-columns:1fr}.v4-card{min-height:0}}
+
 </style>
 </head>
 <body>
@@ -303,14 +315,27 @@ button{font:inherit}
  <p class="tool-note">The stack is an evolving selection, not a promise that every listed component is installed or production-ready. Local execution, licensing, compatibility and quality are verified before adoption.</p>
 </section>
 
-<section class="chapter dark principle" id="close" data-trace="6">
+
+<section class="chapter dark" id="v4-skills" data-trace="6">
+ <div class="section-index light">System update · 09 November 2026</div>
+ <h2 class="section-heading">New skills.<br><span class="outline">Same core.</span></h2>
+ <p class="section-deck">The studio gains reusable creative recipes and stronger editorial checks without adding another rendering stack or turning agents into repetitive workers.</p>
+ <div class="v4-grid">
+  <article class="v4-card"><div class="micro-label">01 / Motion recipes</div><h3>Animation<br>Recipe Engine</h3><p>Six visual recipe families—3D explainers, stick figures, minimal graphics, map routes, exploded breakdowns and graphs—mapped into the existing local renderer stack.</p><span class="v4-status">Design approved · Pilot pending</span></article>
+  <article class="v4-card"><div class="micro-label">02 / Engineering QA</div><h3>Evidence-led<br>Code review</h3><p>A four-probe review workflow for meaningful changes, used as an advisory signal alongside tests, CI and human review. Never an automatic merge gate.</p><span class="v4-status">Pilot pending</span></article>
+  <article class="v4-card"><div class="micro-label">03 / Editorial intelligence</div><h3>Audio-first<br>Storyboard QA</h3><p>Narration-anchored shot planning, visual references and semantic script-to-shot checks, independently implemented with local transcription.</p><span class="v4-status">Design approved · Backlog</span></article>
+ </div>
+ <p class="v4-foot">The renderer does not change: HyperFrames + GSAP remain primary; Remotion, Blender and Three.js remain specialist paths. Ray Sticker Shop stays separate; medical-paper skills are excluded. No ComfyUI. No yt-dlp. Nothing is described as installed until it passes Windows and production acceptance gates.</p>
+</section>
+
+<section class="chapter dark principle" id="close" data-trace="7">
  <div class="section-index">The production philosophy</div>
  <h2>Less busywork.<br><span>More cinema.</span></h2>
  <p>A studio should get more capable with every project. Reusable workflows, cached work, clear decisions and honest quality gates turn one good production into the foundation for the next.</p>
  <a class="action-primary" href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">Explore the open build <span>↗</span></a>
 </section>
 </main>
-<footer class="site-footer"><span>VIDEO PRODUCTION STUDIO · INDEPENDENT BUILD</span><span>Architecture in active development</span><a href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">GitHub repository ↗</a></footer>
+<footer class="site-footer"><span>VIDEO PRODUCTION STUDIO · INDEPENDENT BUILD</span><span>v4 architecture · pilots clearly labelled</span><a href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">GitHub repository ↗</a></footer>
 
 <nav class="edit-trace" aria-label="Page journey timeline">
  <span class="trace-label">YOUR CUT</span><div class="trace-track"><div class="trace-fill"></div><div class="trace-stops">
@@ -320,6 +345,7 @@ button{font:inherit}
   <button class="trace-stop" data-jump="#pipeline" aria-label="Jump to pipeline"></button>
   <button class="trace-stop" data-jump="#principle" aria-label="Jump to the operating principle"></button>
   <button class="trace-stop" data-jump="#tools" aria-label="Jump to the tool index"></button>
+  <button class="trace-stop" data-jump="#v4-skills" aria-label="Jump to v4 skill additions"></button>
   <button class="trace-stop" data-jump="#close" aria-label="Jump to closing statement"></button>
  </div></div><span class="trace-end">PLAYHEAD <b id="tracePercent">00</b></span>
 </nav>
