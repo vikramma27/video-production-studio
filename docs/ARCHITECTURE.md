@@ -43,10 +43,13 @@
 Numerical similarity is not a substitute for human judgement. Reference analysis learns techniques, not source footage, distinctive characters, logos or protected assets. Verify rights and provenance.
 
 ## Safety and compatibility boundary
-The inspected ReelMimic revision is MIT for its main code, but bundled engines/assets have separate notices. Its `requirements.txt`, analysis script and agent instructions currently include yt-dlp, which is excluded here. Do not run upstream installers or copy code until the dependency, network, sandbox and licence audit is complete. The first adapter is local-file-only and must not inherit broad agent permissions.
+The inspected ReelMimic revision is MIT for its main code, but bundled engines/assets have separate notices. Its reference-ingestion path uses yt-dlp; this is permitted when useful after dependency, network, sandbox and rights review. Reference downloads are analysis-only and must never enter final renders. Do not inherit broad agent permissions.
 
 ## Pipeline and timeline
 Brief → research/script → optional reference intelligence → voice/transcript → cleaned editorial timeline → visual language/recipes → render → assembly → QA → delivery/archive. After editorial cuts, remap captions, B-roll, effects and audio to the cleaned timeline.
 
+## Final-video visual invariant
+All final visual content must be authored/generated through code in our rendering pipeline: vector graphics, Canvas/WebGL, procedural animation, charts, typography, simulations and 3D geometry. Never place stock/static photos, downloaded video, generic B-roll, still-image slides or AI-generated raster-image assets in final renders. Online/reference footage may be analysed for technique and style but is never a final visual asset.
+
 ## Reliability and scope
-Every repeatable stage should be cache-aware, batchable and independently rerunnable. Persist project state, decisions, asset metadata, stage manifests and QA results. Offline-first; no paid inference/cloud uploads by default. No ComfyUI or yt-dlp. Scripts and pilots are backlog until implemented and tested on representative Windows hardware.
+Every repeatable stage should be cache-aware, batchable and independently rerunnable. Persist project state, decisions, source provenance, stage manifests and QA results. Local-first; internet access is allowed when it materially improves research/reference acquisition. No paid inference/cloud uploads by default. No ComfyUI. Scripts and pilots are backlog until implemented and tested on representative Windows hardware.
