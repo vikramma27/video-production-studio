@@ -1,107 +1,73 @@
-<div align="center">
-
 # VIDEO PRODUCTION STUDIO
 
 ### A local-first, AI-orchestrated cinematic production system.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
-[Explore the Studio](https://vikramma27.github.io/video-production-studio/) · [Architecture](docs/ARCHITECTURE.md) · [Token Policy](docs/TOKEN_EFFICIENCY_POLICY.md) · [Changelog](CHANGELOG.md)
-
-</div>
-
----
+[Explore the Studio](https://vikramma27.github.io/video-production-studio/) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
 
 ## What this repository is
+The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.
 
-This is the source of truth for a code-driven, offline-first video production studio. It brings creative direction, production workflow, agent instructions, reusable skills, technical standards and the automation roadmap into one version-controlled home.
-
-The aim is not to make an AI agent perform every operation. The aim is to make a reliable production system in which reasoning is used deliberately and routine work is handled by deterministic local tools.
-
-## The operating principle
-
-| Layer | Responsibility | Examples |
+## v4 architecture
+| Plane | Responsibility | Examples |
 |---|---|---|
-| Intelligence & orchestration | Creative direction, planning, ambiguity, exception diagnosis and quality decisions | Claude Code, Codex |
+| Intelligence/orchestration | Creative direction, planning, ambiguity, exception diagnosis and quality decisions | Claude Code or Codex |
 | Local execution | Repeatable processing, rendering, conversion, validation and batching | PowerShell, Python, Node.js, FFmpeg, ffprobe |
-| Specialist production tools | Focused visual, motion, audio and 3D work | HyperFrames, GSAP, Remotion, Blender, Three.js |
-| Local AI | Offline speech, transcription and specialist inference | faster-whisper, Chatterbox and selected local models |
+| Specialist production | Motion, composition and 3D | HyperFrames, GSAP, Remotion, Blender, Three.js |
+| Local AI | Offline speech and specialist inference | faster-whisper, Chatterbox, IndicF5 and evaluated local models |
 
-**Permanent rule:** before every operation, check whether an existing result, deterministic script, local tool or local specialist model can perform it reliably. Do not spend hosted-agent tokens on routine work that local automation can handle.
+**Mandatory routing:** cache/reuse → deterministic local code → local specialist model → bounded agent reasoning → larger reasoning only when justified.
 
-## Start here
+## New v4 decisions
+- **Animation Recipe Engine (planned):** six recipe families—3D explainer, stick figure, minimal graphics, map route, exploded breakdown and graph—adapted to the existing local renderer stack. Target: JSON scene spec → deterministic render → contact sheet and QA report.
+- **Code-review pilot:** evaluate the four-probe review skill for meaningful/high-risk diffs in both agent workflows. Advisory only; no auto-merge.
+- **Audio-first storyboard QA (planned):** narration-anchored shot rows, visual references and semantic script-to-shot checks using local transcription.
+- **Separate/excluded:** Ray Sticker Shop stays separate; medical-paper skills are excluded.
 
-- **[Master production playbook](docs/MASTER_PLAYBOOK.md)** — end-to-end production system and technical standards.
-- **[Claude Code handover](agents/claude/CLAUDE_ONLY.md)** — instructions for Claude Code as the orchestration brain.
-- **[Codex handover](agents/codex/CODEX_ONLY.md)** — independent instructions for Codex as the orchestration brain.
-- **[Architecture & workflow](docs/ARCHITECTURE.md)** — production layers, pipeline and tool responsibilities.
-- **[Token efficiency policy](docs/TOKEN_EFFICIENCY_POLICY.md)** — mandatory model-call gate and automation rules.
-- **[Roadmap & implementation backlog](docs/ROADMAP.md)** — what is specified versus what still needs implementation.
-- **[Changelog](CHANGELOG.md)** — version history and decisions.
+See [Skill Adoption Decisions](docs/SKILL_ADOPTION_DECISIONS.md) and [Master Playbook](docs/MASTER_PLAYBOOK.md) for licence caveats, pilot criteria and status boundaries.
 
 ## Production pipeline
-
-1. **Brief** — define audience, objective, format, duration and creative treatment.
-2. **Research & script** — establish factual claims, narrative structure and source notes.
-3. **Voice & transcript** — generate or import narration; transcribe locally where required.
-4. **Editorial plan** — create a timeline/EDL and map scenes to the cleaned narration timeline.
-5. **Visual production** — build motion graphics, code-driven scenes, 3D elements and supporting footage.
-6. **Assembly** — synchronize narration, music, sound design, captions and visuals.
-7. **Quality assurance** — inspect contact sheets and renders; validate audio, frame rate, duration and captions.
-8. **Delivery** — render, verify outputs and archive manifests and project state.
+1. Brief and success criteria.
+2. Evidence-backed research and script.
+3. Voice generation/import and local transcript timing.
+4. Narration-anchored EDL and cleaned timeline.
+5. Visual language and recipe selection.
+6. Code-driven scenes, 3D and motion production.
+7. FFmpeg assembly, captions, music and sound design.
+8. Technical QA, contact sheets and human playback review.
+9. Verified delivery and archived project state.
 
 ## Core technology direction
+- Primary motion: **HyperFrames + GSAP**.
+- Specialist React/data scenes: **Remotion**, selectively.
+- 3D/technical visuals: **Blender + Three.js**.
+- Media processing/final assembly: **FFmpeg / ffprobe**.
+- Local transcription: **faster-whisper**.
+- Offline voice: **Chatterbox / IndicF5** and locally runnable candidates after evaluation.
+- Image enhancement: **Upscayl**, where useful.
 
-- **Primary motion system:** HyperFrames + GSAP.
-- **Specialist React/data-driven scenes:** Remotion, when it provides a clear advantage.
-- **3D and technical visuals:** Blender and Three.js.
-- **Media processing and final assembly:** FFmpeg / ffprobe.
-- **Local transcription:** faster-whisper.
-- **Offline voice generation:** evaluate Chatterbox and other locally runnable candidates against quality and hardware constraints.
-- **Image utilities:** Upscayl where useful.
-
-Tools are adopted selectively after a practical pilot. A repository's existence or star count is not proof that it belongs in the production baseline.
+A skill's existence or star count is not proof that it belongs in the production baseline. Preserve working integrations; pilot before promotion.
 
 ## Non-negotiable constraints
-
 - Offline-first and free/open-source by default.
-- No paid inference APIs, hosted generation credits or cloud uploads in the default production path.
-- No ComfyUI. No yt-dlp.
-- No unnecessary CDN, remote fonts or network dependency in final renders.
-- Keep source projects, manifests, assets and outputs reproducible.
+- No paid inference APIs, hosted generation credits or cloud uploads in the default path.
+- **No ComfyUI. No yt-dlp.**
+- No remote CDN/fonts/runtime dependency in final renders.
 - Preserve human review for factual accuracy, editorial judgement and final quality.
-- Never describe planned automation as implemented until it exists and has passed a test.
+- Respect software, model, font, image, music, SFX and 3D-asset licences separately.
+- Never claim planned automation or skill pilots are implemented until tested.
 
-## Repository map
-
-```text
-.
-├── index.html
-├── README.md
-├── CHANGELOG.md
-├── docs/
-│   ├── MASTER_PLAYBOOK.md
-│   ├── ARCHITECTURE.md
-│   ├── TOKEN_EFFICIENCY_POLICY.md
-│   └── ROADMAP.md
-├── agents/
-│   ├── claude/CLAUDE_ONLY.md
-│   └── codex/CODEX_ONLY.md
-└── .github/workflows/pages.yml
-```
+## Start here
+- [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
+- [Claude Code handover](agents/claude/CLAUDE_ONLY.md) · [Claude playbook](agents/claude/CLAUDE_ONLY_PLAYBOOK.md)
+- [Codex handover](agents/codex/CODEX_ONLY.md) · [Codex playbook](agents/codex/CODEX_ONLY_PLAYBOOK.md)
+- [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
+- [Token-efficiency policy](docs/TOKEN_EFFICIENCY_POLICY.md) · [Skill decisions](docs/SKILL_ADOPTION_DECISIONS.md)
+- [Changelog](CHANGELOG.md)
 
 ## Project status
-
-The architecture and operating rules are documented. The helper-script backlog is a specification, not a claim that the scripts are already installed or enforced in a production environment. See [Roadmap](docs/ROADMAP.md) for the implementation boundary.
-
-## Updating this system
-
-All durable changes should be committed here. Update the relevant playbook, agent handover, policy and changelog together when a decision changes. Prefer small, reviewable commits with clear messages. Do not silently remove or weaken permanent architecture rules.
+Architecture and skill decisions are documented. The Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until installed and tested. Helper scripts and runtime enforcement are not represented as active.
 
 ---
-
-<div align="center">
-
 **Build once. Automate the repeatable. Spend intelligence where it matters.**
-
-</div>
