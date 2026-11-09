@@ -6,6 +6,12 @@
 - Added the absolute final-visual rule: final visuals are code-authored/generated only; no stock/static photos, downloaded clips, generic B-roll, still-image slides or AI-generated raster-image assets.
 - Kept ComfyUI excluded and retained the existing renderer stack.
 
+## 2026-11-09 — Final-video visual invariant clarified
+- Replaced the earlier blanket yt-dlp prohibition: internet access and yt-dlp may be used when useful for research/reference acquisition after rights, dependency and network review.
+- Reference media is analysis-only and must never appear in final renders.
+- Added the absolute final-visual rule: final visuals are code-authored/generated only; no stock/static photos, downloaded clips, generic B-roll, still-image slides or AI-generated raster-image assets.
+- Kept ComfyUI excluded and retained the existing renderer stack.
+
 ## 2026-11-09 — ReelMimic reference intelligence assessment
 - Added a source-reviewed adoption assessment for edenfunf/reelmimic.
 - Approved selective adoption of local reference analysis, shot fingerprints, approval-first storyboards, isolated parallel shot production and evidence-backed QA.
