@@ -57,7 +57,7 @@ For each pilot, record model/tool version, calls made, approximate or actual usa
 
 ## Permanent exclusions
 
-The default production path must not introduce paid inference APIs, hosted generation credits, subscriptions, external uploads, or remote runtime dependencies. **ComfyUI and yt-dlp are explicitly excluded** and must not be reintroduced through optional skills, dependencies, examples or fallback recommendations. Exceptions require explicit user approval.
+The default production path must not introduce paid inference APIs, hosted generation credits, subscriptions, external uploads, or remote runtime dependencies. **ComfyUI remains excluded.** Internet research, reference downloads and tools such as yt-dlp are permitted when they materially improve the workflow, subject to rights, provenance, dependency and network review. Reference media is analysis-only and must never enter final renders. Final visuals remain code-authored/generated only.
 
 ## Status and evidence
 
