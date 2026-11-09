@@ -26,3 +26,30 @@ File discovery, hashing, copying, media probing, batch conversion, trimming, mux
 - Ask before unplanned paid/cloud work or bulk regeneration.
 
 See [Master Playbook](MASTER_PLAYBOOK.md). Helpers and runtime enforcement remain backlog until implemented and tested.
+
+
+## v4 skill-specific token controls
+
+The new skills do not change the permanent routing hierarchy. They are optional reasoning aids, not workers that should be invoked on every file or frame.
+
+### Animation Recipe Engine
+- Agent calls are limited to creative recipe selection, scene-spec authoring, ambiguous visual decisions and review of failed/representative output.
+- A versioned JSON scene specification is the handoff contract.
+- Local deterministic renderers produce scenes, contact sheets and technical QA.
+- Cache by scene spec, assets, renderer/tool versions and relevant settings; rerun only invalidated stages.
+- Do not make one model call per scene/frame when a batch renderer can process the scene list.
+
+### Code review
+- Invoke the four-probe review only for meaningful or high-risk diffs.
+- Do not run it on every typo, formatting-only change or trivial edit.
+- Keep the output advisory. Tests, CI, security checks and human review remain separate.
+- Record actual invocation cost and useful findings; never infer token savings from a green report.
+
+### Audio-first storyboard QA
+- Use local transcription/timestamping to build narration-anchored shot rows.
+- Deterministic code handles timeline mapping, row generation, manifests and consistency checks.
+- Use an agent only for semantic alignment, visual continuity decisions and ambiguous editorial exceptions.
+- Do not send narration, scripts or media to hosted providers by default.
+
+### Pilot measurement
+For each pilot, record model/tool version, calls made, approximate or actual usage where available, local execution time, cache hits, false positives/misses, and human corrections. Unknown values remain unknown. A pilot is not promoted merely because it reduces agent calls; output quality and reliability must also pass.
