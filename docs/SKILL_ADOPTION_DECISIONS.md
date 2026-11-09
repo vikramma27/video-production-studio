@@ -1,14 +1,23 @@
 # Skill Adoption Decisions — 2026-11-09
 
-This register records the five newly evaluated repositories and the exact boundary for the Video Production Studio. These are adoption decisions and pilot specifications, not a declaration that any repository has been installed or production-validated.
+This register records evaluated repositories and the exact boundary for the Video Production Studio. These are adoption decisions and pilot specifications, not a declaration that any repository has been installed or production-validated.
 
 | Repository | Decision | Why / boundary |
 |---|---|---|
+| [edenfunf/reelmimic](https://github.com/edenfunf/reelmimic) | Adopt selectively as reference-to-animation blueprint | Study reference analysis, shot fingerprints, approval-first storyboards, parallel shot production and evidence-backed QA. Do not vendor wholesale: upstream currently includes yt-dlp, uses hosted Claude/Codex inference, is 2D-focused and documents a full-access Codex sandbox default. Local-file-only adapter; keep our renderers. See [adoption assessment](REELMIMIC_ADOPTION.md). |
 | [artemnovitckii/claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | Selectively port six recipes | 3D explainer, stick figure, minimalist graphics, map route, exploded breakdown and animated graph. Adapt recipes to the existing Windows-first HyperFrames + GSAP + Three.js/Blender stack. Do not add a second renderer or blindly run the macOS/Linux setup scripts. |
 | [kyy-logs/code-review-skill](https://github.com/kyy-logs/code-review-skill) | Pilot for both Claude Code and Codex | Four fresh-context probes: behaviour, tests, repository rules and impact. Use only for meaningful/high-risk diffs. Reports are advisory, not independent model/human adjudication, and never auto-approve or auto-merge. |
 | [konlu/story-studio](https://github.com/konlu/story-studio) | Reimplement useful patterns independently | Adopt the concept of audio-first storyboard timing, narration-anchored shot rows, persistent visual references and semantic script-to-shot checks. Do not copy its code/corpus until the root CC BY-NC-SA 4.0 licence versus README MIT wording is clarified. Its default paid TTS and hosted image-generation dependencies are excluded. |
 | [imraywang/ray-sticker-shop](https://github.com/imraywang/ray-sticker-shop) | Keep separate | A potential future sticker-pack product workflow, not a core video pipeline dependency. Its generation path requires an OpenAI API key or manual hosted image-generation handoff; local post-processing does not make the full workflow offline. |
 | [duyunzhoudyz/dyz-med-paper-skills](https://github.com/duyunzhoudyz/dyz-med-paper-skills) | Exclude | Medical-academic domain is unrelated to this studio. Its PolyForm Noncommercial 1.0.0 licence is not a general commercial-use licence. |
+
+## ReelMimic adoption boundary
+
+Adopt the reference-analysis and fingerprinting approach, shot-to-reference storyboard mapping, approval gate, file-contract/resumable stage design, isolated parallel shot production, fresh-context review and before/after evidence. Keep our own Claude/Codex orchestration playbooks and existing HyperFrames + GSAP, Remotion, Blender + Three.js and FFmpeg stack. ReelMimic's own web app/server is not adopted as a second orchestrator in this phase.
+
+**Hard exclusions:** upstream `requirements.txt`, `analyze.py`, `SKILL.md` and `AGENTS.md` currently include or instruct yt-dlp. Do not install or run upstream setup as-is. The adopted path accepts local user-supplied files only. Do not inherit upstream's documented `danger-full-access` Codex default. ReelMimic uses the user's Claude Code/Codex account for inference; local application execution is not fully local inference. Review each bundled engine/asset licence separately.
+
+The first implementation target is a Windows-compatible, local-file-only Reference Intelligence Engine with versioned analysis reports and cached fingerprints. Full details and gates: [REELMIMIC_ADOPTION.md](REELMIMIC_ADOPTION.md).
 
 ## Animation Recipe Engine design
 
@@ -50,4 +59,4 @@ Build narration-anchored shot rows from local transcription/timestamps. Each row
 5. Measure quality, failures, cost and hardware impact.
 6. Document limitations and obtain human approval before promotion.
 
-**Status:** all five decisions are documented. Animation recipes, code-review integration and storyboard QA remain pilots/backlog. Ray Sticker Shop remains separate. Medical-paper skills are excluded. Nothing is marked installed or production-validated.
+**Status:** ReelMimic is approved for selective study and implementation planning, not installed or production-validated. Animation recipes, code-review integration and storyboard QA remain pilots/backlog. Ray Sticker Shop remains separate. Medical-paper skills are excluded.
