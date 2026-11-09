@@ -4,7 +4,7 @@ This register records evaluated repositories and the exact boundary for the Vide
 
 | Repository | Decision | Why / boundary |
 |---|---|---|
-| [edenfunf/reelmimic](https://github.com/edenfunf/reelmimic) | Adopt selectively as reference-to-animation blueprint | Study reference analysis, shot fingerprints, approval-first storyboards, parallel shot production and evidence-backed QA. Do not vendor wholesale: upstream currently includes yt-dlp, uses hosted Claude/Codex inference, is 2D-focused and documents a full-access Codex sandbox default. Local-file-only adapter; keep our renderers. See [adoption assessment](REELMIMIC_ADOPTION.md). |
+| [edenfunf/reelmimic](https://github.com/edenfunf/reelmimic) | Adopt selectively as reference-to-animation blueprint | Study reference analysis, shot fingerprints, approval-first storyboards, parallel shot production and evidence-backed QA. Do not vendor wholesale: audit its yt-dlp/network ingestion, hosted Claude/Codex inference, 2D focus and documented full-access Codex sandbox default. Internet acquisition is allowed for references; keep our renderers and never use downloaded footage in final renders. See [adoption assessment](REELMIMIC_ADOPTION.md). |
 | [artemnovitckii/claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | Selectively port six recipes | 3D explainer, stick figure, minimalist graphics, map route, exploded breakdown and animated graph. Adapt recipes to the existing Windows-first HyperFrames + GSAP + Three.js/Blender stack. Do not add a second renderer or blindly run the macOS/Linux setup scripts. |
 | [kyy-logs/code-review-skill](https://github.com/kyy-logs/code-review-skill) | Pilot for both Claude Code and Codex | Four fresh-context probes: behaviour, tests, repository rules and impact. Use only for meaningful/high-risk diffs. Reports are advisory, not independent model/human adjudication, and never auto-approve or auto-merge. |
 | [konlu/story-studio](https://github.com/konlu/story-studio) | Reimplement useful patterns independently | Adopt the concept of audio-first storyboard timing, narration-anchored shot rows, persistent visual references and semantic script-to-shot checks. Do not copy its code/corpus until the root CC BY-NC-SA 4.0 licence versus README MIT wording is clarified. Its default paid TTS and hosted image-generation dependencies are excluded. |
@@ -15,7 +15,7 @@ This register records evaluated repositories and the exact boundary for the Vide
 
 Adopt the reference-analysis and fingerprinting approach, shot-to-reference storyboard mapping, approval gate, file-contract/resumable stage design, isolated parallel shot production, fresh-context review and before/after evidence. Keep our own Claude/Codex orchestration playbooks and existing HyperFrames + GSAP, Remotion, Blender + Three.js and FFmpeg stack. ReelMimic's own web app/server is not adopted as a second orchestrator in this phase.
 
-**Hard exclusions:** upstream `requirements.txt`, `analyze.py`, `SKILL.md` and `AGENTS.md` currently include or instruct yt-dlp. Do not install or run upstream setup as-is. The adopted path accepts local user-supplied files only. Do not inherit upstream's documented `danger-full-access` Codex default. ReelMimic uses the user's Claude Code/Codex account for inference; local application execution is not fully local inference. Review each bundled engine/asset licence separately.
+**Adoption boundary:** yt-dlp and internet access are allowed when useful for research/reference acquisition, after auditing dependencies, network behaviour, source provenance and rights. Do not inherit upstream's documented `danger-full-access` Codex default. ReelMimic uses the user's Claude Code/Codex account for inference; local application execution is not fully local inference. Review each bundled engine/asset licence separately. Reference media is analysis-only and must never be used as final footage.
 
 The first implementation target is a Windows-compatible, local-file-only Reference Intelligence Engine with versioned analysis reports and cached fingerprints. Full details and gates: [REELMIMIC_ADOPTION.md](REELMIMIC_ADOPTION.md).
 
@@ -46,7 +46,9 @@ Build narration-anchored shot rows from local transcription/timestamps. Each row
 - Story Studio code/corpus reuse is blocked pending licence clarification.
 - Medical-paper skills remain excluded; non-commercial terms are not treated as commercial permission.
 - No paid API, hosted inference, cloud upload, telemetry or external content transfer in the default workflow.
-- No ComfyUI. No yt-dlp.
+- No ComfyUI.
+- Internet access and yt-dlp are allowed when useful; reference media must not appear in final renders.
+- Final visuals must be code-authored/generated; no stock/static photos, downloaded clips, generic B-roll or still-image slides.
 - Keep final renders independent of CDNs and remote runtime resources.
 - Do not upload private scripts, narration, voice samples or media without explicit approval.
 
