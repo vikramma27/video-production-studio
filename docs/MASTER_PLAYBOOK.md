@@ -1,4 +1,4 @@
-# Master Production Playbook — v4
+# Master Production Playbook — v4.1
 **Video Production Studio | 2026-11-09**
 
 Canonical operating specification for the offline-first, code-driven faceless video studio. Documentation is not implementation: no capability is considered installed or production-ready until it exists in the actual Windows project and passes representative tests.
@@ -18,11 +18,12 @@ Mandatory routing: **reuse/cache → deterministic local code → local speciali
 4. Voice generation/import; preserve source audio.
 5. Local transcription and timing where required.
 6. Narration-anchored EDL and cleaned timeline.
-7. Persistent visual language and scene grammar.
-8. Recipe selection and scene production.
-9. Assembly of narration, visuals, music, effects and captions.
-10. Technical QA, contact sheets, representative frame inspection and full playback.
-11. Verified delivery and archived manifests, assets and decisions.
+7. Reference-video analysis and production blueprint, when a visual reference is supplied.
+8. Persistent visual language, storyboard approval and scene grammar.
+9. Recipe selection and scene production.
+10. Assembly of narration, visuals, music, effects and captions.
+11. Technical QA, contact sheets, representative frame inspection and full playback.
+12. Verified delivery and archived manifests, assets and decisions.
 
 **Timeline integrity:** after cuts, all captions, B-roll, effects and audio must map to the cleaned timeline. Never reuse original timestamps without applying the edit mapping.
 
@@ -39,6 +40,17 @@ Mandatory routing: **reuse/cache → deterministic local code → local speciali
 | Automation | PowerShell, Python, Node.js |
 
 Do not add a renderer merely because a skill bundles one. Preserve working integrations. Final renders must not depend on remote fonts, CDNs or network services.
+
+## Reference Intelligence Engine — approved design, not yet implemented
+Study [ReelMimic](https://github.com/edenfunf/reelmimic) selectively. Its source demonstrates a reference-analysis → style plan → user approval → parallel shot production → independent review → final critique workflow. It also provides a useful direction for measurable reference fingerprints across camera movement, rhythm, look, tension/peaks and frame summaries.
+
+**Adopt:** local reference analysis, shot segmentation, camera/motion and look summaries, audio/beat cues, versioned fingerprints, storyboard-to-reference shot mapping, approval-first planning, file-contract-driven resumable stages, isolated parallel shot work, fresh-context reviewers and before/after evidence for fixes.
+
+**Do not adopt wholesale:** ReelMimic's app/server as a second orchestrator, its 2D-only renderer collection, or its default agent permission configuration. Keep our existing HyperFrames + GSAP, selective Remotion, Blender + Three.js and FFmpeg responsibilities. Treat similarity scores as advisory until validated against human-labelled clips.
+
+**Hard exclusions:** the inspected upstream revision includes yt-dlp in `requirements.txt`, `analyze.py`, `SKILL.md` and `AGENTS.md`. Do not install or execute it as-is. The studio's adapter accepts user-supplied local files only and must contain no yt-dlp dependency or URL-download path. Upstream uses the user's Claude Code/Codex account for inference; local execution is not equivalent to fully local inference. Do not inherit its documented `danger-full-access` Codex default.
+
+Target flow: **local reference file → versioned analysis report + contact sheets → reference fingerprint → storyboard with reference-shot mapping → user approval → our existing renderers → shot QA and final comparison.** Cache by source hash, analysis version and settings. Preserve reference provenance and rights. See [ReelMimic Adoption Assessment](REELMIMIC_ADOPTION.md) for source findings, staged implementation and acceptance criteria.
 
 ## Animation Recipe Engine — approved design, not yet implemented
 Selectively port six recipe families from [artemnovitckii/claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills): 3D explainer, stick figure, minimal graphics, map route, exploded breakdown and animated graph. These are scene-design patterns, not a new rendering runtime. HyperFrames + GSAP remain primary; Three.js/Blender are used only where justified. Do not run its macOS/Linux Bash setup unchanged on Windows.
@@ -62,6 +74,7 @@ Borrow useful patterns from [konlu/story-studio](https://github.com/konlu/story-
 ## Promotion gates
 | Pilot | Evidence required |
 |---|---|
+| Reference Intelligence | Local-file-only Windows analysis, no yt-dlp/network ingestion, versioned/cacheable reports, useful shot/camera/rhythm/look metrics, human-validated comparisons, offline tests |
 | Animation recipes | Windows setup, offline render after approved downloads, deterministic outputs, contact sheets and human approval |
 | Code review | Pinned revision, seeded-defect test, measured misses/false positives, host compatibility; advisory only |
 | Storyboard QA | Local transcription, correct timeline anchors, visual consistency, semantic usefulness and repeatable outputs |
