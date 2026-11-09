@@ -1,4 +1,4 @@
-# Studio Architecture — v4.1
+# Studio Architecture — v5.0 (v4.1 baseline preserved)
 
 ## Two-plane design
 **Intelligence/orchestration:** Claude Code or Codex owns objectives, creative direction, planning, trade-offs, ambiguity, exception diagnosis, reusable automation design and quality decisions. Only one is the active AI worker for a project session.
@@ -31,7 +31,7 @@
 - Ray Sticker Shop stays separate; medical-paper skills excluded.
 
 ## Reference-to-animation flow
-1. Accept a user-supplied local reference file; no URL download path.
+1. Accept a user-supplied local file or intentionally acquired online reference, subject to rights/platform terms and access restrictions.
 2. Probe and normalize media; create a source hash, proxy and contact sheets.
 3. Analyse cuts, durations, rhythm, camera movement, look and optional local audio cues.
 4. Save a versioned report and fingerprint; cache only against matching source hash, analysis version and settings.
@@ -53,3 +53,18 @@ All final visual content must be authored/generated through code in our renderin
 
 ## Reliability and scope
 Every repeatable stage should be cache-aware, batchable and independently rerunnable. Persist project state, decisions, source provenance, stage manifests and QA results. Local-first; internet access is allowed when it materially improves research/reference acquisition. No paid inference/cloud uploads by default. No ComfyUI. Scripts and pilots are backlog until implemented and tested on representative Windows hardware.
+
+
+## v5.0 two-channel production architecture
+
+The system adds reference intelligence, brand/identity locks and a repeatable local episode factory. Benchmarks: https://www.youtube.com/@hisytstory and https://www.youtube.com/@herytstory. They inform quality attributes, never copied expressive assets.
+
+Subsystems: (1) reference discovery/ranking, shot-by-shot segmentation, contact sheets and style fingerprints; (2) separate original channel bibles and Blender character/rig/animation library; (3) local voice auditions and immutable profile versions; (4) original channel names/handles, icons, banners and thumbnail grammar; (5) idea generation at 2–4x target, review board and 30–60 locked ideas; (6) local job orchestration with durable manifests and resumable resource-aware queues.
+
+Reference downloads are allowed only where lawful and consistent with platform terms; never bypass access controls. Isolate references from production assets. Analyse shot length, framing, camera movement, lighting, palette, acting, transitions, narration rhythm and thumbnail layout. Do not reproduce exact frames, scripts, character designs, logos or distinctive compositions.
+
+Blender + Python is primary for channel 3D. MCP for Blender is a candidate interactive interface only; deterministic Blender Python/CLI runs production independently. Audit revision, installer, dependencies, telemetry and permissions; disable telemetry, safe mode, localhost only. Preserve HyperFrames + GSAP, selective Remotion, Three.js and FFmpeg/ffprobe.
+
+The laptop/workstation is the local execution host. Parallelize independent preparation; serialize heavy GPU renders until measured VRAM/RAM/thermal benchmarks justify concurrency. Persist queue state and recover after restarts. User chooses one/two-week batches. Prepare upload packages; user publishes manually.
+
+Evaluate Jamie Pine Voicebox as a local UI candidate; Chatterbox/IndicF5 remain candidates. Verify exact model/weight licences. Suno is a narrow user-approved music-composition exception; no other paid hosted inference is implied.
