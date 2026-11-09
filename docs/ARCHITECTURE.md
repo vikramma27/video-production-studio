@@ -49,7 +49,7 @@ The inspected ReelMimic revision is MIT for its main code, but bundled engines/a
 Brief → research/script → optional reference intelligence → voice/transcript → cleaned editorial timeline → visual language/recipes → render → assembly → QA → delivery/archive. After editorial cuts, remap captions, B-roll, effects and audio to the cleaned timeline.
 
 ## Final-video visual invariant
-All final visual content must be authored/generated through code in our rendering pipeline: vector graphics, Canvas/WebGL, procedural animation, charts, typography, simulations and 3D geometry. Never place stock/static photos, downloaded video, generic B-roll, still-image slides or AI-generated raster-image assets in final renders. Online/reference footage may be analysed for technique and style but is never a final visual asset.
+All final visual content must be authored/generated through code in our rendering pipeline: vector graphics, Canvas/WebGL, procedural animation, charts, typography, simulations and 3D geometry. Never place stock/static photos, downloaded video, generic B-roll in final renders. Online/reference footage may be analysed for technique and style but is never a final visual asset.
 
 ## Reliability and scope
 Every repeatable stage should be cache-aware, batchable and independently rerunnable. Persist project state, decisions, source provenance, stage manifests and QA results. Local-first; internet access is allowed when it materially improves research/reference acquisition. No paid inference/cloud uploads by default. No ComfyUI. Scripts and pilots are backlog until implemented and tested on representative Windows hardware.
