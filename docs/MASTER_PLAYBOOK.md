@@ -82,7 +82,7 @@ Borrow useful patterns from [konlu/story-studio](https://github.com/konlu/story-
 Record revision, environment, commands, test media, outputs, limitations and promotion decision. A smoke test is not editorial-quality proof.
 
 ## Final-video visual invariant
-Every visual element in the finished video must be authored/generated through code in our production pipeline: SVG, Canvas, WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry are valid. **Never use stock/static photos, downloaded video clips, generic downloaded B-roll, still-image slides or AI-generated raster-image assets in the final render.**
+Every visual element in the finished video must be authored/generated through code in our production pipeline: SVG, Canvas, WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry are valid. **Never use stock/static photos, downloaded video clips, generic downloaded B-roll in the final render.**
 
 Reference videos, web pages, screenshots and downloaded examples may be analysed for style, pacing, camera language, composition and technique, subject to rights and provenance. They are references, not final assets.
 
