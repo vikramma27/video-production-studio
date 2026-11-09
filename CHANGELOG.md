@@ -1,6 +1,6 @@
 # Changelog
 
-> **Current media policy:** internet access and tools such as yt-dlp are allowed when useful for research and reference acquisition, subject to rights, provenance, dependency and network review. Reference media is analysis-only. Final-video scenes and visuals must be authored/generated through code; no stock/static-photo slides, downloaded video clips or generic B-roll. ComfyUI remains excluded.
+> **Current media policy:** internet access and tools such as yt-dlp are allowed when useful for research and reference acquisition, subject to rights, provenance, dependency and network review. Reference media is analysis-only. Final-video scenes and visuals must be authored/generated through code; no stock/static photos or generic downloaded video clips. ComfyUI remains excluded.
 
 ## 2026-11-09 — Final-video visual invariant clarified
 - Replaced the earlier blanket yt-dlp prohibition: internet access and yt-dlp may be used when useful for research/reference acquisition after rights, dependency and network review.
