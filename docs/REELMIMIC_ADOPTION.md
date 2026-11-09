@@ -53,7 +53,7 @@ Its analysis/perception code also exposes a useful direction for measuring simil
 
 ### Explicit exclusions and blockers
 
-- **No yt-dlp.** Upstream `requirements.txt`, `analyze.py`, `SKILL.md` and `AGENTS.md` currently include or instruct yt-dlp use for URL downloading. This conflicts with our permanent exclusion. Our implementation must accept user-supplied local video files only; URL ingestion is out of scope unless the user explicitly reverses that policy.
+- **yt-dlp is permitted where useful** for acquiring reference videos for analysis. Audit source, permissions, dependency, network behaviour, copyright and terms before use. Keep reference downloads in a separate analysis workspace and never connect them to final-render asset manifests.
 - **No wholesale install/vendor.** Do not run upstream install scripts or copy the full repository. First audit dependency, script, network and licence surfaces.
 - **No default full-access agent sandbox.** Upstream README documents `CODEX_SANDBOX` defaulting to `danger-full-access`. Do not inherit this default; use the host's least-privilege supported mode and inspect every command boundary.
 - **No hosted inference or media upload by default.** ReelMimic runs locally but uses the user's Claude Code/Codex account for agent work. That is local orchestration, not fully local inference. Our studio keeps the local-model-first routing policy and requires explicit approval for hosted model use or external content transfer.
@@ -98,7 +98,8 @@ Its analysis/perception code also exposes a useful direction for measuring simil
 ## Acceptance criteria
 
 A pilot is not promoted until:
-- no yt-dlp references/dependency remain in the adopted code path;
+- reference acquisition and analysis are explicit, auditable and rights-aware; yt-dlp may be used where useful;
+- no downloaded reference video or still image can be referenced by a final-render scene;
 - no hidden network calls or media uploads occur;
 - local input and output paths are explicit and contained within the project workspace;
 - dependency and third-party licences are recorded;
@@ -107,6 +108,9 @@ A pilot is not promoted until:
 - parallel workers cannot overwrite shared assets or each other's shot files;
 - reviewers produce evidence-backed findings and cannot silently waive blockers;
 - a Windows test run, contact-sheet inspection and complete playback review are recorded.
+
+## Final-video rule
+The final video must be composed entirely from code-authored/generated visuals. Permitted examples include SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry. Prohibited final visual inputs include stock/static photos, downloaded video clips, generic downloaded B-roll, still-image slides and AI-generated raster-image assets. Reference footage can be downloaded and analysed, but is not a production asset.
 
 ## Current status
 
