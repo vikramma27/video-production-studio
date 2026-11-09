@@ -1,4 +1,4 @@
-# Master Production Playbook — v4.1
+# Master Production Playbook — v5.0 (v4.1 baseline preserved)
 **Video Production Studio | 2026-11-09**
 
 Canonical operating specification for the offline-first, code-driven faceless video studio. Documentation is not implementation: no capability is considered installed or production-ready until it exists in the actual Windows project and passes representative tests.
@@ -100,3 +100,37 @@ Reference videos, web pages, screenshots and downloaded examples may be analysed
 
 ## Change control
 When a decision changes, update this playbook, affected agent handovers, architecture, roadmap, token policy and changelog together. Prefer reviewable commits. Never weaken permanent constraints without explicit approval.
+
+
+## v5.0 — Two-channel storytelling production (approved blueprint)
+
+Canonical specification: [Two-Channel Blueprint](TWO_CHANNEL_STUDIO_BLUEPRINT.md). Benchmarks: [His Story](https://www.youtube.com/@hisytstory) and [Her Story](https://www.youtube.com/@herytstory). These channels define observable quality benchmarks only; do not copy names, characters, scripts, exact frames, dialogue, logos, distinctive compositions or music.
+
+### Mandatory sequence
+1. Research both channels and select representative/top-performing Shorts and long-form using transparent public metrics.
+2. Analyse selected videos shot by shot; create timestamped shot records, contact sheets, channel style fingerprints and thumbnail-layout maps.
+3. Translate observations into original techniques and quality targets; isolate reference assets.
+4. Design original male-led and female-led protagonist candidates in Blender. Produce turnarounds, facial expressions, body-action samples and playable animation pilots.
+5. Iterate with user feedback and explicitly freeze selected versions. Frozen assets are immutable; revisions branch.
+6. Audition multiple local voice options per channel; user selects and freezes exact profiles, model/weights and settings.
+7. Curate original channel names, check YouTube name/handle conflicts and similar use, then user reserves the final handle after immediate recheck.
+8. Create original icons, banners, typography, colour system and thumbnail grammar using approved characters.
+9. Generate 2–4x candidate ideas for 30–60 desired approvals. User accepts/rejects/revises/shortlists and locks calendar.
+10. Ask whether the next production batch is one or two weeks and how much laptop time is available.
+11. Run resumable local batches with resource-bounded parallelism; serialize heavy Blender GPU renders until benchmarks justify concurrency.
+12. Deliver videos and upload packages; user uploads/schedules manually.
+
+### Reference acquisition and originality
+Internet research and yt-dlp are allowed where lawful and consistent with platform terms. Download only with rights/permission or lawful basis; otherwise inspect public player/metadata or authorized copies. Never bypass DRM, authentication or access controls. Reference footage is analysis-only. Match production qualities, not protected expressive details. See [Reference Reverse Engineering](REFERENCE_REVERSE_ENGINEERING.md).
+
+### Character and voice identity locks
+Each episode pins exact character, rig, wardrobe, animation and voice profile versions. Never silently change identity. See [Character DNA](CHARACTER_DNA_AND_LOCKS.md) and [Voice Identity](VOICE_IDENTITY_SYSTEM.md).
+
+### Voicebox and Suno
+Evaluate [Jamie Pine Voicebox](https://github.com/jamiepine/voicebox) as a local voice-studio candidate; it is not yet selected or installed. Review each model/weight licence separately. Chatterbox and IndicF5 remain candidates. The user's existing Suno subscription is a narrow approved composition exception; archive song ID, prompt, generation/download dates, plan and licence evidence. This does not authorize other paid services or hosted inference.
+
+### Blender MCP security
+Evaluate [MCP for Blender](https://github.com/ahujasid/mcp-for-blender) at a pinned revision. Review install script, dependencies, telemetry and permissions; disable telemetry, use safe mode, bind only to localhost and never expose the unauthenticated socket. Blender Python/CLI remains the deterministic production path.
+
+### Content board and local scheduler
+Generate a larger candidate pool, support accept/reject/revise/shortlist/defer/merge and lock a 30–60 idea backlog. Weekly/two-week batch selection is user-approved. Durable local job state, pause/resume/cancel, restart recovery and GPU-aware concurrency are mandatory. Publishing remains manual. See [Content Board](CONTENT_BOARD_AND_BATCH_OPERATIONS.md), [Operations](PRODUCTION_OPERATIONS.md) and [Acceptance Tests](IMPLEMENTATION_ACCEPTANCE_TESTS.md).

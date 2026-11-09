@@ -1,10 +1,22 @@
-# VIDEO PRODUCTION STUDIO
+# VIDEO PRODUCTION STUDIO — v5.0 direction
 
 ### A local-first, AI-orchestrated cinematic production system.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
 [Explore the Studio](https://vikramma27.github.io/video-production-studio/) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
+
+
+
+## v5.0 — Two-Channel Storytelling Studio
+
+Approved direction: a reference-first production system for two original animated storytelling channels. Benchmark inputs: [His Story](https://www.youtube.com/@hisytstory) and [Her Story](https://www.youtube.com/@herytstory). They are production-quality references, not identities or assets to copy.
+
+**Workflow:** reference discovery and shot-by-shot analysis → original character and voice auditions → user iteration and freeze → original channel naming/handle checks → icons/banner/thumbnail identity → 30–60 idea backlog → approved one/two-week batches → local Blender rendering → human QA → manual upload.
+
+See [Blueprint](docs/TWO_CHANNEL_STUDIO_BLUEPRINT.md), [Reference Analysis](docs/REFERENCE_REVERSE_ENGINEERING.md), [Character DNA](docs/CHARACTER_DNA_AND_LOCKS.md), [Voice Identity](docs/VOICE_IDENTITY_SYSTEM.md), [Brand & Thumbnails](docs/BRAND_NAMING_AND_THUMBNAILS.md), [Content Board](docs/CONTENT_BOARD_AND_BATCH_OPERATIONS.md), [Blender Engine](docs/BLENDER_PRODUCTION_ENGINE.md), [Operations](docs/PRODUCTION_OPERATIONS.md) and [Acceptance Tests](docs/IMPLEMENTATION_ACCEPTANCE_TESTS.md).
+
+v5.0 is an approved blueprint, not a claim that new modules are installed. Preserve v4.1 technologies and constraints. Suno is a narrow user-approved composition exception; it does not authorize other paid inference or hosted generation.
 
 ## What this repository is
 The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.

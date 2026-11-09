@@ -1,4 +1,4 @@
-# Roadmap and Implementation Status — v4.1
+# Roadmap and Implementation Status — v5.0 (v4.1 baseline preserved)
 
 ## Documented baseline
 - [x] Two-plane intelligence/orchestration and local-execution architecture.
@@ -62,3 +62,49 @@
 
 ## Status discipline
 A checkbox is complete only after implementation and representative tests. Documentation is not implementation. A smoke test is not editorial-quality proof. Record versions, environment, test media, outputs and limitations. No skill is active until installed, pinned and validated.
+
+
+## v5.0 — Two-Channel Storytelling Factory
+
+All items are approved backlog until implemented and evidenced. See [Blueprint](TWO_CHANNEL_STUDIO_BLUEPRINT.md) and [Acceptance Tests](IMPLEMENTATION_ACCEPTANCE_TESTS.md).
+
+### P0 — Reference intelligence
+- [ ] Resolve canonical IDs for https://www.youtube.com/@hisytstory and https://www.youtube.com/@herytstory.
+- [ ] Collect balanced top-performing and representative Shorts/long-form with dated public metrics.
+- [ ] Produce timestamped shot records, contact sheets, camera/lighting/acting/pacing/audio fingerprints and thumbnail maps.
+- [ ] Enforce analysis-only reference isolation and final-render rejection.
+- [ ] Human approve original quality targets.
+
+### P1 — Original character pilots
+- [ ] Build two original protagonist candidates in Blender.
+- [ ] Create turnarounds, expression/body-action sheets and playable clips.
+- [ ] Test identity across five scenes, lighting/camera/wardrobe.
+- [ ] Implement iteration, approval and immutable freeze/versioning.
+
+### P2 — Voice identity
+- [ ] Evaluate Voicebox, Chatterbox, IndicF5 and selected local alternatives on Windows.
+- [ ] Review commercial rights for exact model/weights.
+- [ ] Produce playable auditions for both channels and freeze approved profiles.
+
+### P3 — Original brand and thumbnails
+- [ ] Curate original channel-name shortlist.
+- [ ] Check exact/fuzzy YouTube name/handle conflicts, web use, trademark/domain signals.
+- [ ] Recheck handle immediately before user reservation.
+- [ ] Create icons, banners, visual identity sheets and thumbnail templates from original assets.
+
+### P4 — Content planning
+- [ ] Generate 2–4x candidate ideas for 30–60 desired approvals.
+- [ ] Implement accept/reject/revise/shortlist/defer/merge board actions.
+- [ ] Lock ideas to calendar and support one/two-week user-approved batches.
+
+### P5 — Local episode factory
+- [ ] Build durable local job board and resumable state machine.
+- [ ] Integrate Blender Python render jobs; MCP remains optional.
+- [ ] Benchmark render ceilings and bound concurrency.
+- [ ] Integrate voice, Suno import, local audio fallback, FFmpeg assembly and QA.
+- [ ] Produce four pilots (one Short and one long-form per channel) before scaling.
+
+### P6 — Publishing preparation
+- [ ] Generate upload packages and suggested slots.
+- [ ] Keep upload/scheduling manual.
+- [ ] Track performance and production cost separately per channel.
