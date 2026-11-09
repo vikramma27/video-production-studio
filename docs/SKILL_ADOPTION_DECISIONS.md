@@ -17,7 +17,7 @@ Adopt the reference-analysis and fingerprinting approach, shot-to-reference stor
 
 **Adoption boundary:** yt-dlp and internet access are allowed when useful for research/reference acquisition, after auditing dependencies, network behaviour, source provenance and rights. Do not inherit upstream's documented `danger-full-access` Codex default. ReelMimic uses the user's Claude Code/Codex account for inference; local application execution is not fully local inference. Review each bundled engine/asset licence separately. Reference media is analysis-only and must never be used as final footage.
 
-The first implementation target is a Windows-compatible, local-file-only Reference Intelligence Engine with versioned analysis reports and cached fingerprints. Full details and gates: [REELMIMIC_ADOPTION.md](REELMIMIC_ADOPTION.md).
+The first implementation target is a Windows-compatible Reference Intelligence Engine that can analyse local files and intentionally acquired online references, with versioned reports, source provenance and cached fingerprints. Full details and gates: [REELMIMIC_ADOPTION.md](REELMIMIC_ADOPTION.md).
 
 ## Animation Recipe Engine design
 
