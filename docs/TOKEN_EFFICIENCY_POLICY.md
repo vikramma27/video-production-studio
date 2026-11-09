@@ -53,3 +53,12 @@ The new skills do not change the permanent routing hierarchy. They are optional 
 
 ### Pilot measurement
 For each pilot, record model/tool version, calls made, approximate or actual usage where available, local execution time, cache hits, false positives/misses, and human corrections. Unknown values remain unknown. A pilot is not promoted merely because it reduces agent calls; output quality and reliability must also pass.
+
+
+## Permanent exclusions
+
+The default production path must not introduce paid inference APIs, hosted generation credits, subscriptions, external uploads, or remote runtime dependencies. **ComfyUI and yt-dlp are explicitly excluded** and must not be reintroduced through optional skills, dependencies, examples or fallback recommendations. Exceptions require explicit user approval.
+
+## Status and evidence
+
+This policy describes routing rules and pilot behaviour; it is not itself an installed runtime guard. The Animation Recipe Engine, code-review integration, storyboard QA, helper scripts and automated enforcement remain planned until committed, executed and validated on representative Windows hardware. Record actual token usage when available; otherwise report it as unknown.
