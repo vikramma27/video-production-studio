@@ -8,7 +8,9 @@
 - [x] Blender / Three.js for 3D and technical visuals.
 - [x] FFmpeg / ffprobe for media operations and delivery.
 - [x] Local-first transcription and TTS evaluation direction.
-- [x] Explicit exclusions: no ComfyUI and no yt-dlp.
+- [x] Explicit exclusion: no ComfyUI.
+- [x] Final-video invariant: code-generated visuals only; no stock/static photos, downloaded footage, generic B-roll or still-image slides.
+- [x] Internet tools and yt-dlp may be used for research/reference acquisition when useful; reference media cannot enter final renders.
 - [x] v4 skill decisions and pilot acceptance gates documented.
 - [x] ReelMimic selectively assessed; adoption boundary documented (not installed).
 
@@ -22,7 +24,8 @@
 - [ ] Add optional local audio/beat analysis from supplied media only.
 - [ ] Write versioned `reference_report.json` and fingerprint schema; cache by source hash + analysis version + settings.
 - [ ] Add tests for local files, malformed media, interrupted analysis, cache hit/invalidation and paths containing spaces/non-ASCII.
-- [ ] Verify no yt-dlp dependency, URL downloader or unintended network access in the adopted code path.
+- [ ] Audit reference-ingestion dependencies, network calls, source provenance and rights; allow yt-dlp where useful but keep acquisition separate from final-render assets.
+- [ ] Add a final-render asset validator that rejects photographic/video source assets and verifies that visual scene inputs are code-authored/generated.
 
 ### P1 — Reference-aware pre-production
 - [ ] Map each planned shot to a reference shot and record the technique being adapted.
@@ -51,6 +54,11 @@
 - [ ] Long-form explainer with persistent visual language.
 - [ ] Compare motion approaches on the same representative scene.
 - [ ] Validate local TTS quality, latency and hardware requirements.
+
+## Final-render acceptance gate
+- [ ] Inspect the final project manifest and asset graph: every visual must resolve to code-authored/generated scene content.
+- [ ] Reject stock/static photos, downloaded video clips, generic B-roll, still-image slides and AI-generated raster-image assets from final output.
+- [ ] Confirm reference downloads are used only in analysis folders and never linked by final-render scenes.
 
 ## Status discipline
 A checkbox is complete only after implementation and representative tests. Documentation is not implementation. A smoke test is not editorial-quality proof. Record versions, environment, test media, outputs and limitations. No skill is active until installed, pinned and validated.
