@@ -59,3 +59,7 @@ No paid APIs, hosted inference, cloud uploads, telemetry or transmission of user
 
 ## Session deliverable
 Return changed files, commands, test results, output locations, unresolved issues and next steps. Update the decision log and relevant docs in the same change.
+
+
+## v5.0 reference-first storytelling workflow
+Follow the [Blueprint](../../docs/TWO_CHANNEL_STUDIO_BLUEPRINT.md) and linked specs. Benchmark URLs: https://www.youtube.com/@hisytstory and https://www.youtube.com/@herytstory. Build a ranked representative sample; analyse shot by shot; document style fingerprints and thumbnail grammar. Reference downloads are isolated analysis inputs and must comply with platform terms and rights. Do not copy protected expressive elements. Create original Blender protagonists and present turnarounds, expression/body-action sheets and playable pilots. Iterate until explicit freeze. Audition local voice candidates with fixed scripts and freeze approved profiles. Curate original names and verify YouTube handles before user reservation. Build channel art and thumbnail templates. Generate 2–4x ideas for a 30–60 accepted backlog, support review actions, and ask for one/two-week local batches. Use durable queues, resource-bounded rendering, restart recovery and manual publishing. Voicebox and MCP for Blender are candidates, not installed dependencies. See acceptance tests.
