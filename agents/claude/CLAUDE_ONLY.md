@@ -23,3 +23,6 @@ Read first:
 ## Expected output
 
 For each production task, produce a clear plan, identify deterministic stages, define inputs/outputs and cache invalidation, execute local workers, inspect representative results, report exceptions and update project state. Use creative judgement where it matters; do not micromanage every file operation.
+
+## v4 synchronization
+Read the full [Claude Code Playbook](./CLAUDE_ONLY_PLAYBOOK.md) and repository [Master Playbook](../../docs/MASTER_PLAYBOOK.md). v4 adds six animation recipe families to port into existing renderers, an advisory code-review pilot for meaningful/high-risk diffs, and independent audio-first storyboard QA using local transcription. Ray Sticker Shop remains separate; medical-paper skills are excluded. These are documented decisions/pilots, not installed or production-validated capabilities. Preserve offline-first rules, no ComfyUI, no yt-dlp and approval gates. Do not bulk-install skills.
