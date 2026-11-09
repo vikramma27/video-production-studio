@@ -110,7 +110,7 @@ A pilot is not promoted until:
 - a Windows test run, contact-sheet inspection and complete playback review are recorded.
 
 ## Final-video rule
-The final video must be composed entirely from code-authored/generated visuals. Permitted examples include SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry. Prohibited final visual inputs include stock/static photos, downloaded video clips, generic downloaded B-roll, still-image slides and AI-generated raster-image assets. Reference footage can be downloaded and analysed, but is not a production asset.
+The final video must be composed entirely from code-authored/generated visuals. Permitted examples include SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry. Prohibited final visual inputs include stock/static photos, downloaded video clips, generic downloaded B-roll and AI-generated raster-image assets. Reference footage can be downloaded and analysed, but is not a production asset.
 
 ## Current status
 
