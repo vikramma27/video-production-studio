@@ -1,0 +1,29 @@
+{
+  "policy_version": "1.0",
+  "status": "permanent_default",
+  "approval_required_to_change": true,
+  "routing_order": [
+    "reuse_cache",
+    "deterministic_local_code",
+    "local_specialist_model",
+    "bounded_agent_reasoning",
+    "large_reasoning_only_if_justified"
+  ],
+  "constraints": {
+    "offline_first": true,
+    "paid_inference_default": false,
+    "cloud_upload_default": false,
+    "comfyui": false,
+    "ytdlp": false
+  },
+  "execution": {
+    "batch_operations": true,
+    "cache_stable_inputs": true,
+    "selective_invalidation": true,
+    "persist_project_state": true,
+    "compact_agent_context": true,
+    "stop_after_same_method_failures": 2,
+    "never_fabricate_token_metrics": true
+  },
+  "status_note": "Documented policy only. Helpers and runtime enforcement must not be claimed until implemented and tested."
+}
