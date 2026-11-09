@@ -48,7 +48,7 @@ Study [ReelMimic](https://github.com/edenfunf/reelmimic) selectively. Its source
 
 **Do not adopt wholesale:** ReelMimic's app/server as a second orchestrator, its 2D-only renderer collection, or its default agent permission configuration. Keep our existing HyperFrames + GSAP, selective Remotion, Blender + Three.js and FFmpeg responsibilities. Treat similarity scores as advisory until validated against human-labelled clips.
 
-**Hard exclusions:** the inspected upstream revision includes yt-dlp in `requirements.txt`, `analyze.py`, `SKILL.md` and `AGENTS.md`. Do not install or execute it as-is. The studio's adapter accepts user-supplied local files only and must contain no yt-dlp dependency or URL-download path. Upstream uses the user's Claude Code/Codex account for inference; local execution is not equivalent to fully local inference. Do not inherit its documented `danger-full-access` Codex default.
+**Adoption boundary:** the inspected upstream revision includes yt-dlp in its reference-ingestion path. This is not a project-level prohibition: internet access and yt-dlp may be used when they materially help research or acquire reference footage. Audit the command, source, rights and network behaviour; do not inherit its documented `danger-full-access` Codex default. Reference footage is for analysis only and must never be inserted into final renders. Upstream uses the user's Claude Code/Codex account for inference; local execution is not equivalent to fully local inference.
 
 Target flow: **local reference file → versioned analysis report + contact sheets → reference fingerprint → storyboard with reference-shot mapping → user approval → our existing renderers → shot QA and final comparison.** Cache by source hash, analysis version and settings. Preserve reference provenance and rights. See [ReelMimic Adoption Assessment](REELMIMIC_ADOPTION.md) for source findings, staged implementation and acceptance criteria.
 
@@ -74,17 +74,22 @@ Borrow useful patterns from [konlu/story-studio](https://github.com/konlu/story-
 ## Promotion gates
 | Pilot | Evidence required |
 |---|---|
-| Reference Intelligence | Local-file-only Windows analysis, no yt-dlp/network ingestion, versioned/cacheable reports, useful shot/camera/rhythm/look metrics, human-validated comparisons, offline tests |
+| Reference Intelligence | Windows analysis of local or intentionally acquired reference files, transparent network/source handling, versioned/cacheable reports, useful shot/camera/rhythm/look metrics, human-validated comparisons |
 | Animation recipes | Windows setup, offline render after approved downloads, deterministic outputs, contact sheets and human approval |
 | Code review | Pinned revision, seeded-defect test, measured misses/false positives, host compatibility; advisory only |
 | Storyboard QA | Local transcription, correct timeline anchors, visual consistency, semantic usefulness and repeatable outputs |
 
 Record revision, environment, commands, test media, outputs, limitations and promotion decision. A smoke test is not editorial-quality proof.
 
+## Final-video visual invariant
+Every visual element in the finished video must be authored/generated through code in our production pipeline: SVG, Canvas, WebGL, procedural graphics, charts, typography, animation, simulations and 3D geometry are valid. **Never use stock/static photos, downloaded video clips, generic downloaded B-roll, still-image slides or AI-generated raster-image assets in the final render.**
+
+Reference videos, web pages, screenshots and downloaded examples may be analysed for style, pacing, camera language, composition and technique, subject to rights and provenance. They are references, not final assets.
+
 ## Non-negotiable constraints
 - Offline-first and free/open-source by default.
 - No paid inference APIs, hosted generation credits, cloud uploads or subscriptions by default.
-- **No ComfyUI. No yt-dlp.**
+- **No ComfyUI.** Internet access and yt-dlp are permitted for research/reference acquisition when useful; downloaded media remains reference-only and is prohibited from final renders.
 - No silent renderer replacement or bulk skill installation.
 - No remote runtime dependency in final renders.
 - Respect code, model, font, image, music, sound and 3D-asset licences separately.
