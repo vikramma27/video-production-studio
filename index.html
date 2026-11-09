@@ -1,34 +1,380 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080a12">
-<meta name="description" content="A local-first, AI-orchestrated cinematic video production studio.">
-<title>Video Production Studio — Build Beyond</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10130f">
+<meta name="description" content="An independent, local-first video production system. Creative intelligence directs. Deterministic tools execute. Every stage is built to be repeatable.">
+<meta property="og:title" content="Video Production Studio — Make the impossible repeatable">
+<meta property="og:description" content="A local-first production architecture for ambitious video, built around creative intelligence and deterministic execution.">
+<title>Video Production Studio — Make the impossible repeatable</title>
 <style>
-:root{--bg:#080a12;--ink:#f4f3f0;--muted:#9b9eae;--line:rgba(255,255,255,.12);--cyan:#8cecff;--violet:#a99bff;--orange:#ffb38a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}.noise{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}.gridbg{position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 75%);opacity:.38}.nav{height:82px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}.brand{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.19em;font-weight:750}.mark{width:28px;height:28px;border:1px solid rgba(140,236,255,.7);border-radius:9px;display:grid;place-items:center;box-shadow:0 0 28px #8cecff35;color:var(--cyan)}.navlinks{display:flex;gap:30px;color:#b5b7c3;font-size:12px}.navlinks a:hover{color:white}.navcta,.button{border:1px solid rgba(140,236,255,.42);border-radius:999px;padding:12px 18px;font-size:12px;letter-spacing:.04em;background:rgba(140,236,255,.07);transition:.25s}.navcta:hover,.button:hover{background:rgba(140,236,255,.17);transform:translateY(-2px);box-shadow:0 8px 32px #8cecff22}.hero{min-height:780px;max-width:1240px;margin:auto;padding:112px 28px 110px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;position:relative}.eyebrow{color:var(--cyan);font-size:10px;letter-spacing:.28em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";height:1px;width:28px;background:var(--cyan)}h1{font-size:clamp(58px,7.4vw,104px);line-height:.94;letter-spacing:-.075em;font-weight:650;margin:28px 0 25px;max-width:720px}h1 span{display:block;background:linear-gradient(100deg,#fff 10%,#a7e9f5 48%,#a99bff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:#aeb0bd;font-size:16px;line-height:1.8;max-width:480px}.actions{display:flex;gap:12px;align-items:center;margin-top:35px;flex-wrap:wrap}.button.primary{background:linear-gradient(110deg,#b2f2ff,#b9b0ff);color:#10121c;border:0;font-weight:750}.button.secondary{border-color:var(--line);background:#ffffff08;color:#e8e8ef}.micro{margin-top:30px;color:#737787;font-size:10px;letter-spacing:.14em;text-transform:uppercase}.stage{height:520px;position:relative;perspective:1100px;display:grid;place-items:center;isolation:isolate}.halo{position:absolute;width:410px;height:410px;border-radius:50%;background:radial-gradient(circle,#8cecff21 0%,#9c86ff15 38%,transparent 70%);filter:blur(18px)}.orbit{position:absolute;width:440px;height:180px;border:1px solid #9cecff50;border-radius:50%;transform:rotate(-28deg) rotateX(62deg);box-shadow:0 0 35px #7bdcff12,inset 0 0 22px #7bdcff0b}.orbit.two{width:500px;height:235px;transform:rotate(48deg) rotateX(66deg);border-color:#b19cff45}.orbit.three{width:350px;height:350px;transform:rotateX(72deg) rotateY(20deg);border-color:#ffffff1c}.core{width:245px;height:245px;position:relative;transform-style:preserve-3d;animation:float 8s ease-in-out infinite}.core:before{content:"";position:absolute;inset:0;border-radius:32% 68% 57% 43% / 40% 38% 62% 60%;background:radial-gradient(circle at 30% 25%,#fff 0,#b8f4ff 5%,#7d91c7 20%,#373b6b 43%,#111526 68%,#070912 100%);box-shadow:inset -22px -28px 45px #050611, inset 12px 10px 25px #ffffff8c,0 0 55px #8cecff48,0 0 130px #8d7dff26;transform:rotateX(18deg) rotateY(-25deg);animation:morph 13s ease-in-out infinite alternate}.core:after{content:"";position:absolute;inset:20px;border-radius:50%;border:1px solid #d9fbff7a;transform:translateZ(32px) rotateY(50deg);filter:blur(.3px)}.core .shine{position:absolute;width:90px;height:90px;border-radius:50%;background:#c8faff5c;filter:blur(28px);top:24px;left:35px;transform:translateZ(50px)}.ring{position:absolute;width:490px;height:490px;border-radius:50%;border:1px solid #fff1;transform:rotateX(75deg) rotateZ(-20deg)}.ring:before,.ring:after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px 5px #8cecff8c;top:15%;left:15%}.ring:after{top:78%;left:75%;background:#c1aaff;box-shadow:0 0 18px 5px #a99bff8c}.floating{position:absolute;padding:11px 14px;border:1px solid #ffffff20;border-radius:12px;background:#101522bb;backdrop-filter:blur(14px);font-size:10px;color:#d9e2ec;letter-spacing:.08em;box-shadow:0 18px 55px #0007;animation:float 7s ease-in-out infinite}.floating b{color:var(--cyan);font-weight:600}.f1{top:72px;right:0}.f2{bottom:88px;left:0;animation-delay:-2s}.f3{bottom:40px;right:12px;animation-delay:-4s}.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.22em;color:#777e90;text-transform:uppercase}.scroll:after{content:"";display:block;height:34px;width:1px;background:linear-gradient(var(--cyan),transparent);margin:12px auto 0}.section{max-width:1240px;margin:auto;padding:100px 28px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.kicker{font-size:10px;color:var(--cyan);letter-spacing:.24em;text-transform:uppercase}.section h2{font-size:clamp(36px,5vw,62px);letter-spacing:-.06em;font-weight:600;margin:14px 0 0}.section-head p{max-width:360px;color:var(--muted);font-size:13px;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{min-height:230px;border:1px solid var(--line);border-radius:18px;padding:27px;background:linear-gradient(145deg,#ffffff0b,#ffffff02);position:relative;overflow:hidden;transition:.35s}.card:hover{transform:translateY(-6px);border-color:#8cecff55;background:linear-gradient(145deg,#8cecff12,#ffffff03)}.card .num{font-size:10px;color:#7c8395;letter-spacing:.15em}.card h3{font-size:20px;font-weight:550;margin:42px 0 10px;letter-spacing:-.03em}.card p{color:#9da2b2;font-size:12px;line-height:1.75;max-width:300px}.card .glow{position:absolute;width:160px;height:160px;border-radius:50%;background:#8cecff15;filter:blur(48px);right:-80px;top:-70px}.architecture{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(90deg,#11152290,#0a0d17)}.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:18px;align-items:center}.node{border:1px solid var(--line);padding:24px;border-radius:16px;background:#ffffff06;min-height:150px}.node strong{display:block;font-size:15px;margin:12px 0 7px}.node small{color:#999eaf;font-size:11px;line-height:1.7}.node .tag{color:var(--cyan);font-size:9px;letter-spacing:.17em;text-transform:uppercase}.arrow{color:#8cecff80;font-size:24px}.manifesto{padding:140px 28px;text-align:center;max-width:1000px;margin:auto}.manifesto h2{font-size:clamp(40px,6vw,76px);line-height:1.06;letter-spacing:-.07em;font-weight:550}.manifesto h2 em{font-style:normal;color:var(--cyan)}.manifesto p{color:#9da2b2;max-width:570px;margin:25px auto;line-height:1.8;font-size:14px}.footer{border-top:1px solid var(--line);padding:30px 28px;max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:20px;color:#777e90;font-size:10px;letter-spacing:.08em}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -16px}}@keyframes morph{0%{border-radius:32% 68% 57% 43% / 40% 38% 62% 60%;rotate:0deg}100%{border-radius:58% 42% 38% 62% / 55% 61% 39% 45%;rotate:12deg}}@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px;min-height:auto}.stage{height:420px;grid-row:1}.hero-copy{grid-row:2}.navlinks{display:none}.section-head{display:block}.cards{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}.f1{right:4%}.f2{left:3%}.stage{transform:scale(.9)}.section{padding-top:75px;padding-bottom:75px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+:root{
+  color-scheme:dark;
+  --night:#10130f;--night-2:#171c17;--paper:#e9e7dc;--paper-2:#dcdace;
+  --ink:#181c17;--muted:#a7ada1;--muted-dark:#656b61;
+  --acid:#d8ff57;--signal:#ff6548;--line-dark:rgba(236,239,223,.17);
+  --line-light:rgba(24,28,23,.19);--display:Impact,"Arial Narrow",system-ui,sans-serif;
+  --body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --page-progress:0;--mx:0;--my:0;
+  font-family:var(--body);background:var(--night);color:#f2f0e6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;overflow-x:hidden;background:var(--night);color:#f2f0e6}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+::selection{background:var(--acid);color:var(--ink)}
+:focus-visible{outline:2px solid var(--acid);outline-offset:5px}
+.skip{position:fixed;z-index:1000;top:10px;left:10px;padding:12px 16px;background:var(--acid);color:var(--ink);transform:translateY(-150%)}
+.skip:focus{transform:none}
+.site-head{height:76px;position:absolute;z-index:30;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,78px);border-bottom:1px solid rgba(255,255,255,.12)}
+.brand{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:800;letter-spacing:.16em}
+.brand-mark{width:31px;height:31px;display:grid;place-items:center;background:var(--acid);color:var(--ink);font-size:17px;font-weight:950;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.brand small{display:block;color:#92998b;font-size:8px;letter-spacing:.24em;margin-top:3px}
+.nav-links{display:flex;gap:clamp(16px,3vw,42px);align-items:center}
+.nav-links a{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#b9beb2;transition:color .2s}
+.nav-links a:hover{color:var(--acid)}
+.nav-github{padding:11px 15px;border:1px solid rgba(216,255,87,.55);color:var(--acid)!important}
+.hero{min-height:850px;min-height:100svh;position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(360px,.96fr);align-items:center;padding:140px clamp(20px,7vw,110px) 105px;overflow:hidden;background:var(--night)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(115deg,transparent 48%,rgba(216,255,87,.045) 48.1%,transparent 48.3%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:auto,64px 64px,64px 64px;mask-image:linear-gradient(90deg,black,transparent 90%)}
+.hero:after{content:"";position:absolute;z-index:-1;width:55vw;height:55vw;right:-18vw;top:6%;border:1px solid rgba(216,255,87,.15);border-radius:50%;box-shadow:0 0 0 55px rgba(216,255,87,.018),0 0 0 110px rgba(216,255,87,.012)}
+.hero-copy{position:relative;z-index:4;max-width:760px}
+.eyebrow,.micro-label{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--acid);font-weight:750}
+.eyebrow{display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:34px;height:1px;background:var(--acid)}
+.hero h1{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.045em;font-size:clamp(76px,11.3vw,164px);line-height:.78;margin:35px 0 31px;max-width:850px}
+.hero h1 span{display:block;color:var(--acid);padding-left:.42em}
+.hero-deck{max-width:480px;color:#b8bdb1;font-size:15px;line-height:1.8;margin:0}
+.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:36px}
+.action-primary{display:inline-flex;align-items:center;gap:24px;padding:16px 19px;background:var(--acid);color:var(--ink);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s,background .25s}
+.action-primary:hover{transform:translateY(-4px);background:#e6ff91}
+.action-primary span{font-size:18px}
+.action-text{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#c1c6ba;border-bottom:1px solid #777e70;padding:0 0 7px}
+.hero-note{margin-top:52px;display:flex;gap:22px;flex-wrap:wrap;color:#777f72;font-size:8px;letter-spacing:.2em;text-transform:uppercase}
+.hero-note span:before{content:"+";color:var(--signal);margin-right:7px}
+.hero-art{height:min(660px,72vh);min-height:480px;position:relative;perspective:1100px;transform:translate3d(calc(var(--mx)*-8px),calc(var(--my)*-7px),0);transition:transform .18s ease-out}
+.art-grid{position:absolute;inset:8% 0 8% 3%;border:1px solid rgba(216,255,87,.2);transform:rotateY(-19deg) rotateX(5deg);background:linear-gradient(90deg,transparent 49.8%,rgba(216,255,87,.16) 50%,transparent 50.2%),linear-gradient(transparent 49.8%,rgba(216,255,87,.16) 50%,transparent 50.2%);background-size:72px 72px;box-shadow:28px 30px 0 -27px var(--signal)}
+.frame-stack{position:absolute;inset:12% 10% 13% 12%;transform:rotateY(-17deg) rotateX(3deg) rotateZ(-5deg);transform-style:preserve-3d}
+.frame-back{position:absolute;inset:9% -8% -7% 13%;border:1px solid rgba(216,255,87,.38);background:rgba(216,255,87,.035);transform:translateZ(-65px)}
+.frame-main{position:absolute;inset:0;border:1px solid rgba(237,240,223,.45);background:#20271e;box-shadow:28px 35px 0 rgba(0,0,0,.25),0 0 70px rgba(216,255,87,.08);overflow:hidden}
+.frame-main:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 35%,rgba(216,255,87,.12) 35.2%,transparent 35.6%),linear-gradient(0deg,rgba(10,13,10,.95),transparent 65%),repeating-linear-gradient(90deg,transparent 0 48px,rgba(255,255,255,.035) 49px 50px)}
+.frame-top{position:absolute;top:0;left:0;right:0;height:32px;border-bottom:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;align-items:center;padding:0 14px;color:#aeb6a7;font-size:7px;letter-spacing:.16em;text-transform:uppercase}
+.frame-top b{color:var(--acid);font-weight:800}
+.frame-image{position:absolute;inset:14% 9% 20%;display:grid;place-items:center;overflow:hidden}
+.frame-image svg{width:100%;height:100%;overflow:visible}
+.frame-caption{position:absolute;left:15px;bottom:13px;right:15px;display:flex;justify-content:space-between;align-items:end;color:#dce1d4;font-size:8px;letter-spacing:.15em;text-transform:uppercase}
+.frame-caption strong{font-size:10px;color:var(--acid)}
+.frame-side{position:absolute;top:17%;right:-3%;width:22%;height:67%;border:1px solid rgba(255,255,255,.25);background:repeating-linear-gradient(180deg,#313a2c 0 18px,#1b211a 19px 38px);transform:translateZ(45px) rotateY(-8deg);display:flex;flex-direction:column;justify-content:space-around;padding:8px}
+.frame-side i{height:1px;background:rgba(216,255,87,.4);display:block}
+.frame-label{position:absolute;padding:10px 12px;background:var(--acid);color:var(--ink);font-size:8px;letter-spacing:.14em;font-weight:900;text-transform:uppercase;box-shadow:8px 8px 0 rgba(0,0,0,.25)}
+.frame-label.one{top:8%;left:-3%;transform:translateZ(85px) rotate(-8deg)}
+.frame-label.two{bottom:11%;right:0;background:var(--signal);color:#171a15;transform:translateZ(110px) rotate(4deg)}
+.art-crosshair{position:absolute;width:22px;height:22px;right:2%;top:6%;border-top:1px solid var(--acid);border-right:1px solid var(--acid)}
+.art-crosshair:after{content:"";position:absolute;width:22px;height:22px;left:-10px;top:10px;border-left:1px solid var(--acid);border-bottom:1px solid var(--acid)}
+.hero-side-note{position:absolute;right:0;bottom:2%;writing-mode:vertical-rl;color:#778071;font-size:8px;letter-spacing:.24em;text-transform:uppercase}
+.hero-bottom{position:absolute;bottom:0;left:0;right:0;height:48px;border-top:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,78px);font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#788071}
+.hero-bottom b{color:var(--acid)}
+.chapter{position:relative;padding:clamp(90px,13vw,180px) clamp(20px,9vw,140px)}
+.paper{background:var(--paper);color:var(--ink)}
+.dark{background:var(--night);color:#f2f0e6}
+.section-index{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--signal);font-weight:850}
+.section-index.light{color:var(--acid)}
+.section-heading{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.045em;line-height:.91;font-size:clamp(48px,7.6vw,106px);margin:22px 0 0}
+.section-heading .outline{-webkit-text-stroke:1px currentColor;color:transparent}
+.tension{display:grid;grid-template-columns:.78fr 1.22fr;gap:9vw;align-items:start}
+.tension-aside{position:sticky;top:100px}
+.tension-aside p{font-size:12px;line-height:1.8;color:#656b61;max-width:260px;margin-top:28px}
+.tension-copy{padding-top:7px}
+.tension-copy .statement{font-size:clamp(25px,3.5vw,47px);line-height:1.17;letter-spacing:-.045em;font-weight:650;max-width:850px}
+.tension-copy .statement em{font-style:normal;color:#a9b83f}
+.comparison{margin-top:70px;border-top:1px solid var(--line-light);display:grid;grid-template-columns:1fr 1fr}
+.compare-side{padding:26px 26px 5px 0}
+.compare-side+ .compare-side{padding-left:30px;border-left:1px solid var(--line-light)}
+.compare-side small{font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:#777e72}
+.compare-side h3{font-size:20px;letter-spacing:-.04em;margin:16px 0 10px}
+.compare-side p{max-width:350px;color:#666c62;font-size:12px;line-height:1.8}
+.compare-side .compare-mark{font-family:var(--display);font-size:42px;color:var(--signal);line-height:1}
+.compare-side:last-child .compare-mark{color:#8b9c2c}
+.architecture{padding-top:130px;padding-bottom:145px}
+.architecture-intro{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:75px}
+.architecture-intro p{max-width:330px;color:#a8afa1;font-size:12px;line-height:1.8;margin:0}
+.plane-switch{display:flex;gap:8px;margin:0 0 28px}
+.plane-switch button{border:1px solid rgba(255,255,255,.2);padding:11px 15px;background:transparent;color:#aab1a2;font-size:9px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer}
+.plane-switch button[aria-pressed=true]{background:var(--acid);color:var(--ink);border-color:var(--acid);font-weight:900}
+.plane-stage{min-height:360px;position:relative;border:1px solid rgba(255,255,255,.2);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.plane-stage:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:rgba(255,255,255,.18)}
+.plane{position:relative;padding:clamp(25px,5vw,65px);transition:background .3s}
+.plane.active{background:rgba(216,255,87,.075)}
+.plane .plane-id{font-size:8px;letter-spacing:.2em;color:var(--acid)}
+.plane h3{font-family:var(--display);font-size:clamp(30px,4vw,55px);line-height:.95;text-transform:uppercase;margin:30px 0 16px;letter-spacing:-.03em}
+.plane p{max-width:360px;color:#aab1a2;font-size:12px;line-height:1.85;margin:0}
+.plane ul{padding:0;margin:28px 0 0;list-style:none;display:flex;flex-wrap:wrap;gap:7px}
+.plane li{padding:7px 9px;border:1px solid rgba(255,255,255,.19);font-size:8px;color:#d3d8cb;letter-spacing:.06em}
+.plane-foot{position:absolute;bottom:22px;left:clamp(25px,5vw,65px);font-size:8px;color:#788071;letter-spacing:.15em;text-transform:uppercase}
+.architecture-caption{display:flex;justify-content:space-between;gap:25px;margin-top:17px;color:#778071;font-size:8px;letter-spacing:.13em;text-transform:uppercase}
+.architecture-caption strong{color:var(--acid)}
+.pipeline{background:#d8ff57;color:var(--ink);padding-top:130px;padding-bottom:140px;overflow:hidden}
+.pipeline-top{display:flex;justify-content:space-between;align-items:end;gap:35px}
+.pipeline-top .section-index{color:#4d5b1c}
+.pipeline-top .section-heading{max-width:700px}
+.pipeline-top p{max-width:300px;color:#515b37;font-size:12px;line-height:1.8}
+.process{margin-top:95px;border-top:1px solid rgba(24,28,23,.35)}
+.process-row{display:grid;grid-template-columns:90px minmax(180px,.7fr) 1fr 110px;gap:25px;align-items:center;min-height:112px;border-bottom:1px solid rgba(24,28,23,.35);transition:padding .25s}
+.process-row:hover{padding-left:15px}
+.process-no{font-family:var(--display);font-size:36px;letter-spacing:-.04em;color:rgba(24,28,23,.48)}
+.process-row h3{font-size:clamp(18px,2.2vw,26px);letter-spacing:-.04em;margin:0}
+.process-row p{font-size:11px;line-height:1.7;color:#536039;margin:0;max-width:470px}
+.process-output{justify-self:end;font-size:8px;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(24,28,23,.4);padding:9px 10px}
+.peak{min-height:760px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5vw;overflow:hidden}
+.peak-copy{position:relative;z-index:2}
+.peak-copy .section-heading{font-size:clamp(55px,8vw,112px)}
+.peak-copy p{max-width:410px;color:#a8afa1;font-size:13px;line-height:1.85;margin-top:30px}
+.peak-visual{height:500px;position:relative;display:grid;place-items:center;perspective:900px}
+.peak-ring{position:absolute;width:420px;height:420px;border:1px solid rgba(216,255,87,.22);border-radius:50%;transform:rotateX(67deg) rotateZ(-24deg);box-shadow:0 0 0 35px rgba(216,255,87,.025),0 0 0 70px rgba(216,255,87,.018)}
+.peak-ring:before,.peak-ring:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 24px var(--signal);left:18%;top:20%}
+.peak-ring:after{background:var(--acid);box-shadow:0 0 24px var(--acid);left:75%;top:68%}
+.peak-gate{width:min(80%,390px);aspect-ratio:1.18;position:relative;border:1px solid rgba(216,255,87,.6);background:linear-gradient(145deg,#273124,#111711 65%);transform:rotateY(-18deg) rotateZ(-8deg);box-shadow:24px 25px 0 rgba(216,255,87,.08),0 0 80px rgba(216,255,87,.1);display:grid;place-items:center}
+.peak-gate:before{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.18)}
+.peak-gate svg{width:72%;height:72%}
+.peak-word{position:absolute;bottom:9%;right:-2%;background:var(--signal);color:var(--ink);padding:13px 16px;font-size:9px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;transform:rotate(3deg)}
+.tool-index{background:var(--paper-2);color:var(--ink);padding-top:120px;padding-bottom:135px}
+.tool-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:55px}
+.tool-head p{max-width:310px;color:#60675b;font-size:12px;line-height:1.8}
+.tool-list{border-top:1px solid var(--line-light)}
+.tool-row{display:grid;grid-template-columns:1.1fr 1.1fr 1.8fr;gap:25px;padding:23px 0;border-bottom:1px solid var(--line-light);align-items:baseline}
+.tool-category{font-size:8px;color:#7b8175;letter-spacing:.18em;text-transform:uppercase}
+.tool-names{font-weight:750;font-size:14px;letter-spacing:-.03em}
+.tool-purpose{font-size:11px;color:#646b60;line-height:1.65}
+.tool-note{margin-top:30px;font-size:9px;line-height:1.7;color:#72796d;max-width:650px}
+.principle{padding-top:150px;padding-bottom:160px;text-align:center}
+.principle .section-index{color:var(--acid)}
+.principle h2{font-family:var(--display);font-size:clamp(58px,10vw,145px);line-height:.82;letter-spacing:-.045em;text-transform:uppercase;margin:32px auto;max-width:1200px}
+.principle h2 span{color:var(--acid)}
+.principle p{max-width:560px;margin:30px auto 0;color:#a8afa1;font-size:13px;line-height:1.9}
+.principle .action-primary{margin-top:34px}
+.site-footer{background:#0a0d09;border-top:1px solid rgba(255,255,255,.13);padding:35px clamp(20px,5vw,78px);display:flex;justify-content:space-between;gap:25px;align-items:center;color:#778071;font-size:8px;letter-spacing:.15em;text-transform:uppercase}
+.site-footer a{color:var(--acid)}
+/* Scroll-built edit trace: a persistent, clickable record of the visitor's journey. */
+.edit-trace{position:fixed;z-index:40;left:50%;bottom:13px;transform:translateX(-50%);width:min(620px,calc(100vw - 28px));height:38px;display:flex;align-items:center;gap:0;padding:0 12px;background:rgba(10,13,9,.92);border:1px solid rgba(216,255,87,.35);box-shadow:0 12px 45px rgba(0,0,0,.35);backdrop-filter:blur(16px)}
+.trace-label{font-size:7px;letter-spacing:.16em;color:#9da593;white-space:nowrap;margin-right:12px}
+.trace-track{height:2px;position:relative;flex:1;background:rgba(255,255,255,.2)}
+.trace-fill{position:absolute;inset:0 auto 0 0;width:calc(var(--page-progress)*100%);background:var(--acid)}
+.trace-stops{position:absolute;inset:50% 0 auto;display:flex;justify-content:space-between;transform:translateY(-50%)}
+.trace-stop{width:9px;height:9px;border:1px solid #87917c;background:#11160f;padding:0;cursor:pointer;transform:rotate(45deg);transition:background .2s,border-color .2s,scale .2s}
+.trace-stop[aria-current=true]{background:var(--signal);border-color:var(--signal);scale:1.35}
+.trace-end{font-size:7px;letter-spacing:.14em;color:var(--acid);margin-left:12px;white-space:nowrap}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.reveal.in-view{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero{grid-template-columns:1fr;min-height:auto;padding-top:130px;padding-bottom:95px}
+ .hero-copy{max-width:760px}.hero-art{height:480px;min-height:0;margin:20px auto 0;width:min(100%,600px)}
+ .hero h1{font-size:clamp(74px,14vw,130px)}
+ .tension{grid-template-columns:1fr;gap:45px}.tension-aside{position:static}
+ .architecture-intro,.pipeline-top,.tool-head{display:block}.architecture-intro p,.pipeline-top p,.tool-head p{margin-top:25px}
+ .peak{grid-template-columns:1fr;gap:0}.peak-visual{height:420px}
+}
+@media(max-width:620px){
+ .site-head{height:65px;padding:0 18px}.nav-links a:not(.nav-github){display:none}.nav-github{padding:9px 10px;font-size:8px}
+ .brand{font-size:9px}.brand-mark{width:27px;height:27px}
+ .hero{padding:112px 20px 80px}.hero h1{font-size:clamp(68px,16vw,102px);margin-top:29px}
+ .hero-deck{font-size:13px;max-width:390px}.hero-art{height:350px;width:100%;margin-top:15px}
+ .frame-stack{inset:12% 11% 12% 8%}.frame-label.one{left:-2%;top:5%}.frame-label.two{right:-1%;bottom:7%}
+ .hero-bottom{padding:0 18px;font-size:7px}.hero-bottom span:last-child{display:none}
+ .chapter{padding:88px 22px}.section-heading{font-size:clamp(47px,13vw,76px)}
+ .comparison{grid-template-columns:1fr}.compare-side{padding:24px 0}.compare-side+.compare-side{padding:24px 0 0;border-left:0;border-top:1px solid var(--line-light)}
+ .architecture{padding-top:90px;padding-bottom:95px}.architecture-intro{margin-bottom:45px}
+ .plane-stage{grid-template-columns:1fr}.plane-stage:before{display:none}.plane{padding:28px 23px 75px}.plane+.plane{border-top:1px solid rgba(255,255,255,.2)}
+ .plane h3{margin-top:19px}.plane-foot{left:23px;bottom:20px}
+ .architecture-caption{display:block;line-height:1.8}.architecture-caption span{display:block}
+ .pipeline{padding-top:90px;padding-bottom:100px}.process{margin-top:50px}
+ .process-row{grid-template-columns:42px 1fr;gap:10px;padding:20px 0;min-height:0}
+ .process-no{grid-row:1 / span 2;font-size:27px}.process-row p{grid-column:2}.process-output{grid-column:2;justify-self:start;margin-top:4px}
+ .peak{padding-top:100px;padding-bottom:90px}.peak-visual{height:330px}.peak-ring{width:280px;height:280px}
+ .tool-index{padding-top:90px;padding-bottom:100px}.tool-row{grid-template-columns:1fr 1fr;gap:9px;padding:18px 0}.tool-purpose{grid-column:1 / -1}
+ .principle{padding-top:110px;padding-bottom:120px}.principle h2{font-size:clamp(56px,15vw,95px)}
+ .site-footer{display:block;line-height:2.2;padding-bottom:70px}
+ .edit-trace{bottom:8px;height:34px}.trace-label{font-size:6px;margin-right:8px}.trace-end{font-size:6px;margin-left:8px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ .reveal{opacity:1;transform:none}
+ .hero-art{transform:none!important}
+}
 </style>
 </head>
 <body>
-<div class="gridbg"></div><div class="noise"></div>
-<header class="nav"><a class="brand" href="#"><span class="mark">V</span><span>VPS <span style="color:#737b8e">/ STUDIO</span></span></a><nav class="navlinks"><a href="#system">SYSTEM</a><a href="#workflow">WORKFLOW</a><a href="#principles">PRINCIPLES</a></nav><a class="navcta" href="https://github.com/vikramma27/video-production-studio">OPEN REPOSITORY ↗</a></header>
-<main>
-<section class="hero">
-<div class="hero-copy reveal"><div class="eyebrow">INDEPENDENT PRODUCTION SYSTEM · 001</div><h1>Make ideas<br>feel <span>cinematic.</span></h1><p class="lead">A production studio engineered for creative ambition. AI directs the thinking. Local tools do the making. Your workflow gets smarter with every project.</p><div class="actions"><a class="button primary" href="#system">Explore the system ↘</a><a class="button secondary" href="https://github.com/vikramma27/video-production-studio">View source code ↗</a></div><div class="micro">OFFLINE-FIRST · CODE-DRIVEN · AUTOMATION-LED</div></div>
-<div class="stage" id="stage"><div class="halo"></div><div class="orbit"></div><div class="orbit two"></div><div class="orbit three"></div><div class="ring"></div><div class="core"><div class="shine"></div></div><div class="floating f1"><b>01 / INTELLIGENCE</b><br>Creative direction</div><div class="floating f2"><b>02 / EXECUTION</b><br>Local-first pipeline</div><div class="floating f3"><b>03 / OUTPUT</b><br>Frame by frame</div></div><div class="scroll">Scroll to explore</div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+ <a class="brand" href="#top" aria-label="Video Production Studio home"><span class="brand-mark">V</span><span>VIDEO PRODUCTION STUDIO<small>INDEPENDENT PRODUCTION SYSTEM</small></span></a>
+ <nav class="nav-links" aria-label="Main navigation"><a href="#architecture">Architecture</a><a href="#pipeline">Pipeline</a><a href="#tools">Tool index</a><a class="nav-github" href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">Open build ↗</a></nav>
+</header>
+<main id="main">
+<section class="hero" id="top" data-trace="0">
+ <div class="hero-copy">
+  <div class="eyebrow">A different kind of production studio</div>
+  <h1>Make the<br>impossible <span>repeatable.</span></h1>
+  <p class="hero-deck">A local-first video production system where creative intelligence directs the work, specialist tools do the heavy lifting, and every repeatable task becomes an automation.</p>
+  <div class="hero-actions"><a class="action-primary" href="#architecture">Enter the system <span>↘</span></a><a class="action-text" href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">Explore the source ↗</a></div>
+  <div class="hero-note"><span>Local-first by design</span><span>Code-driven production</span><span>Human-directed craft</span></div>
+ </div>
+ <div class="hero-art" id="heroArt" aria-label="Layered technical illustration of a film frame and editing gate">
+  <div class="art-grid"></div><div class="art-crosshair"></div>
+  <div class="frame-stack">
+   <div class="frame-back"></div>
+   <div class="frame-main">
+    <div class="frame-top"><span>Production / 001</span><b>Local render path</b></div>
+    <div class="frame-image">
+     <svg viewBox="0 0 520 340" role="img" aria-label="Abstract frame composition with a moving camera aperture">
+      <defs><linearGradient id="beam" x1="0" x2="1" y1="1" y2="0"><stop stop-color="#d8ff57" stop-opacity="0"/><stop offset=".55" stop-color="#d8ff57" stop-opacity=".35"/><stop offset="1" stop-color="#d8ff57" stop-opacity="0"/></linearGradient><linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#64724a"/><stop offset="1" stop-color="#1b2518"/></linearGradient></defs>
+      <path d="M0 275 L155 115 L250 220 L345 70 L520 275 Z" fill="url(#plate)" opacity=".82"/>
+      <path d="M0 275 L155 115 L250 220 L345 70 L520 275" fill="none" stroke="#d8ff57" stroke-opacity=".72" stroke-width="1.5"/>
+      <path d="M0 285 H520" stroke="#d8ff57" stroke-opacity=".5"/>
+      <path d="M260 0 L520 300 L520 340 L220 0Z" fill="url(#beam)" opacity=".7"/>
+      <circle cx="260" cy="168" r="85" fill="none" stroke="#d8ff57" stroke-width="1.2" stroke-opacity=".75"/>
+      <circle cx="260" cy="168" r="59" fill="none" stroke="#ff6548" stroke-width="2" stroke-dasharray="4 8"/>
+      <path d="M260 50 V286 M142 168 H378" stroke="#d8ff57" stroke-opacity=".55" stroke-width="1"/>
+      <path d="M248 168 H272 M260 156 V180" stroke="#f2f0e6" stroke-width="2"/>
+      <path d="M40 35 H150 M40 43 H105 M370 300 H480" stroke="#d8ff57" stroke-opacity=".7"/>
+      <g fill="#e9e7dc" font-family="monospace" font-size="10" letter-spacing="2"><text x="40" y="24">FRAME / 001</text><text x="372" y="287">24 FPS</text></g>
+     </svg>
+    </div>
+    <div class="frame-caption"><span>Creative direction → local execution</span><strong>FRAME / 001</strong></div>
+   </div>
+   <div class="frame-side" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+   <div class="frame-label one">Built to be rerun</div><div class="frame-label two">Not another AI wrapper</div>
+  </div>
+  <div class="hero-side-note">A production architecture, not a prompt collection</div>
+ </div>
+ <div class="hero-bottom"><span><b>01</b> / A system with clear roles</span><span>Scroll to move through the workflow ↓</span></div>
 </section>
-<section class="section" id="system"><div class="section-head reveal"><div><div class="kicker">THE PRODUCTION STACK</div><h2>One studio. Clear roles.</h2></div><p>Purpose-built layers work together. No single agent is forced to do everything; each part has a defined job.</p></div><div class="cards">
-<article class="card reveal"><div class="glow"></div><div class="num">01 — THE BRAIN</div><h3>Intelligence layer</h3><p>Claude Code and Codex plan, reason, direct creative choices and handle ambiguity—not repetitive file operations.</p></article>
-<article class="card reveal"><div class="glow"></div><div class="num">02 — THE ENGINE</div><h3>Local execution</h3><p>PowerShell, Python, Node.js and FFmpeg batch, render, validate, transform and deliver with predictable results.</p></article>
-<article class="card reveal"><div class="glow"></div><div class="num">03 — THE CRAFT</div><h3>Specialist tools</h3><p>HyperFrames, GSAP, Remotion, Blender and Three.js create motion, data-driven scenes and dimensional visuals.</p></article>
-</div></section>
-<section class="architecture" id="workflow"><div class="section"><div class="section-head reveal"><div><div class="kicker">FROM BRIEF TO FRAME</div><h2>A deliberate pipeline.</h2></div><p>Repeatable stages, explicit handoffs and inspectable outputs make production dependable.</p></div><div class="flow reveal"><div class="node"><span class="tag">01 / Decide</span><strong>Creative intelligence</strong><small>Brief · Research · Script · Storyboard</small></div><div class="arrow">→</div><div class="node"><span class="tag">02 / Build</span><strong>Local production</strong><small>Voice · Edit · Motion · 3D · Assembly</small></div><div class="arrow">→</div><div class="node"><span class="tag">03 / Verify</span><strong>Quality & delivery</strong><small>Inspect · Validate · Render · Archive</small></div></div></div></section>
-<section class="section" id="principles"><div class="manifesto reveal"><div class="kicker">THE PERMANENT RULE</div><h2>Don't spend intelligence on work that <em>automation</em> can do.</h2><p>Reuse what exists. Prefer deterministic local execution. Call specialist local models when appropriate. Reserve hosted reasoning for creative judgement, language, ambiguity and exceptions.</p><a class="button primary" href="docs/TOKEN_EFFICIENCY_POLICY.md">Read the operating policy ↗</a></div></section>
+
+<section class="chapter paper" id="why" data-trace="1">
+ <div class="tension">
+  <aside class="tension-aside reveal"><div class="section-index">The problem worth solving</div><h2 class="section-heading">Intelligence<br>is too <span class="outline">expensive</span><br>to waste.</h2><p>Not every production decision needs a reasoning model. Not every operation needs a conversation.</p></aside>
+  <div class="tension-copy reveal">
+   <p class="statement">The goal isn't to make an AI agent click faster. It's to stop asking an AI agent to do work that a reliable local tool can finish in milliseconds.</p>
+   <div class="comparison">
+    <div class="compare-side"><div class="compare-mark">×</div><small>The old pattern</small><h3>Agent does everything</h3><p>Repeated file handling, media probing, conversions, exports and checks consume context, time and hosted-model usage.</p></div>
+    <div class="compare-side"><div class="compare-mark">↗</div><small>The studio pattern</small><h3>Intelligence directs. Tools execute.</h3><p>Agents make the decisions that need judgement. Scripts, local models and production tools handle predictable work in batches.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="chapter dark architecture" id="architecture" data-trace="2">
+ <div class="architecture-intro reveal"><div><div class="section-index light">The architecture</div><h2 class="section-heading">Two planes.<br><span class="outline">One studio.</span></h2></div><p>One layer decides what should happen. The other makes it happen. The boundary is deliberate, measurable and designed to keep getting stronger.</p></div>
+ <div class="plane-switch" role="group" aria-label="Highlight an architecture plane"><button type="button" data-plane="brain" aria-pressed="true">01 / Intelligence</button><button type="button" data-plane="execution" aria-pressed="false">02 / Execution</button></div>
+ <div class="plane-stage reveal">
+  <article class="plane active" id="plane-brain"><div class="plane-id">01 — INTELLIGENCE PLANE</div><h3>The brains.<br>Not the workforce.</h3><p>Claude Code and Codex own the brief, research, creative direction, technical decisions, orchestration and exception handling. They build reusable systems instead of repeating manual work.</p><ul><li>Creative judgement</li><li>Planning & reasoning</li><li>Exception diagnosis</li><li>Quality review</li></ul><div class="plane-foot">Think · Direct · Improve</div></article>
+  <article class="plane" id="plane-execution"><div class="plane-id">02 — LOCAL EXECUTION PLANE</div><h3>The workers.<br>Built for throughput.</h3><p>Deterministic scripts, specialist local models and media engines perform the repeatable operations. Stages are batchable, cache-aware, independently rerunnable and inspectable.</p><ul><li>PowerShell · Python · Node</li><li>FFmpeg · ffprobe</li><li>Local speech & vision models</li><li>Motion · 3D · rendering</li></ul><div class="plane-foot">Run · Cache · Validate</div></article>
+ </div>
+ <div class="architecture-caption"><span><strong>Routing rule:</strong> reuse → local code → local model → bounded agent call → deep reasoning</span><span>Hosted tokens are a scarce resource</span></div>
+</section>
+
+<section class="chapter pipeline" id="pipeline" data-trace="3">
+ <div class="pipeline-top reveal"><div><div class="section-index">From first thought to final frame</div><h2 class="section-heading">A pipeline<br>with a point of view.</h2></div><p>Every stage has a job, a clear handoff and an output that can be checked. The sequence is a working architecture, not a claim that every automation is already deployed.</p></div>
+ <div class="process">
+  <article class="process-row reveal"><div class="process-no">01</div><h3>Discover & research</h3><p>Find the story, verify the facts, understand the audience and define the creative direction.</p><span class="process-output">Brief / sources</span></article>
+  <article class="process-row reveal"><div class="process-no">02</div><h3>Write & structure</h3><p>Shape the narrative, script, pacing, scene plan and visual language before production begins.</p><span class="process-output">Script / boards</span></article>
+  <article class="process-row reveal"><div class="process-no">03</div><h3>Voice & sound</h3><p>Use local speech tools for transcription and narration, then build a clean, synchronised audio foundation.</p><span class="process-output">Audio / captions</span></article>
+  <article class="process-row reveal"><div class="process-no">04</div><h3>Build the visual world</h3><p>Compose motion, code-driven scenes, 3D elements and purposeful visual transitions.</p><span class="process-output">Scenes / assets</span></article>
+  <article class="process-row reveal"><div class="process-no">05</div><h3>Edit & assemble</h3><p>Make the timeline coherent. Align cuts, captions, B-roll, sound and effects to the final edit.</p><span class="process-output">Master timeline</span></article>
+  <article class="process-row reveal"><div class="process-no">06</div><h3>Inspect & deliver</h3><p>Run technical checks, inspect actual frames, render deliverables and preserve project state for reruns.</p><span class="process-output">QA / exports</span></article>
+ </div>
+</section>
+
+<section class="chapter dark peak" id="principle" data-trace="4">
+ <div class="peak-copy reveal"><div class="section-index light">The rule that changes the economics</div><h2 class="section-heading">Automate<br>the repeat.<br><span class="outline">Protect</span><br>the craft.</h2><p>When a task is predictable, make it a script. When a specialist model can do it locally, route it there. Save agent reasoning for the choices that actually benefit from intelligence.</p></div>
+ <div class="peak-visual reveal" aria-label="Technical illustration of a production frame gate"><div class="peak-ring"></div><div class="peak-gate"><svg viewBox="0 0 300 250" role="img" aria-label="A technical frame gate with a precise cut line"><path d="M35 25 H265 V225 H35Z" fill="none" stroke="#d8ff57" stroke-width="2"/><path d="M55 45 H245 V205 H55Z" fill="none" stroke="#7b8b68" stroke-width="1"/><path d="M150 45 V205" stroke="#ff6548" stroke-width="3"/><path d="M125 125 H175 M150 100 V150" stroke="#f2f0e6" stroke-width="2"/><circle cx="150" cy="125" r="30" fill="none" stroke="#d8ff57" stroke-dasharray="3 6"/><path d="M35 12 V25 M265 12 V25 M35 225 V238 M265 225 V238" stroke="#d8ff57" stroke-width="2"/><g fill="#d8ff57" font-family="monospace" font-size="9"><text x="42" y="18">SOURCE</text><text x="202" y="239">OUTPUT</text></g></svg></div><div class="peak-word">One source of truth. Many clean runs.</div></div>
+</section>
+
+<section class="chapter tool-index" id="tools" data-trace="5">
+ <div class="tool-head reveal"><div><div class="section-index">The specialist bench</div><h2 class="section-heading">The right tool.<br>The right job.</h2></div><p>Tools are selected for their strengths, not collected for their logos. This is the intended division of labour in the production stack.</p></div>
+ <div class="tool-list">
+  <div class="tool-row reveal"><div class="tool-category">Orchestration</div><div class="tool-names">Claude Code · Codex</div><div class="tool-purpose">Creative direction, planning, implementation, review and exception handling.</div></div>
+  <div class="tool-row reveal"><div class="tool-category">Motion & web scenes</div><div class="tool-names">HyperFrames · GSAP · Remotion</div><div class="tool-purpose">Timeline-aware motion, precise animation and data-driven visual sequences.</div></div>
+  <div class="tool-row reveal"><div class="tool-category">3D & compositing</div><div class="tool-names">Blender · Three.js</div><div class="tool-purpose">Dimensional scenes, technical objects, camera work and rendered visual assets.</div></div>
+  <div class="tool-row reveal"><div class="tool-category">Media engine</div><div class="tool-names">FFmpeg · ffprobe</div><div class="tool-purpose">Batch conversion, encoding, probing, assembly and repeatable media operations.</div></div>
+  <div class="tool-row reveal"><div class="tool-category">Speech & language</div><div class="tool-names">faster-whisper · Chatterbox</div><div class="tool-purpose">Local transcription and narration workflows, subject to hardware and voice-quality tests.</div></div>
+  <div class="tool-row reveal"><div class="tool-category">Editorial systems</div><div class="tool-names">Herk Edit Kit · Video Shotcraft</div><div class="tool-purpose">Reusable editing methods, structured cut decisions and visual direction references.</div></div>
+ </div>
+ <p class="tool-note">The stack is an evolving selection, not a promise that every listed component is installed or production-ready. Local execution, licensing, compatibility and quality are verified before adoption.</p>
+</section>
+
+<section class="chapter dark principle" id="close" data-trace="6">
+ <div class="section-index">The production philosophy</div>
+ <h2>Less busywork.<br><span>More cinema.</span></h2>
+ <p>A studio should get more capable with every project. Reusable workflows, cached work, clear decisions and honest quality gates turn one good production into the foundation for the next.</p>
+ <a class="action-primary" href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">Explore the open build <span>↗</span></a>
+</section>
 </main>
-<footer class="footer"><span>VPS / VIDEO PRODUCTION STUDIO</span><span>BUILT FOR REPEATABILITY. DESIGNED FOR IMPACT.</span><a href="https://github.com/vikramma27/video-production-studio">GITHUB ↗</a></footer>
+<footer class="site-footer"><span>VIDEO PRODUCTION STUDIO · INDEPENDENT BUILD</span><span>Architecture in active development</span><a href="https://github.com/vikramma27/video-production-studio" target="_blank" rel="noreferrer">GitHub repository ↗</a></footer>
+
+<nav class="edit-trace" aria-label="Page journey timeline">
+ <span class="trace-label">YOUR CUT</span><div class="trace-track"><div class="trace-fill"></div><div class="trace-stops">
+  <button class="trace-stop" data-jump="#top" aria-label="Jump to introduction" aria-current="true"></button>
+  <button class="trace-stop" data-jump="#why" aria-label="Jump to the problem"></button>
+  <button class="trace-stop" data-jump="#architecture" aria-label="Jump to architecture"></button>
+  <button class="trace-stop" data-jump="#pipeline" aria-label="Jump to pipeline"></button>
+  <button class="trace-stop" data-jump="#principle" aria-label="Jump to the operating principle"></button>
+  <button class="trace-stop" data-jump="#tools" aria-label="Jump to the tool index"></button>
+  <button class="trace-stop" data-jump="#close" aria-label="Jump to closing statement"></button>
+ </div></div><span class="trace-end">PLAYHEAD <b id="tracePercent">00</b></span>
+</nav>
 <script>
-(()=>{const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;const items=document.querySelectorAll('.reveal');if(reduced){items.forEach(x=>x.classList.add('visible'));return}const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>observer.observe(x));const stage=document.querySelector('#stage');if(stage&&matchMedia('(pointer:fine)').matches){stage.addEventListener('pointermove',e=>{const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;stage.style.transform='rotateY('+x*8+'deg) rotateX('+(-y*7)+'deg)'});stage.addEventListener('pointerleave',()=>stage.style.transform='')}})();
+(()=>{
+ const root=document.documentElement;
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const sections=[...document.querySelectorAll('[data-trace]')];
+ const stops=[...document.querySelectorAll('.trace-stop')];
+ const percent=document.getElementById('tracePercent');
+ let active=0, ticking=false;
+ const clamp=(v,min,max)=>Math.min(max,Math.max(min,v));
+ function updateScroll(){
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  const progress=max>0?clamp(window.scrollY/max,0,1):0;
+  root.style.setProperty('--page-progress',progress.toFixed(4));
+  percent.textContent=String(Math.round(progress*100)).padStart(2,'0');
+  let next=0,best=Infinity;
+  sections.forEach((section,i)=>{
+   const r=section.getBoundingClientRect();
+   const d=Math.abs(r.top+Math.min(r.height*.28,window.innerHeight*.32)-window.innerHeight*.42);
+   if(d<best){best=d;next=i}
+  });
+  if(next!==active){active=next;stops.forEach((s,i)=>s.setAttribute('aria-current',String(i===active)))}
+  ticking=false;
+ }
+ window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true}},{passive:true});
+ window.addEventListener('resize',updateScroll,{passive:true});
+ stops.forEach(stop=>stop.addEventListener('click',()=>document.querySelector(stop.dataset.jump)?.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})));
+ updateScroll();
+
+ const reveals=[...document.querySelectorAll('.reveal')];
+ if('IntersectionObserver' in window&&!reduce){
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -4% 0px'});
+  reveals.forEach(el=>observer.observe(el));
+ }else reveals.forEach(el=>el.classList.add('in-view'));
+
+ const planeButtons=[...document.querySelectorAll('[data-plane]')];
+ planeButtons.forEach(button=>button.addEventListener('click',()=>{
+  const chosen=button.dataset.plane;
+  planeButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  document.getElementById('plane-brain').classList.toggle('active',chosen==='brain');
+  document.getElementById('plane-execution').classList.toggle('active',chosen==='execution');
+ }));
+
+ const art=document.getElementById('heroArt');
+ if(art&&!reduce&&window.matchMedia('(pointer:fine)').matches){
+  art.addEventListener('pointermove',event=>{
+   const r=art.getBoundingClientRect();
+   const x=(event.clientX-r.left)/r.width-.5,y=(event.clientY-r.top)/r.height-.5;
+   root.style.setProperty('--mx',x.toFixed(3));root.style.setProperty('--my',y.toFixed(3));
+  });
+  art.addEventListener('pointerleave',()=>{root.style.setProperty('--mx','0');root.style.setProperty('--my','0')});
+ }
+})();
 </script>
-<!-- GitHub Pages deployment trigger: 2026-11-09 -->
-</body></html>
+</body>
+</html>
