@@ -28,13 +28,13 @@ Brief → research/script → optional local reference analysis → voice → lo
 - FFmpeg / ffprobe handle media operations and final assembly.
 - faster-whisper is the local transcription baseline.
 - Chatterbox / IndicF5 require local quality/hardware evaluation.
-- No ComfyUI. No yt-dlp. No new renderer without a documented pilot and approval.
+- No ComfyUI. Internet tools/yt-dlp are permitted for research/reference acquisition when useful. No new renderer without a documented pilot and approval.
 
 ## v4.1 skill decisions
 ### ReelMimic — selective reference, not wholesale installation
 Study [edenfunf/reelmimic](https://github.com/edenfunf/reelmimic) for local reference analysis, shot/camera/rhythm/look fingerprints, shot-to-reference storyboard mapping, approval-first planning, resumable file contracts, isolated parallel shot production and fresh-context review with before/after evidence. Keep our existing orchestration and renderer stack; do not install its second app/server or its 2D engine collection as a replacement.
 
-**Hard gate:** the inspected upstream revision includes yt-dlp in requirements and reference-URL handling. Never run its installer or use its URL path. Any adopted analysis must accept user-supplied local files only and contain no yt-dlp dependency. Do not inherit the upstream documented danger-full-access Codex default. Agent inference through Claude Code/Codex accounts is hosted inference, not offline local inference. Review third-party licences separately. Follow [the adoption assessment](../../docs/REELMIMIC_ADOPTION.md).
+**Adoption gate:** yt-dlp/reference-URL ingestion is allowed when useful after dependency, network, permission and rights review. Keep downloaded references separate from production assets; never insert downloaded footage or stills into the final video. Do not inherit the upstream documented danger-full-access Codex default. Agent inference through Claude Code/Codex accounts is hosted inference, not offline local inference. Review third-party licences separately. Follow [the adoption assessment](../../docs/REELMIMIC_ADOPTION.md).
 
 ### Animation recipes — design only
 Port six patterns from [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills): 3D explainer, stick figure, minimal graphics, map route, exploded breakdown and graph. Adapt for Windows; do not run the Bash setup unchanged. Build a versioned JSON scene spec and deterministic local rendering with contact-sheet/QA output. Keep the existing renderer stack.
@@ -49,7 +49,10 @@ Borrow audio-first timing, narration-anchored shot rows, visual references and s
 Keep [ray-sticker-shop](https://github.com/imraywang/ray-sticker-shop) separate. Exclude [dyz-med-paper-skills](https://github.com/duyunzhoudyz/dyz-med-paper-skills) as unrelated and non-commercially licensed.
 
 ## Pilot acceptance
-Windows compatibility; offline execution after approved initial downloads; pinned versions and licence/dependency/network review; reproducible outputs; technical checks; human inspection of frames and complete playback; documented test evidence and limitations. For reference intelligence, also verify local-file-only input, no yt-dlp/network ingestion, source-hash caching and human-validated comparison usefulness.
+Windows compatibility; pinned versions and licence/dependency/network review; reproducible outputs; technical checks; human inspection of frames and complete playback; documented test evidence and limitations. For reference intelligence, verify transparent local/online reference ingestion, source-hash caching and human-validated comparison usefulness. Final-render asset validation must enforce code-generated visuals only.
+
+## Final-visual invariant
+Every final visual must be authored/generated through code in our production pipeline (SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations or 3D geometry). Never use stock/static photos, downloaded video clips, generic B-roll, still-image slides or AI-generated raster-image assets in the final render. Reference footage and internet research may inform style and technique but remain analysis-only.
 
 ## Privacy, rights and cost
 No paid APIs, hosted inference, cloud uploads, telemetry or transmission of user content without explicit approval. Verify rights for every asset. Never fabricate token usage or savings. Ask before unplanned paid/cloud work or bulk regeneration.
