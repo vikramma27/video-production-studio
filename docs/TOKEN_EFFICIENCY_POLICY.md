@@ -62,3 +62,14 @@ The default production path must not introduce paid inference APIs, hosted gener
 ## Status and evidence
 
 This policy describes routing rules and pilot behaviour; it is not itself an installed runtime guard. The Animation Recipe Engine, code-review integration, storyboard QA, helper scripts and automated enforcement remain planned until committed, executed and validated on representative Windows hardware. Record actual token usage when available; otherwise report it as unknown.
+
+
+## v5.0 reference, identity and batch controls
+- Analyse representative ranked samples first; expand by evidence gaps rather than ingesting every upload.
+- Batch metadata, frame extraction, contact sheets, transcription and shot metrics locally. Cache by source hash, analysis version and settings.
+- Agents interpret style and original adaptation; deterministic tools handle probing, segmentation, contact sheets and manifests.
+- Generate character candidates in batches with contact sheets and playable clips; never call an agent per frame.
+- Voice auditions use fixed scripts and batch synthesis; user listens and chooses. Pin model, weights and settings.
+- Generate idea candidates at 2–4x target; deterministic dedup/filter first, agent judgement for finalists.
+- Batch independent preparation but limit GPU renders to measured capacity. Persist checkpoints and pause/resume controls.
+- Never overwrite frozen character, voice or brand versions.
