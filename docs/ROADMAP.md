@@ -57,7 +57,7 @@
 
 ## Final-render acceptance gate
 - [ ] Inspect the final project manifest and asset graph: every visual must resolve to code-authored/generated scene content.
-- [ ] Reject stock/static photos, downloaded video clips, generic B-roll, still-image slides and AI-generated raster-image assets from final output.
+- [ ] Reject stock/static photos, downloaded video clips, generic B-roll and AI-generated raster-image assets from final output.
 - [ ] Confirm reference downloads are used only in analysis folders and never linked by final-render scenes.
 
 ## Status discipline
