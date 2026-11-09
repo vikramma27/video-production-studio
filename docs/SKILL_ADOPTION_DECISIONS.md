@@ -62,3 +62,12 @@ Build narration-anchored shot rows from local transcription/timestamps. Each row
 6. Document limitations and obtain human approval before promotion.
 
 **Status:** ReelMimic is approved for selective study and implementation planning, not installed or production-validated. Animation recipes, code-review integration and storyboard QA remain pilots/backlog. Ray Sticker Shop remains separate. Medical-paper skills are excluded.
+
+
+## v5.0 additions — Blender and voice candidates
+
+### MCP for Blender — controlled pilot
+Source: https://github.com/ahujasid/mcp-for-blender. Current upstream documents Windows setup, Claude Code/Codex clients, scene inspection, Python execution, viewport/frame inspection and safe mode. Candidate for interactive character/scene iteration, not a production dependency. Pin revision; audit installer/dependencies/network/telemetry/permissions; disable telemetry, enable safe mode, localhost only. Keep optional cloud 3D generators off. Promote only after Windows tests and a deterministic CLI counterpart.
+
+### Jamie Pine Voicebox — local voice-studio candidate
+Source: https://github.com/jamiepine/voicebox. Candidate UI for local auditions/profile management; current docs list engines including Qwen3-TTS, Chatterbox variants and Kokoro. MIT app licence does not automatically license each model/weight. Verify commercial use, language, watermark and output terms for exact weights. Compare with Chatterbox/IndicF5; no adoption until Windows, voice quality, consistency and licence tests pass. Never clone reference narrators or identifiable voices without authorization.
