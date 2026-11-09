@@ -27,7 +27,7 @@ The source of truth for an offline-first, code-driven faceless video studio: pro
 - Use isolated parallel shot production, fresh-context reviews and before/after evidence for fixes.
 - Compare the finished render with the reference as an advisory QA aid.
 
-**Important:** this is a design/adoption decision, not an installed integration. Internet access and tools such as yt-dlp may be used when genuinely useful for research and reference-video acquisition. Downloaded references are analysis inputs only, never final-video footage. Our final visual frames must be original and code-generated using our own scene/rendering system; no stock photos, downloaded clips, generic B-roll, static-image slides or AI-generated raster-image assets. We will retain our existing HyperFrames + GSAP, Remotion, Blender + Three.js and FFmpeg stack. ReelMimic uses Claude Code/Codex account inference; it is not fully local inference.
+**Important:** this is a design/adoption decision, not an installed integration. Internet access and tools such as yt-dlp may be used when genuinely useful for research and reference-video acquisition. Downloaded references are analysis inputs only, never final-video footage. Our final visual frames must be original and code-generated using our own scene/rendering system; no stock photos, downloaded clips, generic B-roll, static-image slides. We will retain our existing HyperFrames + GSAP, Remotion, Blender + Three.js and FFmpeg stack. ReelMimic uses Claude Code/Codex account inference; it is not fully local inference.
 
 ## Other v4 decisions
 - **Animation Recipe Engine (planned):** six recipe families—3D explainer, stick figure, minimal graphics, map route, exploded breakdown and graph—adapted to the existing local renderer stack. Target: JSON scene spec → deterministic render → contact sheet and QA report.
@@ -60,7 +60,7 @@ See [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md), [Skill Adoption
 A skill's existence or star count is not proof that it belongs in the production baseline. Preserve working integrations; pilot before promotion.
 
 ## Non-negotiable constraints
-- **Final-visual invariant:** every final visual element/frame must be authored or generated through code in our production pipeline (e.g. SVG, Canvas, WebGL, procedural graphics, charts, typography, animation and 3D geometry). No stock/static photos, downloaded video clips, generic downloaded B-roll, still-image slides or AI-generated raster-image assets in the final render.
+- **Final-visual invariant:** every final visual element/frame must be authored or generated through code in our production pipeline (e.g. SVG, Canvas, WebGL, procedural graphics, charts, typography, animation and 3D geometry). No stock/static photos, downloaded video clips, generic downloaded B-roll in the final render.
 - Reference footage, online research, documentation and downloaded examples may be used for analysis and inspiration, subject to rights and provenance. They must not be inserted into the final video.
 - Offline-first and free/open-source by default.
 - No paid inference APIs, hosted generation credits or cloud uploads in the default path.
