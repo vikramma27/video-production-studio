@@ -9,7 +9,7 @@
 ## What this repository is
 The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.
 
-## v4 architecture
+## v4.1 architecture
 | Plane | Responsibility | Examples |
 |---|---|---|
 | Intelligence/orchestration | Creative direction, planning, ambiguity, exception diagnosis and quality decisions | Claude Code or Codex |
@@ -19,22 +19,32 @@ The source of truth for an offline-first, code-driven faceless video studio: pro
 
 **Mandatory routing:** cache/reuse → deterministic local code → local specialist model → bounded agent reasoning → larger reasoning only when justified.
 
-## New v4 decisions
+## New v4.1 decision: Reference-to-Animation Intelligence
+[ReelMimic](https://github.com/edenfunf/reelmimic) is now an approved upstream reference for a dedicated Reference Intelligence Engine. We will selectively adopt its strongest ideas:
+- Analyse a supplied reference video into shot boundaries, pacing, camera movement, colour/look and optional audio-beat cues.
+- Create versioned fingerprints and map storyboard shots to specific reference shots and techniques.
+- Generate style frames and require approval before rendering.
+- Use isolated parallel shot production, fresh-context reviews and before/after evidence for fixes.
+- Compare the finished render with the reference as an advisory QA aid.
+
+**Important:** this is a design/adoption decision, not an installed integration. We will not vendor ReelMimic wholesale or add a second orchestrator. Its upstream dependency list and analysis instructions currently include yt-dlp, so our implementation will be local-file-only and must contain no yt-dlp path. We will retain our existing HyperFrames + GSAP, Remotion, Blender + Three.js and FFmpeg stack. ReelMimic uses Claude Code/Codex account inference; it is not fully local inference.
+
+## Other v4 decisions
 - **Animation Recipe Engine (planned):** six recipe families—3D explainer, stick figure, minimal graphics, map route, exploded breakdown and graph—adapted to the existing local renderer stack. Target: JSON scene spec → deterministic render → contact sheet and QA report.
 - **Code-review pilot:** evaluate the four-probe review skill for meaningful/high-risk diffs in both agent workflows. Advisory only; no auto-merge.
 - **Audio-first storyboard QA (planned):** narration-anchored shot rows, visual references and semantic script-to-shot checks using local transcription.
 - **Separate/excluded:** Ray Sticker Shop stays separate; medical-paper skills are excluded.
 
-See [Skill Adoption Decisions](docs/SKILL_ADOPTION_DECISIONS.md) and [Master Playbook](docs/MASTER_PLAYBOOK.md) for licence caveats, pilot criteria and status boundaries.
+See [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md), [Skill Adoption Decisions](docs/SKILL_ADOPTION_DECISIONS.md) and [Master Playbook](docs/MASTER_PLAYBOOK.md) for implementation gates and licence boundaries.
 
 ## Production pipeline
 1. Brief and success criteria.
 2. Evidence-backed research and script.
-3. Voice generation/import and local transcript timing.
-4. Narration-anchored EDL and cleaned timeline.
-5. Visual language and recipe selection.
-6. Code-driven scenes, 3D and motion production.
-7. FFmpeg assembly, captions, music and sound design.
+3. Optional reference-video analysis and storyboard approval.
+4. Voice generation/import and local transcript timing.
+5. Narration-anchored EDL and cleaned timeline.
+6. Visual language, scene recipes and code-driven scenes.
+7. 3D/motion production, FFmpeg assembly, captions, music and sound design.
 8. Technical QA, contact sheets and human playback review.
 9. Verified delivery and archived project state.
 
@@ -64,10 +74,11 @@ A skill's existence or star count is not proof that it belongs in the production
 - [Codex handover](agents/codex/CODEX_ONLY.md) · [Codex playbook](agents/codex/CODEX_ONLY_PLAYBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
 - [Token-efficiency policy](docs/TOKEN_EFFICIENCY_POLICY.md) · [Skill decisions](docs/SKILL_ADOPTION_DECISIONS.md)
+- [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md)
 - [Changelog](CHANGELOG.md)
 
 ## Project status
-Architecture and skill decisions are documented. The Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until installed and tested. Helper scripts and runtime enforcement are not represented as active.
+Architecture and upstream adoption decisions are documented. Reference Intelligence Engine, Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until implemented and tested. Helper scripts and runtime enforcement are not represented as active.
 
 ---
 **Build once. Automate the repeatable. Spend intelligence where it matters.**
