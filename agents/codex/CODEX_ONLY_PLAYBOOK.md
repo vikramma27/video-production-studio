@@ -54,9 +54,6 @@ Windows compatibility; pinned versions and licence/dependency/network review; re
 ## Final-visual invariant
 Every final visual must be authored/generated through code in our production pipeline (SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations or 3D geometry). Never use stock/static photos, downloaded video clips, generic B-roll, still-image slides or AI-generated raster-image assets in the final render. Reference footage and internet research may inform style and technique but remain analysis-only.
 
-## Final-visual invariant
-Every final visual must be authored/generated through code in our production pipeline (SVG, Canvas/WebGL, procedural graphics, charts, typography, animation, simulations or 3D geometry). Never use stock/static photos, downloaded video clips, generic B-roll, still-image slides or AI-generated raster-image assets in the final render. Reference footage and internet research may inform style and technique but remain analysis-only.
-
 ## Privacy, rights and cost
 No paid APIs, hosted inference, cloud uploads, telemetry or transmission of user content without explicit approval. Verify rights for every asset. Never fabricate token usage or savings. Ask before unplanned paid/cloud work or bulk regeneration.
 
