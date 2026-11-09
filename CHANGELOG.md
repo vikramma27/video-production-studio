@@ -1,5 +1,19 @@
 # Changelog
 
+
+## 2026-11-09 — v5.0 two-channel storytelling blueprint
+- Locked His Story (@hisytstory) and Her Story (@herytstory) as benchmark references, not identities to copy.
+- Added shot-by-shot analysis, transparent public-performance ranking, timestamped fingerprints and thumbnail-layout research.
+- Added original Blender character development, playable expression/body-animation pilots, user iteration and immutable approval locks.
+- Added local voice auditions and persistent voice-profile locks; Voicebox is an evaluation candidate, not installed.
+- Added original naming/YouTube handle conflict checks, channel art and thumbnail system.
+- Added 2–4x idea candidate generation, review board, 30–60 backlog and user-approved weekly/two-week local batches.
+- Added durable laptop job queue, restart recovery, GPU-aware parallelism and manual upload/scheduling.
+- Preserved v4.1 tools and constraints. Suno is a narrow user-approved composition exception.
+- Added Blender MCP security review; MCP remains optional and Blender Python/CLI is deterministic production path.
+- All new capabilities are documented backlog until implemented and tested.
+
+
 > **Current media policy:** internet access and tools such as yt-dlp are allowed when useful for research and reference acquisition, subject to rights, provenance, dependency and network review. Reference media is analysis-only. Final-video scenes and visuals must be authored/generated through code; no stock/static photos or generic downloaded video clips. ComfyUI remains excluded.
 
 ## 2026-11-09 — Final-video visual invariant clarified
