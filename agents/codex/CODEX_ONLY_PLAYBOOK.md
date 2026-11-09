@@ -1,9 +1,9 @@
-# Codex Playbook — v4
+# Codex Playbook — v4.1
 
 **Role:** Codex is the sole AI worker/orchestrator when this handover is selected. Do not delegate implementation to another coding agent. Specialist local tools are workers, not AI co-owners.
 
 ## Mandatory first read
-Read [Master Playbook](../../docs/MASTER_PLAYBOOK.md), [Architecture](../../docs/ARCHITECTURE.md), [Roadmap](../../docs/ROADMAP.md) and [Token Policy](../../docs/TOKEN_EFFICIENCY_POLICY.md).
+Read [Master Playbook](../../docs/MASTER_PLAYBOOK.md), [Architecture](../../docs/ARCHITECTURE.md), [Roadmap](../../docs/ROADMAP.md), [Token Policy](../../docs/TOKEN_EFFICIENCY_POLICY.md) and [ReelMimic Adoption Assessment](../../docs/REELMIMIC_ADOPTION.md).
 
 ## Mission and execution contract
 Own planning, creative direction, research synthesis, technical decisions, implementation, narration workflow, visual production, rendering, QA, debugging and documentation. Preserve English/Tamil narration, long-form and Shorts workflows, and existing working integrations.
@@ -19,7 +19,7 @@ Route every operation through **cache/reuse → deterministic local code → loc
 6. Do not claim a component works until tested in this Windows project.
 
 ## Production workflow
-Brief → research/script → voice → local transcript/timing → cleaned EDL/timeline → visual language → scene recipes → render → assembly → technical/editorial QA → delivery/archive. After cuts, remap captions, B-roll, effects and audio to the cleaned timeline.
+Brief → research/script → optional local reference analysis → voice → local transcript/timing → cleaned EDL/timeline → visual language → approved storyboard/scene recipes → render → assembly → technical/editorial QA → delivery/archive. After cuts, remap captions, B-roll, effects and audio to the cleaned timeline.
 
 ## Renderer boundaries
 - HyperFrames + GSAP remain primary.
@@ -30,7 +30,12 @@ Brief → research/script → voice → local transcript/timing → cleaned EDL/
 - Chatterbox / IndicF5 require local quality/hardware evaluation.
 - No ComfyUI. No yt-dlp. No new renderer without a documented pilot and approval.
 
-## v4 skill decisions
+## v4.1 skill decisions
+### ReelMimic — selective reference, not wholesale installation
+Study [edenfunf/reelmimic](https://github.com/edenfunf/reelmimic) for local reference analysis, shot/camera/rhythm/look fingerprints, shot-to-reference storyboard mapping, approval-first planning, resumable file contracts, isolated parallel shot production and fresh-context review with before/after evidence. Keep our existing orchestration and renderer stack; do not install its second app/server or its 2D engine collection as a replacement.
+
+**Hard gate:** the inspected upstream revision includes yt-dlp in requirements and reference-URL handling. Never run its installer or use its URL path. Any adopted analysis must accept user-supplied local files only and contain no yt-dlp dependency. Do not inherit the upstream documented danger-full-access Codex default. Agent inference through Claude Code/Codex accounts is hosted inference, not offline local inference. Review third-party licences separately. Follow [the adoption assessment](../../docs/REELMIMIC_ADOPTION.md).
+
 ### Animation recipes — design only
 Port six patterns from [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills): 3D explainer, stick figure, minimal graphics, map route, exploded breakdown and graph. Adapt for Windows; do not run the Bash setup unchanged. Build a versioned JSON scene spec and deterministic local rendering with contact-sheet/QA output. Keep the existing renderer stack.
 
@@ -44,7 +49,7 @@ Borrow audio-first timing, narration-anchored shot rows, visual references and s
 Keep [ray-sticker-shop](https://github.com/imraywang/ray-sticker-shop) separate. Exclude [dyz-med-paper-skills](https://github.com/duyunzhoudyz/dyz-med-paper-skills) as unrelated and non-commercially licensed.
 
 ## Pilot acceptance
-Windows compatibility; offline execution after approved initial downloads; pinned versions and licence/dependency/network review; reproducible outputs; technical checks; human inspection of frames and complete playback; documented test evidence and limitations.
+Windows compatibility; offline execution after approved initial downloads; pinned versions and licence/dependency/network review; reproducible outputs; technical checks; human inspection of frames and complete playback; documented test evidence and limitations. For reference intelligence, also verify local-file-only input, no yt-dlp/network ingestion, source-hash caching and human-validated comparison usefulness.
 
 ## Privacy, rights and cost
 No paid APIs, hosted inference, cloud uploads, telemetry or transmission of user content without explicit approval. Verify rights for every asset. Never fabricate token usage or savings. Ask before unplanned paid/cloud work or bulk regeneration.
