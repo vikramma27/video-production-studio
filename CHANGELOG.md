@@ -1,15 +1,17 @@
 # Changelog
 
+> **Policy correction:** the blanket yt-dlp prohibition recorded in earlier entries was superseded on 2026-11-09. Internet access and yt-dlp are permitted for useful research/reference acquisition. The permanent restriction is on final-video content: visuals must be code-authored/generated; downloaded reference footage must never appear in the final render.
+
 ## 2026-11-09 — Final-video visual invariant clarified
 - Replaced the earlier blanket yt-dlp prohibition: internet access and yt-dlp may be used when useful for research/reference acquisition after rights, dependency and network review.
 - Reference media is analysis-only and must never appear in final renders.
-- Added the absolute final-visual rule: final visuals are code-authored/generated only; no stock/static photos, downloaded clips, generic B-roll, still-image slides or AI-generated raster-image assets.
+- Added the absolute final-visual rule: scenes and motion are authored/rendered through code; no stock/static-photo slides, downloaded clips or generic B-roll.
 - Kept ComfyUI excluded and retained the existing renderer stack.
 
 ## 2026-11-09 — Final-video visual invariant clarified
 - Replaced the earlier blanket yt-dlp prohibition: internet access and yt-dlp may be used when useful for research/reference acquisition after rights, dependency and network review.
 - Reference media is analysis-only and must never appear in final renders.
-- Added the absolute final-visual rule: final visuals are code-authored/generated only; no stock/static photos, downloaded clips, generic B-roll, still-image slides or AI-generated raster-image assets.
+- Added the absolute final-visual rule: scenes and motion are authored/rendered through code; no stock/static-photo slides, downloaded clips or generic B-roll.
 - Kept ComfyUI excluded and retained the existing renderer stack.
 
 ## 2026-11-09 — ReelMimic reference intelligence assessment
