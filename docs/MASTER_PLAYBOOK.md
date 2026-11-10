@@ -208,7 +208,7 @@ First benchmark: a 60-second centrifugal-pump explainer using original procedura
 
 ## v5.8 — Givemotion controlled renderer pilot
 
-Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [givemotion/givemotion](https://github.com/givemotion/givemotion). Pin candidate release `v0.1.5`. Givemotion is an agent-native HTML/CSS/JavaScript animation, preview, visual-check and render workflow. It is a **controlled candidate**, not yet a first-class engine, installed runtime or proven winner.
+Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [givemotion/givemotion](https://github.com/givemotion/givemotion). Review npm package `givemotion@0.1.5`; resolve and record the exact upstream Git commit and package integrity hash before installation. Givemotion is an agent-native HTML/CSS/JavaScript animation, preview, visual-check and render workflow. It is a **controlled candidate**, not yet a first-class engine, installed runtime or proven winner.
 
 Evaluate it against Remotion and HyperFrames + GSAP on identical 60-second centrifugal-pump and 30-second data-story briefs. Keep the v5.7 Infographic Motion Engine renderer-neutral. Blender remains primary for 3D character acting and environments.
 
