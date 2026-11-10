@@ -133,3 +133,16 @@ See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md). Preserv
 | Givemotion security | Restricted execution | Compositions are executable HTML/JS. Use trusted code only, sandbox it, expose no secrets and block outbound network during render. |
 
 The upstream benchmark is author-run and small-sample; it is a test hypothesis, not proof. See [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) for the benchmark matrix, version pin, Windows/offline preflight and acceptance gates.
+
+
+## v5.8 — Givemotion
+
+| Candidate | Decision | Boundary |
+|---|---|---|
+| Givemotion v0.1.5 | Approved for controlled renderer pilot; not installed or validated | Agent-native HTML/CSS/JS authoring, preview, checks and incremental rendering. Compare with Remotion and HyperFrames on identical briefs before promotion. |
+| Givemotion as first-class renderer | Not approved yet | Do not route routine episodes or add it to the production engine selector before Windows/offline/security/performance/quality gates and explicit user approval. |
+| Givemotion skill install | Isolated workspace only after audit | Pin source; review scripts, subprocesses, filesystem/network access, dependencies and licences. Do not bulk-install into both agents. |
+| Givemotion external resources | Prohibited in final renders | No CDN, remote font, script, media, external Lottie resource, stock/downloaded imagery, AI raster plates or generic B-roll. |
+| Givemotion security | Restricted execution | Compositions are executable HTML/JS. Use trusted code only, sandbox it, expose no secrets and block outbound network during render. |
+
+The upstream benchmark is author-run and small-sample; it is a test hypothesis, not proof. See [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) for the benchmark matrix, version pin, Windows/offline preflight and acceptance gates.
