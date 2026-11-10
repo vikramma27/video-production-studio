@@ -28,6 +28,11 @@
 | Remove hidden external dependencies | No remote font, script, image, icon or runtime imports |
 | Avoid false claims | Labels distinguish approved direction, candidate identities and uninstalled pilot |
 
+## Browser QA follow-up
+- The deployed desktop/mobile interaction test found that the document filter correctly set the HTML `hidden` attribute but the author `.doc` display rule overrode the browser's default hidden styling.
+- Added an explicit `.doc[hidden]{display:none}` rule so filtered rows are actually removed from the visual list. This was verified in the follow-up browser pass.
+- The browser test confirmed channel switching, renderer switching, search results/empty state, mobile menu open/close and no horizontal overflow at 390px.
+
 ## Second-pass acceptance checklist
 - [x] Visual system is materially different from v5.1.
 - [x] Hero communicates purpose without relying on generic AI claims.
@@ -37,6 +42,7 @@
 - [x] Blender, Three.js and FFmpeg roles remain clear.
 - [x] Documentation links point to canonical repository files.
 - [x] Search, channel switcher, engine selector and mobile menu have explicit interaction behaviour.
+- [x] Browser QA: filtered document rows hide correctly; mobile menu works; 390px viewport has no horizontal overflow.
 - [x] No external runtime dependencies or stock assets.
 - [x] Reduced-motion and keyboard focus treatment are present.
 - [ ] Live visual QA on GitHub Pages across actual desktop and Android browsers remains a post-deployment check.

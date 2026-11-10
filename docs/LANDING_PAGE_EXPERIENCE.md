@@ -59,4 +59,4 @@ A separate adversarial design/implementation review was performed after the init
 - [x] No external fonts, scripts, images, libraries or CDN dependencies.
 - [x] Mobile navigation, responsive grids, keyboard focus and reduced-motion behaviour included.
 - [x] No fake metrics, fabricated completion states or automatic publishing claims.
-- [ ] Verify final deployment on GitHub Pages and inspect on desktop and Android mobile browsers.
+- [x] GitHub Pages deployment succeeded; desktop and 390px mobile browser checks passed for content, channel/engine switching, document search/empty state, mobile menu and horizontal overflow.
