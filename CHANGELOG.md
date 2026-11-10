@@ -1,5 +1,13 @@
 # Changelog
 
+## v5.2 — Remotion first-class + Cinetic pilot decision (2026-11-10)
+- Promoted Remotion from selective specialist use to a first-class production engine alongside HyperFrames + GSAP.
+- Recorded the solo-operator Remotion Free License basis with official FAQ/Terms links and a future ownership/team-change reassessment gate.
+- Added Cinetic as a controlled pilot for launch films, update videos, teasers and social cut-downs; not installed and not a replacement orchestrator.
+- Documented the 34-scene Remotion starter evaluation, Windows/Git Bash preflight, render benchmarks, music separation, asset restrictions and no-assumed-HyperFrames-compatibility rule.
+- Added docs/CINETIC_ADOPTION.md and synchronized architecture, master playbook, skill decisions, roadmap, token policy and Claude/Codex handovers.
+
+
 ## v5.1 — Story Foundry landing experience (2026-11-10)
 - Replaced the previous landing-page direction with an interactive editorial front door for the two-channel studio.
 - Added switchable original channel-world concepts and a temporary character identity explorer.
