@@ -98,6 +98,7 @@ A skill's existence or star count is not proof that it belongs in the production
 
 ## Start here
 - [Infographic Motion Engine Blueprint](docs/INFOGRAPHIC_MOTION_ENGINE.md)
+- [Givemotion Adoption Assessment](docs/GIVEMOTION_ADOPTION.md)
 - [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
 - [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md)
 - [Cinematic Skill Adoption Assessment](docs/CINEMATIC_SKILL_ADOPTION.md)
@@ -116,3 +117,9 @@ Architecture and upstream adoption decisions are documented, including the Cinem
 
 ## v5.5 — Creator Generalist craft-skill layer
 Creator Generalist is approved for a selective, isolated pilot: selected Blender 3D craft skills and a filtered 2D Generalist for code-generated maps, charts, timelines and diagrams. It is a skill pack, not a new model or renderer. Watch Video and Design Sound are excluded from the first pilot; 67.js and all photo/downloaded-asset paths are excluded. Not installed, pinned or validated. See [Creator Generalist Adoption Assessment](docs/CREATOR_GENERALIST_ADOPTION.md).
+
+## v5.8 — Givemotion controlled renderer pilot
+
+Givemotion v0.1.5 is approved for an isolated comparative pilot, not first-class production use. Its agent-native HTML/CSS/JS authoring, local preview, checks and incremental rendering may be a strong implementation route for procedural infographic motion. Compare it against Remotion and HyperFrames + GSAP on identical engineering/data-story briefs. The v5.7 Infographic Motion Engine remains renderer-neutral; Blender remains the 3D character/environment path.
+
+Compositions are executable code. Require a disposable sandbox, no exposed secrets, audited dependencies/scripts, Windows validation and offline rendering with outbound network blocked. Final visuals remain original and procedural only; no CDN/remote assets, stock/downloaded imagery, generic B-roll, AI raster plates, hosted TTS or automatic dependency installation. Status: not installed, not executed, not benchmarked by us and not production-validated. See [Givemotion Adoption Assessment](docs/GIVEMOTION_ADOPTION.md).
