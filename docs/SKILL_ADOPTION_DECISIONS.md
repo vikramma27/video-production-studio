@@ -84,3 +84,13 @@ Source: https://github.com/jamiepine/voicebox. Candidate UI for local auditions/
 | Cinetic asset discovery | Restricted | No downloaded stock imagery/video/B-roll in final renders. Use original code-generated scenes and approved original brand assets only. |
 
 Remotion official references: [License FAQ](https://convert.remotion.dev/docs/license/faq), [Terms](https://www.remotion.dev/docs/terms), [LICENSE](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md). Cinetic implementation gates and constraints: [CINETIC_ADOPTION.md](CINETIC_ADOPTION.md).
+
+## v5.4 — Cinematic Skill
+
+| Candidate | Decision | Boundary |
+|---|---|---|
+| [Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill) | Controlled specialist-renderer pilot | Python + Skia narration-led documentary/explainer sequences; not installed or validated. See [assessment](CINEMATIC_SKILL_ADOPTION.md). |
+| Narration beat contract | Standardise a minimal renderer-neutral contract | VO timing, shot/beat IDs, visual intent, camera path, transition, provenance and approval state can feed Cinematic Skill, Remotion, HyperFrames and Blender. Do not create a bloated universal scene format. |
+| Archive/photo/AI-still path | Excluded from final renders | No downloaded photos, scans, stock imagery, downloaded video, generic B-roll or AI-generated raster stills in final output. |
+
+Cinematic Skill is best suited to maps, diagrams, typography, annotations and camera travel for science/engineering/history explainers. It does not displace the co-equal Remotion/HyperFrames engines or Blender's 3D role. Pin and review the upstream revision, dependencies, licence, network/filesystem behaviour and Windows setup before isolated installation. Use the existing local voice profile. Promotion requires a 60–90 second code-only pilot, offline/Windows validation, performance measurements and a comparative human review.
