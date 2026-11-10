@@ -2,7 +2,7 @@
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
-The landing page is a film-atelier front door: explore two original channel worlds, inspect the production engines, understand the Cinetic and Cinematic Skill pilots and navigate the full studio blueprint.
+The landing page is a film-atelier front door: explore two original channel worlds, inspect the production engines, understand the Cinetic, Cinematic Skill and Creator Generalist pilots and navigate the full studio blueprint.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
@@ -109,3 +109,6 @@ Architecture and upstream adoption decisions are documented, including the Cinem
 
 ---
 **Build once. Automate the repeatable. Spend intelligence where it matters.**
+
+## v5.5 — Creator Generalist craft-skill layer
+Creator Generalist is approved for a selective, isolated pilot: selected Blender 3D craft skills and a filtered 2D Generalist for code-generated maps, charts, timelines and diagrams. It is a skill pack, not a new model or renderer. Watch Video and Design Sound are excluded from the first pilot; 67.js and all photo/downloaded-asset paths are excluded. Not installed, pinned or validated. See [Creator Generalist Adoption Assessment](docs/CREATOR_GENERALIST_ADOPTION.md).
