@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.1 — Story Foundry landing experience (2026-11-10)
+- Replaced the previous landing-page direction with an interactive editorial front door for the two-channel studio.
+- Added switchable original channel-world concepts and a temporary character identity explorer.
+- Added interactive creative-discipline panels, a six-stage production map and an organisation index linking the v5.0 specifications.
+- Clarified human approval/freeze gates and the distinction between approved blueprint and unimplemented production modules.
+- Removed remote font dependencies and continuous autoplay animation; retained responsive navigation and reduced-motion support.
+- Added `docs/LANDING_PAGE_EXPERIENCE.md` as the landing experience source of truth.
 
 ## 2026-11-09 — v5.0 two-channel storytelling blueprint
 - Locked His Story (@hisytstory) and Her Story (@herytstory) as benchmark references, not identities to copy.
