@@ -1,14 +1,17 @@
-# VIDEO PRODUCTION STUDIO — v5.0 direction
+# VIDEO PRODUCTION STUDIO — v5.3 direction
 
-### Story Foundry — an interactive map of a local-first, AI-orchestrated cinematic production system.
+### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
-The landing page is an interactive creative control room: explore two original channel worlds, experiment with a temporary identity profile, inspect each creative department and navigate the v5.0 production blueprint.
+The landing page is a film-atelier front door: explore two original channel worlds, inspect the Remotion and HyperFrames production engines, understand the Cinetic pilot and navigate the full studio blueprint.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
-[Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Landing Experience](docs/LANDING_PAGE_EXPERIENCE.md) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
+[Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Landing Experience](docs/LANDING_PAGE_EXPERIENCE.md) · [Landing Critique](docs/LANDING_PAGE_CRITIQUE_V5_3.md) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
 
 
+
+## v5.3 — Editorial Production Atlas
+The landing page has been rebuilt with a new visual identity, responsive navigation, channel and renderer explorers, a searchable document library and current v5.2 decisions. The critique pass and implementation notes are in [Landing Page Critique](docs/LANDING_PAGE_CRITIQUE_V5_3.md).
 
 ## v5.0 — Two-Channel Storytelling Studio
 
@@ -22,6 +25,9 @@ v5.0 is an approved blueprint, not a claim that new modules are installed. Prese
 
 ## What this repository is
 The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.
+
+## v5.2 renderer decision
+Remotion and HyperFrames + GSAP are co-equal first-class production engines. Remotion is approved for the current solo-operator workflow under its official Free License (including commercial use and automation, subject to terms); it is source-available under a proprietary licence, not OSI open source. Cinetic is approved for a controlled launch-film/update-video pilot, not installed. See [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md), [Master Playbook](docs/MASTER_PLAYBOOK.md) and [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md).
 
 ## v4.1 architecture
 | Plane | Responsibility | Examples |
@@ -63,7 +69,7 @@ See [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md), [Skill Adoption
 9. Verified delivery and archived project state.
 
 ## Core technology direction
-- Primary motion: **HyperFrames + GSAP**.
+- First-class motion engines: **HyperFrames + GSAP and Remotion**.
 - Specialist React/data scenes: **Remotion**, selectively.
 - 3D/technical visuals: **Blender + Three.js**.
 - Media processing/final assembly: **FFmpeg / ffprobe**.
@@ -86,6 +92,7 @@ A skill's existence or star count is not proof that it belongs in the production
 
 ## Start here
 - [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
+- [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md)
 - [Claude Code handover](agents/claude/CLAUDE_ONLY.md) · [Claude playbook](agents/claude/CLAUDE_ONLY_PLAYBOOK.md)
 - [Codex handover](agents/codex/CODEX_ONLY.md) · [Codex playbook](agents/codex/CODEX_ONLY_PLAYBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)

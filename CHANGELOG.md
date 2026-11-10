@@ -1,5 +1,22 @@
 # Changelog
 
+## v5.3 — Frame / Foundry landing-page redesign (2026-11-10)
+- Rebuilt the complete GitHub Pages interface with a new editorial film-atelier visual identity, replacing the prior dark dashboard aesthetic.
+- Added responsive channel A/B exploration, first-class renderer selector, Cinetic pilot disclosure, six-stage operating method, latest-decision panels and searchable documentation library.
+- Reflected v5.2 Remotion/HyperFrames parity and the Cinetic 34-scene controlled-pilot status without claiming installation or production readiness.
+- Removed the malformed legacy CSS preamble and all remote asset/font/runtime dependencies; added semantic navigation, keyboard focus and reduced-motion support.
+- Added a separate critique report and updated the landing experience specification.
+- A separate Notion Custom Agent was unavailable due workspace entitlement; an independent adversarial review pass was performed and documented without claiming a parallel agent.
+
+
+## v5.2 — Remotion first-class + Cinetic pilot decision (2026-11-10)
+- Promoted Remotion from selective specialist use to a first-class production engine alongside HyperFrames + GSAP.
+- Recorded the solo-operator Remotion Free License basis with official FAQ/Terms links and a future ownership/team-change reassessment gate.
+- Added Cinetic as a controlled pilot for launch films, update videos, teasers and social cut-downs; not installed and not a replacement orchestrator.
+- Documented the 34-scene Remotion starter evaluation, Windows/Git Bash preflight, render benchmarks, music separation, asset restrictions and no-assumed-HyperFrames-compatibility rule.
+- Added docs/CINETIC_ADOPTION.md and synchronized architecture, master playbook, skill decisions, roadmap, token policy and Claude/Codex handovers.
+
+
 ## v5.1 — Story Foundry landing experience (2026-11-10)
 - Replaced the previous landing-page direction with an interactive editorial front door for the two-channel studio.
 - Added switchable original channel-world concepts and a temporary character identity explorer.

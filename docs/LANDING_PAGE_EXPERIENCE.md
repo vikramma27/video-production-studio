@@ -1,47 +1,62 @@
-# Story Foundry Landing Experience — v5.1
+# Landing Page Experience — v5.3 Production Atlas
 
-## Purpose
-The GitHub Pages landing page is an interactive editorial front door for the v5 two-channel storytelling studio. It should feel like entering a creative facility, not reading a generic SaaS feature page.
+## Product intent
+The landing page is the public front door to the Video Production Studio repository. It should feel like an independent animation and film atelier with a documented operating system—not a SaaS dashboard, generic AI landing page or portfolio template.
 
-## Experience architecture
-1. **World entrance:** cinematic title and abstract original character silhouette.
-2. **Two-world switcher:** channel A/B identity panels. These are conceptual profiles, not approved character assets or names.
-3. **Identity explorer:** interactive warmth, performance energy, stylisation and palette controls. The preview is illustrative and never writes to production specifications.
-4. **Discipline switcher:** character DNA, voice identity, brand, story universe and reference intelligence.
-5. **Production map:** six gates from reference analysis through local rendering, with human approval points visible.
-6. **Organisation index:** direct links to all v5 blueprint documents.
-7. **Truth/status statement:** makes clear v5.0 is an approved blueprint; engines and interfaces remain to be implemented and tested.
+## Design philosophy: Frame / Foundry
+- **Visual identity:** warm archival-paper canvas, deep ink, signal orange, restrained cobalt and sage. Editorial serif display typography contrasts with compact technical mono labels.
+- **Composition:** asymmetric two-column opening, an original illustrated film-frame, oversized editorial typography, horizontal manifesto strip, full-bleed dark renderer lab, modular production sequence and an index-like document library.
+- **Visual language:** original inline SVG character studies, film-frame borders, registration rings, typographic hierarchy and deliberate negative space. No stock imagery, remote fonts, remote scripts, icon libraries or runtime CDN.
+- **Responsive behaviour:** desktop two-column compositions collapse to touch-first single-column sections; navigation becomes a real disclosure button; grids adapt without horizontal overflow.
+- **Motion:** only small interaction transitions; no autoplay, parallax or motion-dependent content. Reduced-motion preferences remove transitions and smooth scrolling.
 
-## Visual direction
-- Dark editorial foundry environment, acid-lime and ember accents, large typographic hierarchy, grid/technical motifs, original inline SVG silhouettes.
-- Avoid generic SaaS cards, gradients-as-decoration, fake dashboards, fake metrics and stock imagery.
-- Distinguish the two channel identities using different accent palettes and separate creative profiles.
-- Responsive layout from mobile to desktop; mobile navigation is a native button.
-- No remote font, script, image or runtime dependency. Use system font fallbacks and inline SVG.
-- No autoplay motion. Respect reduced-motion preferences.
+## Information architecture
+1. **Opening statement:** “Stories, built from the frame up.” Clearly communicates the two-channel, code-first studio.
+2. **Two original worlds:** interactive A/B switcher. Profiles are conceptual; characters and voices remain candidates until user approval and explicit freeze.
+3. **Production engines:** interactive engine selector for Remotion, HyperFrames + GSAP, Blender + Python, Three.js and FFmpeg/ffprobe.
+4. **Cinetic specialist:** clearly labelled controlled pilot, with 34-scene Remotion starter noted as untested/uninstalled.
+5. **Operating method:** six stages from reference intelligence through local production, with originality and approval gates.
+6. **Latest decisions:** v5.2 Remotion first-class decision, Cinetic pilot boundary, Blender/3D and local operations.
+7. **Blueprint library:** searchable links to the master playbook, architecture, two-channel specs, Cinetic assessment, skill register, roadmap and Claude/Codex handovers.
+8. **Production philosophy:** intelligence directs, deterministic local tools execute, human review remains mandatory.
 
 ## Interaction contracts
-- Channel switcher changes the world profile, labels, palette and original inline silhouette.
-- Identity explorer updates a concept preview only; it must never imply persistent storage or a real production asset.
-- Discipline tabs update the associated specification panel.
-- Repository document cards navigate directly to the canonical Markdown sources.
-- Every navigation/action control must work with keyboard and touch; focus states remain visible.
+- Channel A/B switcher updates labels, descriptive copy, accent colours and inline SVG study.
+- Engine selector updates engine role, current status, description and capability tags; Remotion and HyperFrames are explicitly co-equal first-class engines.
+- Document search filters the document index and exposes a useful empty state.
+- Mobile menu reports aria-expanded, closes after navigation and remains keyboard operable.
+- No interaction writes to a production profile, saves data or claims to generate a production-ready character.
 
-## Content truth
-- Benchmark channels are production-quality references only, not source identities to copy.
-- Original characters, narrator profiles, names, handles, logos, channel art and thumbnail language require user review and explicit approval.
-- Frozen identities are versioned and cannot silently drift.
-- Final video visuals are original code-authored/generated; reference material remains analysis-only.
-- User retains manual publishing and scheduling.
-- No ComfyUI. Local-first/free/open-source by default; Suno is the narrow, previously approved music-composition exception.
+## Content and status truth
+- Benchmark channels are production-quality references only; no identities, scripts, voices, logos or expressive assets are copied.
+- Both channel protagonists and voice profiles are still subject to iteration and explicit user freeze.
+- Remotion is a first-class engine under the current solo-operator licence decision, subject to its official terms and future ownership/team reassessment.
+- HyperFrames + GSAP is equally first-class; choose per scene.
+- Cinetic is approved for a controlled launch/update-film pilot only. It is not installed; its 34-scene starter has not been tested on Windows.
+- Blender + Python is the original 3D production path; Three.js is specialist; FFmpeg/ffprobe handles assembly and QA.
+- The v5.0/v5.2 documents define approved direction and pilots, not completed software integrations.
+- Final visuals are code-authored/generated; no stock/static photos, downloaded clips or generic B-roll.
+- Local-first/free/open-source by default; Suno remains the narrow, user-approved music exception.
+- Publishing/scheduling remains manual.
+
+## Accessibility and performance
+- Semantic header, navigation, main, sections, article and footer landmarks.
+- Descriptive accessible names on interactive controls; aria-pressed, aria-expanded, and live region for engine detail.
+- Visible keyboard focus, native buttons/links, labelled search field and accessible empty state.
+- Responsive breakpoints at 900px and 640px; system font stacks; no remote assets.
+- Reduced-motion support and no essential information conveyed only by animation.
+
+## Critique pass and changes applied
+A separate adversarial design/implementation review was performed after the initial build. Findings and disposition are recorded in [Landing Page Critique v5.3](LANDING_PAGE_CRITIQUE_V5_3.md). A separate Notion Custom Agent could not be spawned because the connected workspace's agent-search capability requires a Business plan or higher; no external parallel agent review is claimed.
 
 ## Acceptance checklist
-- [x] Channel A/B switcher communicates distinct identities.
-- [x] Identity controls update the preview and state that values are temporary.
-- [x] Discipline tabs update the correct content.
-- [x] All nine specification links resolve in the repository.
-- [x] Mobile navigation and responsive controls are present.
-- [x] No remote assets or external runtime dependencies.
-- [x] Reduced-motion support; no essential information depends on motion.
-- [x] Status copy does not claim planned engines are already implemented.
-- [ ] Visual QA on GitHub Pages across desktop and Android mobile browsers.
+- [x] Complete visual direction replaced; no reuse of the former dark lime/coral dashboard aesthetic.
+- [x] Opening, navigation, content hierarchy, production-engine presentation and document library redesigned.
+- [x] Remotion + HyperFrames co-equal status included.
+- [x] Cinetic 34-scene pilot status and caveats included.
+- [x] Two-channel story blueprint and character/voice approval gates preserved.
+- [x] Searchable documentation library and direct source links included.
+- [x] No external fonts, scripts, images, libraries or CDN dependencies.
+- [x] Mobile navigation, responsive grids, keyboard focus and reduced-motion behaviour included.
+- [x] No fake metrics, fabricated completion states or automatic publishing claims.
+- [ ] Verify final deployment on GitHub Pages and inspect on desktop and Android mobile browsers.

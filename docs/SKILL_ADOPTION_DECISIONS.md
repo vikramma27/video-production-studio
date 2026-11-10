@@ -71,3 +71,16 @@ Source: https://github.com/ahujasid/mcp-for-blender. Current upstream documents 
 
 ### Jamie Pine Voicebox — local voice-studio candidate
 Source: https://github.com/jamiepine/voicebox. Candidate UI for local auditions/profile management; current docs list engines including Qwen3-TTS, Chatterbox variants and Kokoro. MIT app licence does not automatically license each model/weight. Verify commercial use, language, watermark and output terms for exact weights. Compare with Chatterbox/IndicF5; no adoption until Windows, voice quality, consistency and licence tests pass. Never clone reference narrators or identifiable voices without authorization.
+
+
+## v5.2 — Cinetic and Remotion
+
+| Candidate | Decision | Boundary |
+|---|---|---|
+| [Remotion](https://www.remotion.dev/) | Promote to first-class engine alongside HyperFrames + GSAP | Solo operator qualifies for official Free License, including commercial use and automation, subject to terms. Source-available/proprietary, not OSI open source. Reassess if ownership/team/collaboration changes. |
+| [Leonxlnx/cinetic](https://github.com/Leonxlnx/cinetic) | Approve controlled pilot | Optional launch-film/update-video/teaser/social-cutdown skill. Not a second orchestrator, not a full-episode default, not installed yet. Test v1.5 34-scene Remotion starter on Windows. |
+| Cinetic scene bank | Evaluate, do not wholesale promote | Curate scenes for our channel identities. Do not assume HyperFrames compatibility; port ideas separately only after validation. |
+| Cinetic music path | Conditional / separate | Its requirement for licensed human-made instrumental tracks does not replace or invalidate the user's narrow approved Suno composition exception. Track licence/provenance separately. |
+| Cinetic asset discovery | Restricted | No downloaded stock imagery/video/B-roll in final renders. Use original code-generated scenes and approved original brand assets only. |
+
+Remotion official references: [License FAQ](https://convert.remotion.dev/docs/license/faq), [Terms](https://www.remotion.dev/docs/terms), [LICENSE](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md). Cinetic implementation gates and constraints: [CINETIC_ADOPTION.md](CINETIC_ADOPTION.md).

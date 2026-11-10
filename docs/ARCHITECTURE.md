@@ -68,3 +68,12 @@ Blender + Python is primary for channel 3D. MCP for Blender is a candidate inter
 The laptop/workstation is the local execution host. Parallelize independent preparation; serialize heavy GPU renders until measured VRAM/RAM/thermal benchmarks justify concurrency. Persist queue state and recover after restarts. User chooses one/two-week batches. Prepare upload packages; user publishes manually.
 
 Evaluate Jamie Pine Voicebox as a local UI candidate; Chatterbox/IndicF5 remain candidates. Verify exact model/weight licences. Suno is a narrow user-approved music-composition exception; no other paid hosted inference is implied.
+
+
+## v5.2 renderer and Cinetic decisions
+
+Remotion and HyperFrames + GSAP are co-equal first-class motion engines. Remotion supports full React-based compositions, reusable scene components and data-driven/launch-film/update-video workflows; HyperFrames + GSAP remains first-class for precise timeline and beat-driven motion. Renderer selection is scene-specific and evidence-based, not a blanket default. Blender + Python remains the primary original 3D character/environment engine; Three.js is specialist; FFmpeg/ffprobe owns final media assembly and technical QA.
+
+The project is currently operated by one individual. Remotion's official Free License permits individual personal/commercial use and automation, subject to its terms. Remotion is source-available under a proprietary licence, not OSI open source. Reassess if project ownership, collaboration or involved-party headcount changes. See [official FAQ](https://convert.remotion.dev/docs/license/faq) and [Terms](https://www.remotion.dev/docs/terms).
+
+Cinetic (MIT) is approved for a controlled pilot as an optional agent skill for launch films, update videos, trailers and social cut-downs—not as a second orchestrator or replacement renderer. Evaluate its v1.5 34-scene Remotion starter on Windows. Do not assume those scenes are HyperFrames-compatible. Preserve original code-generated visuals; exclude stock/downloaded imagery. Its human-made instrumental music requirement is separate from the user's narrow approved Suno exception. Validate dependencies, Git Bash/Windows support, render-time impact (especially motion blur), reproducibility, audio sync and QA before adoption. See [Cinetic Adoption Assessment](CINETIC_ADOPTION.md).

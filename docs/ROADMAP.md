@@ -108,3 +108,24 @@ All items are approved backlog until implemented and evidenced. See [Blueprint](
 - [ ] Generate upload packages and suggested slots.
 - [ ] Keep upload/scheduling manual.
 - [ ] Track performance and production cost separately per channel.
+
+
+## v5.2 — Renderer expansion and Cinetic pilot
+
+### P0 — Remotion promotion
+- [x] Document Remotion as a first-class engine alongside HyperFrames + GSAP.
+- [x] Record solo-individual Free License basis and official links; flag reassessment if project ownership/team/collaboration changes.
+- [ ] Pin a current Remotion version and create a clean Windows starter project.
+- [ ] Build representative code-authored scenes: typography, data-driven scene, character-adjacent 2D composition and transition-heavy sequence.
+- [ ] Benchmark render speed, peak RAM/VRAM, determinism, output quality and offline reproducibility.
+- [ ] Define scene handoff/export contracts with HyperFrames/FFmpeg; avoid unnecessary renderer chaining.
+
+### P1 — Cinetic controlled pilot
+- [x] Record Cinetic as approved for a controlled pilot, not installed.
+- [ ] Review pinned source revision, MIT code licence, bundled scene/assets licences, music rules, dependencies, scripts and network calls.
+- [ ] Validate Windows/Git Bash setup and all prerequisites before installation.
+- [ ] Run one 20–30s launch-film brief through Cinetic + Remotion; inspect all 34 starter scenes and select only identity-compatible scenes.
+- [ ] Compare against hand-authored Remotion; measure render time, memory, editability, sync, QA and human corrections.
+- [ ] Confirm stock/image discovery is excluded from final render manifests.
+- [ ] Keep Cinetic music workflow separate from the approved Suno exception.
+- [ ] Promote, modify or reject Cinetic based on recorded evidence; do not bulk-install to both agents before this gate.
