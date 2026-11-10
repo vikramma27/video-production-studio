@@ -107,3 +107,16 @@ Cinematic Skill is best suited to maps, diagrams, typography, annotations and ca
 | 67.js | Do not promote | Avoid renderer proliferation; require a separate benchmark and explicit decision before adoption. |
 
 Hard policy overrides: no downloaded/stock/scanned imagery, downloaded video, generic B-roll, AI raster stills or unapproved third-party visual assets in final renders; no hosted/paid generation, ElevenLabs or ComfyUI. Original/procedural visuals and local TTS only. Pilot one isolated agent environment after pinned-source and dependency/security review. See [Creator Generalist Adoption Assessment](CREATOR_GENERALIST_ADOPTION.md).
+
+## v5.7 — Infographic Motion Engine
+
+| Candidate | Decision | Boundary |
+|---|---|---|
+| Supplied infographic mega-prompt patterns | Selective architecture adoption | Channel DNA, Episode DNA, procedural vector scenes, puppets, motion, narration sync, deterministic rendering, QA and episode history. |
+| Infographic Motion Engine | Approved controlled prototype blueprint | Specialist subsystem, not orchestrator or new renderer. Not implemented or benchmarked. |
+| Channel DNA | Permanent, human-approved manifest | Versioned and frozen; never randomly regenerate identity. |
+| Episode DNA | Bounded variation | Curated alternatives and reproducible seed; anti-repetition warnings; no identity mutation. |
+| Image-heavy workflow | Reject for final visuals | No AI raster plates, stock photos, scans, downloaded video or generic B-roll. |
+| Voice/render defaults | Adapt and benchmark | Local TTS/alignment; no ElevenLabs/hosted inference. No fixed WPM, frame-rate, motion-blur or parallel-browser assumptions. |
+
+See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md). Preserve Remotion/HyperFrames/Blender/FFmpeg responsibilities.
