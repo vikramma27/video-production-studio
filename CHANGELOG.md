@@ -1,3 +1,11 @@
+## v5.7 — Infographic Motion Engine blueprint (2026-11-10)
+- Translated the supplied infographic-channel mega-prompt into a specialist code-first subsystem rather than copying its image-heavy workflow or installer.
+- Added versioned human-approved Channel DNA, bounded seeded Episode DNA, procedural scene/puppet/motion layers, local narration alignment, deterministic rendering, checkpoints, QA and episode-history contracts.
+- Preserved the existing renderer stack; first prototype must use one existing engine, with Blender for 3D and FFmpeg for assembly/QA.
+- Added a 60-second centrifugal-pump explainer benchmark and measurable Windows/offline, reproducibility, resource, recovery and correction-effort gates.
+- Updated architecture, master playbook, skill decisions, roadmap, token policy, Claude/Codex handovers and playbooks, README and landing page.
+- No runtime implementation, skill installation, Windows/offline validation or production benchmark is claimed.
+
 # Changelog
 
 ## v5.3 — Frame / Foundry landing-page redesign (2026-11-10)
