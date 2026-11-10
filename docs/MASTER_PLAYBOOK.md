@@ -182,3 +182,15 @@ The upstream archive/photo/scanned-document/AI-still paths are excluded from fin
 
 ### Pilot gate
 Produce one 60–90 second original engineering/science explainer with code-generated visuals only, approved local narration and full subtitles/audio QA. Create contact sheets/animatic before full render. Compare a representative section with Remotion or HyperFrames. Record pinned versions, render time, peak memory, reproducibility, correction time, Windows failures and human quality judgement. Promote only for the documentary/explainer niche if evidence shows a durable advantage.
+
+## v5.5 — Creator Generalist craft-skill layer (controlled pilot only)
+
+Read [Creator Generalist Adoption Assessment](CREATOR_GENERALIST_ADOPTION.md) before using [codepawl/creator-generalist](https://github.com/codepawl/creator-generalist). This is an MIT skill pack for existing agents, not a newly trained model and not a renderer. Its role is optional craft guidance for Blender 3D production and code-generated 2D educational graphics. It does not become a second orchestrator or change renderer ownership.
+
+**Selected pilot skills:** `3d-generalist`, `model-characters`, `sculpt-models`, `animate-characters`, `rig-characters`, `use-3d-software`, `2d-generalist`, `draw-and-paint-art` (original art only), `paint-stylized-backgrounds` (procedural/original backgrounds only) and `edit-video` (local editing guidance only). Stage only the skills required for a task; do not bulk-install every plugin.
+
+**Excluded from first pilot:** `watch-video` and `design-sound`. Borrow video-inspection concepts only after separate review. Do not invoke ElevenLabs/web sound fetching, hosted foley, paid inference, or any unapproved network workflow.
+
+**Studio policy overrides upstream defaults:** use original/procedural geometry and code-generated visuals only. Do not use downloaded photographs, scans, stock assets, video clips, generic B-roll, AI raster stills, photo-led `photos` mode, or third-party pre-rendered visual assets in final output. Upstream CC0/CC BY asset sourcing is not automatically approved for this studio. No ComfyUI. Do not add 67.js as a renderer. Use only our approved local tools and local TTS. Maintain original character/channel identities and user approval/freeze gates.
+
+**Pilot sequence:** pin upstream SHA; audit selected skill instructions, scripts, dependencies, subprocess/network/filesystem calls and licences; stage in one isolated agent workspace (not global, not both agents); check Windows/Git Bash and toolchain; run the original-character, mechanical-cutaway and 2D-map/timeline benchmarks; inspect source, contact sheets and full playback; measure render time, peak RAM/VRAM, reproducibility and human correction time. Promote only skills that demonstrate measurable value without policy or dependency regressions. See the assessment for detailed gates.
