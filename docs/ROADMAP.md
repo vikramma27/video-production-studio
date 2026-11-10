@@ -129,3 +129,18 @@ All items are approved backlog until implemented and evidenced. See [Blueprint](
 - [ ] Confirm stock/image discovery is excluded from final render manifests.
 - [ ] Keep Cinetic music workflow separate from the approved Suno exception.
 - [ ] Promote, modify or reject Cinetic based on recorded evidence; do not bulk-install to both agents before this gate.
+
+## v5.4 — Cinematic Skill specialist pilot
+
+- [x] Review upstream scope and record controlled-pilot decision in [Cinematic Skill Adoption Assessment](CINEMATIC_SKILL_ADOPTION.md).
+- [x] Define strict code-generated-only adaptation and archive/photo/AI-still exclusions.
+- [x] Specify renderer-neutral narration beat contract and update agent workflows.
+- [ ] Pin upstream commit; audit scripts, dependencies, licences, filesystem scope and network calls.
+- [ ] Validate isolated installation on Windows/Git Bash; record Node/Python/Skia/FFmpeg/font prerequisites.
+- [ ] Demonstrate offline execution after approved dependency setup, with no archive/download/hosted-generation path.
+- [ ] Produce 60–90 second original engineering/science explainer using only code-generated graphics and existing local TTS.
+- [ ] Validate subtitles, SFX/audio mix, camera movement, contact sheets and full playback.
+- [ ] Measure render time, peak RAM/VRAM, determinism, failures, recovery and human correction time.
+- [ ] Compare with a representative Remotion or HyperFrames implementation; promote only for a proven niche advantage.
+
+Documentation and landing-page integration are complete in this branch; installation and runtime validation are deliberately not claimed.
