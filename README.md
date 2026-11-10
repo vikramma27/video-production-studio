@@ -6,7 +6,7 @@ The landing page is an interactive creative control room: explore two original c
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
-[Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
+[Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Landing Experience](docs/LANDING_PAGE_EXPERIENCE.md) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
 
 
 
