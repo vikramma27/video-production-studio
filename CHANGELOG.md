@@ -71,3 +71,10 @@
 - Documented the two-plane architecture and token-efficiency policy.
 - Added separate Claude Code and Codex handover instructions.
 - Added roadmap and implementation-status boundaries.
+
+## v5.4 — Cinematic Skill specialist pilot (2026-11-10)
+- Reviewed Moh4696/cinematic-skill and approved a controlled Python + Skia documentary/explainer pilot; not installed or production-validated.
+- Added a renderer-neutral narration beat/shot contract direction so VO timing can inform Cinematic Skill, Remotion, HyperFrames and Blender.
+- Added strict exclusions for archive photographs, scanned documents, stock/downloaded imagery, AI raster stills and downloaded video in final renders.
+- Added Windows/offline/dependency/licence/network preflight, local-TTS integration boundary, comparative pilot and measurable acceptance criteria.
+- Updated architecture, master playbook, skill decisions, roadmap, token policy, Claude/Codex handovers and playbooks, README and the Frame / Foundry landing page.
