@@ -1,4 +1,4 @@
-# VIDEO PRODUCTION STUDIO — v5.3 direction
+# VIDEO PRODUCTION STUDIO — v5.5 direction
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
@@ -10,7 +10,7 @@ The landing page is a film-atelier front door: explore two original channel worl
 
 
 
-## v5.3 — Editorial Production Atlas
+## v5.5 — Editorial Production Atlas
 The landing page has been rebuilt with a new visual identity, responsive navigation, channel and renderer explorers, a searchable document library and current v5.2 decisions. The critique pass and implementation notes are in [Landing Page Critique](docs/LANDING_PAGE_CRITIQUE_V5_3.md).
 
 ## v5.0 — Two-Channel Storytelling Studio
@@ -105,7 +105,7 @@ A skill's existence or star count is not proof that it belongs in the production
 - [Changelog](CHANGELOG.md)
 
 ## Project status
-Architecture and upstream adoption decisions are documented, including the Cinematic Skill controlled pilot. Reference Intelligence Engine, Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until implemented and tested. Helper scripts and runtime enforcement are not represented as active.
+Architecture and upstream adoption decisions are documented, including the Cinematic Skill and Creator Generalist controlled pilots. Reference Intelligence Engine, Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until implemented and tested. Helper scripts and runtime enforcement are not represented as active.
 
 ---
 **Build once. Automate the repeatable. Spend intelligence where it matters.**
