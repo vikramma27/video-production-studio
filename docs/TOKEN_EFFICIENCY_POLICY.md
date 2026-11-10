@@ -73,3 +73,11 @@ This policy describes routing rules and pilot behaviour; it is not itself an ins
 - Generate idea candidates at 2–4x target; deterministic dedup/filter first, agent judgement for finalists.
 - Batch independent preparation but limit GPU renders to measured capacity. Persist checkpoints and pause/resume controls.
 - Never overwrite frozen character, voice or brand versions.
+
+
+## v5.2 renderer and Cinetic token controls
+- Remotion and HyperFrames + GSAP are co-equal renderers; select by scene needs, not habit.
+- Batch scene authoring through reusable React/Remotion components or HyperFrames timelines; avoid one agent call per frame/scene.
+- Cinetic is an optional pilot for launch/update films only. Use it when its brief-to-beat/QA workflow adds value; do not invoke on every episode or install duplicate wrappers.
+- Cache scene outputs, contact sheets and QA reports by source/spec hash, renderer version and settings. Ask before bulk regeneration.
+- Cinetic remains uninstalled until Windows preflight and the 20–30s comparative pilot pass.
