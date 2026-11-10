@@ -66,7 +66,7 @@ See [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md), [Skill Adoption
 9. Verified delivery and archived project state.
 
 ## Core technology direction
-- Primary motion: **HyperFrames + GSAP**.
+- First-class motion engines: **HyperFrames + GSAP and Remotion**.
 - Specialist React/data scenes: **Remotion**, selectively.
 - 3D/technical visuals: **Blender + Three.js**.
 - Media processing/final assembly: **FFmpeg / ffprobe**.
