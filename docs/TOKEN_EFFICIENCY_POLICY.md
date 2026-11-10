@@ -106,8 +106,3 @@ Use the episode registry and cache before regenerating assets. Generate procedur
 ## v5.8 Givemotion routing controls
 
 Use Givemotion only for the isolated comparative pilot or a clearly suitable HTML/CSS/JS procedural-motion task after its security preflight. Do not invoke it for every episode, use it as a second orchestrator or load its skill globally in both agents. Compare identical briefs against existing Remotion and HyperFrames workflows; retain compact benchmark reports and reuse cached segments only after validating cache invalidation. Run serially until RAM/VRAM and browser-worker behaviour are measured. Keep agent reasoning for visual direction, review and exceptions; use deterministic local rendering and checks for repeatable work. No network/CDN resources, hosted TTS, auto-install or unapproved assets.
-
-
-## v5.8 Givemotion routing controls
-
-Use Givemotion only for the isolated comparative pilot or a clearly suitable HTML/CSS/JS procedural-motion task after its security preflight. Do not invoke it for every episode, use it as a second orchestrator or load its skill globally in both agents. Compare identical briefs against existing Remotion and HyperFrames workflows; retain compact benchmark reports and reuse cached segments only after validating cache invalidation. Run serially until RAM/VRAM and browser-worker behaviour are measured. Keep agent reasoning for visual direction, review and exceptions; use deterministic local rendering and checks for repeatable work. No network/CDN resources, hosted TTS, auto-install or unapproved assets.
