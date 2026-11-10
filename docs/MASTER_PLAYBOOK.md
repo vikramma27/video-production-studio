@@ -167,3 +167,18 @@ Source: [Leonxlnx/cinetic](https://github.com/Leonxlnx/cinetic). Cinetic is an a
 Create one 20–30 second original launch film for a channel concept using a fixed brief and approved brand/character assets. Compare Cinetic + Remotion with a hand-directed Remotion composition; add a HyperFrames equivalent if it helps isolate renderer value. Measure Windows setup reliability, reproducibility, scene-editability, render time, peak RAM/VRAM, motion quality, audio sync, QA findings, manual corrections and originality. Inspect contact sheets and watch the complete video. Promote only if Cinetic adds measurable value beyond direct Remotion authoring.
 
 Detailed constraints, preflight and test matrix: [Cinetic Adoption Assessment](CINETIC_ADOPTION.md).
+
+## v5.4 — Cinematic Skill specialist pilot
+
+Read [Cinematic Skill Adoption Assessment](CINEMATIC_SKILL_ADOPTION.md) before using this candidate. It is a Python + Skia narration-led documentary/explainer workflow with drawn visual boards, camera movement, subtitle/audio/SFX and QA support. Status is **controlled pilot approved; not installed, not Windows-validated and not production-ready**.
+
+Use it for engineering/science/history explainers, maps, diagrams, evidence-board sequences and selected Shorts when its drawn 2D camera language is a better fit than hand-authoring in Remotion/HyperFrames. Do not use it for rigged character performance or complex 3D; Blender remains the route. Remotion and HyperFrames remain co-equal first-class motion engines.
+
+### Narration beat contract
+Standardise only a small renderer-neutral timing contract: `beat_id`, `shot_id`, `vo_start`, `vo_end`, `narration_text`, `visual_intent`, `camera_path`, `transition`, `provenance`, `approval_state`. Local transcription/timing and deterministic mapping create/update this data; agents are used for creative intent and ambiguous alignment, not one call per line/frame. Each renderer maps this contract into its own native scene format. Preserve original VO and user-approved local narrator profile.
+
+### Hard visual and operational boundaries
+The upstream archive/photo/scanned-document/AI-still paths are excluded from final renders. Final visuals must be code-authored/generated only: Skia geometry, paths, maps, charts, diagrams, typography, annotations and procedural textures. No downloaded photos, stock imagery, scanned pages, downloaded video, generic B-roll or AI-generated raster stills. Reference footage remains isolated analysis-only. Use existing local TTS; no hosted TTS, paid inference or cloud uploads. Review dependencies/scripts/network/filesystem access, pin a revision and validate Windows/Git Bash, fonts, Skia, FFmpeg, offline operation and resource usage before installation.
+
+### Pilot gate
+Produce one 60–90 second original engineering/science explainer with code-generated visuals only, approved local narration and full subtitles/audio QA. Create contact sheets/animatic before full render. Compare a representative section with Remotion or HyperFrames. Record pinned versions, render time, peak memory, reproducibility, correction time, Windows failures and human quality judgement. Promote only for the documentary/explainer niche if evidence shows a durable advantage.

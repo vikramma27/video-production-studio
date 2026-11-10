@@ -81,3 +81,10 @@ This policy describes routing rules and pilot behaviour; it is not itself an ins
 - Cinetic is an optional pilot for launch/update films only. Use it when its brief-to-beat/QA workflow adds value; do not invoke on every episode or install duplicate wrappers.
 - Cache scene outputs, contact sheets and QA reports by source/spec hash, renderer version and settings. Ask before bulk regeneration.
 - Cinetic remains uninstalled until Windows preflight and the 20–30s comparative pilot pass.
+
+## v5.4 Cinematic Skill routing
+- Use Cinematic Skill only for narration-led documentary/explainer sequences where drawn 2D boards and virtual-camera movement add value; do not invoke it for every episode.
+- Deterministic local code handles beat-sheet generation, VO timing, scene mapping, rendering, subtitles, contact sheets and manifests. Agent calls are reserved for story/visual intent and ambiguous editorial decisions.
+- Cache rendered beats/contact sheets by script/audio hash, beat data, renderer revision, fonts and settings; rerun only invalidated beats.
+- Feed a minimal renderer-neutral VO beat contract into native engine-specific scene specs. Do not force Remotion/HyperFrames/Blender to share Skia's scene representation.
+- Exclude archive-photo discovery, downloads and AI raster stills from final-render paths. Preserve local TTS and offline execution.

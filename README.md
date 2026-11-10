@@ -2,7 +2,7 @@
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
-The landing page is a film-atelier front door: explore two original channel worlds, inspect the Remotion and HyperFrames production engines, understand the Cinetic pilot and navigate the full studio blueprint.
+The landing page is a film-atelier front door: explore two original channel worlds, inspect the production engines, understand the Cinetic and Cinematic Skill pilots and navigate the full studio blueprint.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
@@ -26,8 +26,11 @@ v5.0 is an approved blueprint, not a claim that new modules are installed. Prese
 ## What this repository is
 The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.
 
+## v5.4 — Cinematic Skill specialist pilot
+Cinematic Skill (Python + Skia) is approved for a controlled documentary/explainer pilot. It adds narration-led beat planning, virtual-camera movement, drawn maps/diagrams/typography, subtitles and sound design. It is not installed or validated. Its archive/photo/AI-still paths are excluded from final renders; our code-generated-visual invariant remains absolute. See [Cinematic Skill Adoption Assessment](docs/CINEMATIC_SKILL_ADOPTION.md).
+
 ## v5.2 renderer decision
-Remotion and HyperFrames + GSAP are co-equal first-class production engines. Remotion is approved for the current solo-operator workflow under its official Free License (including commercial use and automation, subject to terms); it is source-available under a proprietary licence, not OSI open source. Cinetic is approved for a controlled launch-film/update-video pilot, not installed. See [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md), [Master Playbook](docs/MASTER_PLAYBOOK.md) and [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md).
+Remotion and HyperFrames + GSAP are co-equal first-class production engines. Remotion is approved for the current solo-operator workflow under its official Free License (including commercial use and automation, subject to terms); it is source-available under a proprietary licence, not OSI open source. Cinetic is approved for a controlled launch-film/update-video pilot, not installed. See [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md), [Cinematic Skill Adoption Assessment](docs/CINEMATIC_SKILL_ADOPTION.md), [Master Playbook](docs/MASTER_PLAYBOOK.md) and [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md).
 
 ## v4.1 architecture
 | Plane | Responsibility | Examples |
@@ -69,7 +72,7 @@ See [ReelMimic adoption assessment](docs/REELMIMIC_ADOPTION.md), [Skill Adoption
 9. Verified delivery and archived project state.
 
 ## Core technology direction
-- First-class motion engines: **HyperFrames + GSAP and Remotion**.
+- First-class motion engines: **HyperFrames + GSAP and Remotion**; optional specialist documentary renderer pilot: **Cinematic Skill (Python + Skia)**.
 - Specialist React/data scenes: **Remotion**, selectively.
 - 3D/technical visuals: **Blender + Three.js**.
 - Media processing/final assembly: **FFmpeg / ffprobe**.
@@ -93,6 +96,7 @@ A skill's existence or star count is not proof that it belongs in the production
 ## Start here
 - [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
 - [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md)
+- [Cinematic Skill Adoption Assessment](docs/CINEMATIC_SKILL_ADOPTION.md)
 - [Claude Code handover](agents/claude/CLAUDE_ONLY.md) · [Claude playbook](agents/claude/CLAUDE_ONLY_PLAYBOOK.md)
 - [Codex handover](agents/codex/CODEX_ONLY.md) · [Codex playbook](agents/codex/CODEX_ONLY_PLAYBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
@@ -101,7 +105,7 @@ A skill's existence or star count is not proof that it belongs in the production
 - [Changelog](CHANGELOG.md)
 
 ## Project status
-Architecture and upstream adoption decisions are documented. Reference Intelligence Engine, Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until implemented and tested. Helper scripts and runtime enforcement are not represented as active.
+Architecture and upstream adoption decisions are documented, including the Cinematic Skill controlled pilot. Reference Intelligence Engine, Animation Recipe Engine, code-review integration and storyboard QA remain pilots/backlog until implemented and tested. Helper scripts and runtime enforcement are not represented as active.
 
 ---
 **Build once. Automate the repeatable. Spend intelligence where it matters.**
