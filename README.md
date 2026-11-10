@@ -1,4 +1,4 @@
-# VIDEO PRODUCTION STUDIO — v5.7 direction
+# VIDEO PRODUCTION STUDIO — v5.8 direction
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
