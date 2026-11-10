@@ -2,7 +2,7 @@
 
 **Decision:** approved for an isolated, comparative renderer pilot  
 **Upstream:** [givemotion/givemotion](https://github.com/givemotion/givemotion)  
-**Pinned candidate:** release/tag `v0.1.5` (npm package `givemotion@0.1.5`)  
+**Version candidate:** npm package `givemotion@0.1.5`. Before any install, resolve and record the exact upstream Git commit and package integrity hash; do not assume the package version is also a Git tag.  
 **Licence:** MIT for the project code; bundled fonts and external runtime components retain their own licences  
 **Runtime status:** not installed in the studio, not executed in our Windows environment, not benchmarked by us and not production-validated.
 
@@ -51,7 +51,7 @@ The reviewed upstream documentation describes Node.js 20+, FFmpeg and Chrome/Chr
 
 Before installation or execution:
 
-1. Pin the exact upstream release/tag and verify its source and package contents.
+1. Resolve and pin the exact upstream Git commit corresponding to the reviewed `givemotion@0.1.5` package; record the package integrity hash and verify source/package correspondence.
 2. Review CLI scripts, install behaviour, subprocess calls, filesystem access, browser launch flags and any automatic browser installation.
 3. Verify Node, FFmpeg and Chromium versions and paths on the target Windows machine; test from the intended shell.
 4. Use a disposable project directory with no credentials, personal files, production assets or unrelated workspaces mounted.
@@ -140,9 +140,9 @@ Until then, status remains **approved for controlled pilot; not installed, not e
 ## Upstream references
 
 - [Repository](https://github.com/givemotion/givemotion)
-- [README and workflow](https://github.com/givemotion/givemotion/blob/v0.1.5/README.md)
-- [Package manifest](https://github.com/givemotion/givemotion/blob/v0.1.5/package.json)
-- [Agent skill](https://github.com/givemotion/givemotion/blob/v0.1.5/skills/givemotion/SKILL.md)
-- [Security guidance](https://github.com/givemotion/givemotion/blob/v0.1.5/SECURITY.md)
-- [Third-party notices](https://github.com/givemotion/givemotion/blob/v0.1.5/THIRD_PARTY_NOTICES.md)
-- [Upstream experiment notes](https://github.com/givemotion/givemotion/blob/v0.1.5/docs/experiments/2026-11-rounds-7-8.md)
+- [README and workflow](https://github.com/givemotion/givemotion/blob/main/README.md)
+- [Package manifest](https://github.com/givemotion/givemotion/blob/main/package.json)
+- [Agent skill](https://github.com/givemotion/givemotion/blob/main/skills/givemotion/SKILL.md)
+- [Security guidance](https://github.com/givemotion/givemotion/blob/main/SECURITY.md)
+- [Third-party notices](https://github.com/givemotion/givemotion/blob/main/THIRD_PARTY_NOTICES.md)
+- [Upstream experiment notes](https://github.com/givemotion/givemotion/blob/main/docs/experiments/2026-11-rounds-7-8.md)
