@@ -173,3 +173,18 @@ Documentation is complete; installation, execution, Windows validation and bench
 **P4 — Reliability benchmark:** measure render time, RAM/VRAM, cache reuse, interruption/recovery, Windows/offline operation and manual corrections; compare one alternate existing engine only if justified.
 
 **Status:** approved blueprint/prototype direction; no runtime implementation, installation, benchmark or production validation claimed. See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md).
+
+
+## v5.8 — Givemotion controlled renderer pilot
+
+- [x] Review upstream scope, licence, security notes and reported benchmark limitations.
+- [x] Record Givemotion v0.1.5 as a controlled pilot candidate, not a production engine.
+- [ ] Pin/audit exact source, CLI scripts, dependency tree, browser launch, subprocesses and filesystem/network behaviour.
+- [ ] Validate Node 20+, FFmpeg and Chromium on Windows in a disposable workspace.
+- [ ] Prove offline preview/render with outbound network blocked and no CDN/remote assets.
+- [ ] Run the 60-second centrifugal-pump explainer in Givemotion, Remotion and HyperFrames + GSAP under equivalent conditions.
+- [ ] Run the 30-second data-led story comparison and small vector-puppet capability probe.
+- [ ] Record render/authoring time, peak RAM/VRAM, determinism, segment invalidation, recovery, correction effort and QA.
+- [ ] Review outputs with the user; promote only with explicit approval.
+
+**Status:** adoption blueprint and controlled pilot decision only. Givemotion is not installed, executed, benchmarked by us or production-validated. See [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md).

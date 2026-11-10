@@ -101,3 +101,8 @@ This policy describes routing rules and pilot behaviour; it is not itself an ins
 ## v5.7 Infographic Motion Engine routing
 
 Use the episode registry and cache before regenerating assets. Generate procedural scenes and timing with deterministic local code; use local TTS/transcription/alignment where needed. Reserve Claude Code/Codex tokens for creative direction, factual ambiguity, exception diagnosis and human-review summaries. Episode DNA repetition checks should be local deterministic comparisons, not an LLM call. Batch contact-sheet and QA summaries. Do not auto-install dependencies or render all scenes in parallel by default. Track cache hits, render time, peak memory and correction effort. See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md); it is a blueprint, not an installed tool.
+
+
+## v5.8 Givemotion routing controls
+
+Use Givemotion only for the isolated comparative pilot or a clearly suitable HTML/CSS/JS procedural-motion task after its security preflight. Do not invoke it for every episode, use it as a second orchestrator or load its skill globally in both agents. Compare identical briefs against existing Remotion and HyperFrames workflows; retain compact benchmark reports and reuse cached segments only after validating cache invalidation. Run serially until RAM/VRAM and browser-worker behaviour are measured. Keep agent reasoning for visual direction, review and exceptions; use deterministic local rendering and checks for repeatable work. No network/CDN resources, hosted TTS, auto-install or unapproved assets.

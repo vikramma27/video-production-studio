@@ -49,3 +49,10 @@ Do not install Watch Video or Design Sound in the first pilot. No photo mode, do
 ## v5.7 Infographic Motion Engine
 
 Read [Infographic Motion Engine Blueprint](../../docs/INFOGRAPHIC_MOTION_ENGINE.md). This is an approved prototype blueprint, not an implemented engine. Use human-approved versioned Channel DNA and bounded Episode DNA, original procedural vector scenes, optional vector puppets, deterministic motion, local narration alignment, chunked rendering and QA. Target one existing engine first; do not create a new renderer. Preserve code-generated visuals only, local-first execution, user approval gates and no ComfyUI. First benchmark: 60-second centrifugal-pump explainer. Do not claim runtime readiness before Windows/offline tests and measured evidence.
+
+
+## v5.8 — Givemotion controlled renderer pilot
+
+Read [Givemotion Adoption Assessment](../../docs/GIVEMOTION_ADOPTION.md). Givemotion v0.1.5 is approved for an isolated renderer comparison only; it is not installed, executed or production-validated. Use its agent-native HTML/CSS/JS authoring, preview, checks and incremental rendering as a candidate for procedural infographic work. Compare the same 60-second pump explainer and 30-second data story against Remotion and HyperFrames + GSAP. Keep the v5.7 Infographic Motion Engine renderer-neutral and Blender as the 3D character/environment path.
+
+Before execution, resolve and pin the exact upstream Git commit and package integrity for the reviewed npm package, then audit CLI scripts, dependencies, licences, browser launch, subprocesses and filesystem/network behaviour. Run trusted compositions only in a disposable sandbox with no secrets; block outbound network and remove all CDN/remote resources. Windows and offline validation are mandatory. Use only original procedural SVG/HTML/CSS/Canvas/WebGL/Three.js visuals, local TTS and approved local audio. No AI raster plates, stock/downloaded media, generic B-roll, hosted generation, automatic dependency installation or ComfyUI. Do not bulk-install into both agents or promote to routine production without measured acceptance results and explicit user approval.
