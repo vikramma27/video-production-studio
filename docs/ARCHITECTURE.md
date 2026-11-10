@@ -112,3 +112,12 @@ Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [gi
 Evaluate it against Remotion and HyperFrames + GSAP on identical 60-second centrifugal-pump and 30-second data-story briefs. Keep the v5.7 Infographic Motion Engine renderer-neutral. Blender remains primary for 3D character acting and environments.
 
 Run only in an isolated, trusted Windows workspace after source/script/dependency/licence review. Compositions are executable code: expose no secrets, sandbox filesystem access, block outbound network during rendering, and prohibit remote fonts/scripts/media/CDNs. Use original procedural visuals only, local TTS, reproducible dependencies and serial rendering until resource use is measured. Do not auto-install dependencies or add it to routine production until all acceptance gates pass and the user approves promotion.
+
+
+## v5.8 — Givemotion controlled renderer pilot
+
+Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [givemotion/givemotion](https://github.com/givemotion/givemotion). Pin candidate release `v0.1.5`. Givemotion is an agent-native HTML/CSS/JavaScript animation, preview, visual-check and render workflow. It is a **controlled candidate**, not yet a first-class engine, installed runtime or proven winner.
+
+Evaluate it against Remotion and HyperFrames + GSAP on identical 60-second centrifugal-pump and 30-second data-story briefs. Keep the v5.7 Infographic Motion Engine renderer-neutral. Blender remains primary for 3D character acting and environments.
+
+Run only in an isolated, trusted Windows workspace after source/script/dependency/licence review. Compositions are executable code: expose no secrets, sandbox filesystem access, block outbound network during rendering, and prohibit remote fonts/scripts/media/CDNs. Use original procedural visuals only, local TTS, reproducible dependencies and serial rendering until resource use is measured. Do not auto-install dependencies or add it to routine production until all acceptance gates pass and the user approves promotion.
