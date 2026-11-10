@@ -144,3 +144,18 @@ All items are approved backlog until implemented and evidenced. See [Blueprint](
 - [ ] Compare with a representative Remotion or HyperFrames implementation; promote only for a proven niche advantage.
 
 Documentation and landing-page integration are complete in this branch; installation and runtime validation are deliberately not claimed.
+
+## v5.5 — Creator Generalist skill layer
+
+- [x] Review upstream repository, README, install guide, agent guide and representative 2D/3D craft skills.
+- [x] Record selective pilot decision, renderer boundaries and strict code-generated visual policy in [Creator Generalist Adoption Assessment](CREATOR_GENERALIST_ADOPTION.md).
+- [x] Synchronise architecture, master playbook, skill decisions, token policy, agent handovers and landing page.
+- [ ] Pin upstream commit SHA and selected skill paths; audit scripts, dependencies, licences, network/subprocess/filesystem behaviour.
+- [ ] Stage selected 3D and filtered 2D skills in one isolated agent workspace; do not install globally or into both agents.
+- [ ] Validate Windows/Git Bash, Blender, Python, Node.js and FFmpeg prerequisites without unapproved system installs.
+- [ ] Run original-character, mechanical-cutaway and code-generated 2D map/timeline benchmark tasks.
+- [ ] Inspect editable project files, contact sheets and full playback; verify visual provenance and studio policy compliance.
+- [ ] Measure render time, peak RAM/VRAM, reproducibility, recovery and human correction effort against existing workflows.
+- [ ] Promote only skills with measurable quality or productivity gains; document exclusions and any local wrappers.
+
+Documentation is complete; installation, execution, Windows validation and benchmark results remain outstanding.

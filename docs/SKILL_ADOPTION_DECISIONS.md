@@ -94,3 +94,16 @@ Remotion official references: [License FAQ](https://convert.remotion.dev/docs/li
 | Archive/photo/AI-still path | Excluded from final renders | No downloaded photos, scans, stock imagery, downloaded video, generic B-roll or AI-generated raster stills in final output. |
 
 Cinematic Skill is best suited to maps, diagrams, typography, annotations and camera travel for science/engineering/history explainers. It does not displace the co-equal Remotion/HyperFrames engines or Blender's 3D role. Pin and review the upstream revision, dependencies, licence, network/filesystem behaviour and Windows setup before isolated installation. Use the existing local voice profile. Promotion requires a 60–90 second code-only pilot, offline/Windows validation, performance measurements and a comparative human review.
+
+## v5.5 — Creator Generalist
+
+| Candidate | Decision | Boundary |
+|---|---|---|
+| [codepawl/creator-generalist](https://github.com/codepawl/creator-generalist) | Selective controlled skill pilot | Skill pack, not a new model or renderer. Not installed, pinned or validated. |
+| 3D Generalist + craft skills | Pilot selected skills | Blender modelling, characters, rigging, acting, cutaways, environments and camera/lighting. Blender remains the renderer. |
+| 2D Generalist | Pilot with strict filtering | Maps, charts, timelines, diagrams and editorial motion using code-generated visuals only. Exclude `photos` mode and photo-led collage. |
+| Watch Video | Do not install in first pilot | Study frame-sheet/transcript analysis concepts separately; audit any acquisition scripts and network paths before future use. |
+| Design Sound | Exclude from first pilot | Web/ElevenLabs fetching and model-based foley overlap or conflict with local-first audio direction. |
+| 67.js | Do not promote | Avoid renderer proliferation; require a separate benchmark and explicit decision before adoption. |
+
+Hard policy overrides: no downloaded/stock/scanned imagery, downloaded video, generic B-roll, AI raster stills or unapproved third-party visual assets in final renders; no hosted/paid generation, ElevenLabs or ComfyUI. Original/procedural visuals and local TTS only. Pilot one isolated agent environment after pinned-source and dependency/security review. See [Creator Generalist Adoption Assessment](CREATOR_GENERALIST_ADOPTION.md).
