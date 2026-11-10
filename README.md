@@ -23,6 +23,9 @@ v5.0 is an approved blueprint, not a claim that new modules are installed. Prese
 ## What this repository is
 The source of truth for an offline-first, code-driven faceless video studio: production architecture, tool responsibilities, agent handovers, skill decisions, QA gates and implementation roadmap. Creative intelligence directs; deterministic local tools and specialist models execute repeatable work.
 
+## v5.2 renderer decision
+Remotion and HyperFrames + GSAP are co-equal first-class production engines. Remotion is approved for the current solo-operator workflow under its official Free License (including commercial use and automation, subject to terms); it is source-available under a proprietary licence, not OSI open source. Cinetic is approved for a controlled launch-film/update-video pilot, not installed. See [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md), [Master Playbook](docs/MASTER_PLAYBOOK.md) and [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md).
+
 ## v4.1 architecture
 | Plane | Responsibility | Examples |
 |---|---|---|
@@ -86,6 +89,7 @@ A skill's existence or star count is not proof that it belongs in the production
 
 ## Start here
 - [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
+- [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md)
 - [Claude Code handover](agents/claude/CLAUDE_ONLY.md) · [Claude playbook](agents/claude/CLAUDE_ONLY_PLAYBOOK.md)
 - [Codex handover](agents/codex/CODEX_ONLY.md) · [Codex playbook](agents/codex/CODEX_ONLY_PLAYBOOK.md)
 - [Architecture](docs/ARCHITECTURE.md) · [Roadmap](docs/ROADMAP.md)
