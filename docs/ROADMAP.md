@@ -159,3 +159,17 @@ Documentation and landing-page integration are complete in this branch; installa
 - [ ] Promote only skills with measurable quality or productivity gains; document exclusions and any local wrappers.
 
 Documentation is complete; installation, execution, Windows validation and benchmark results remain outstanding.
+
+## v5.7 — Infographic Motion Engine prototype
+
+**P0 — Contracts and preflight:** define minimal versioned Channel DNA, Episode DNA, scene/puppet/render/QA manifests; select one existing engine; pin/audit Windows and offline dependencies.
+
+**P1 — Procedural animatic:** create a 60-second centrifugal-pump explainer with 5–8 code-generated vector scenes, contact sheets and an animatic.
+
+**P2 — Motion and narration:** implement deterministic time-based motion and local word/phrase alignment; verify subtitles, shot sync and repeatable frame output.
+
+**P3 — Puppet and episode history:** add one original vector host, bounded Episode DNA, last-five repetition warnings and registry without mutating frozen Channel DNA.
+
+**P4 — Reliability benchmark:** measure render time, RAM/VRAM, cache reuse, interruption/recovery, Windows/offline operation and manual corrections; compare one alternate existing engine only if justified.
+
+**Status:** approved blueprint/prototype direction; no runtime implementation, installation, benchmark or production validation claimed. See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md).

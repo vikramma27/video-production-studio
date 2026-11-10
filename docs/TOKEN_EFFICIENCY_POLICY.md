@@ -97,3 +97,7 @@ This policy describes routing rules and pilot behaviour; it is not itself an ins
 - Cache generated assets, playblasts, contact sheets and QA by source/spec hash, skill revision, renderer version and settings.
 - First pilot is isolated to one agent workspace. Do not bulk-install into Claude Code and Codex or load excluded Watch Video/Design Sound plugins.
 - Enforce the studio code-generated-only visual invariant; upstream asset-discovery and photo modes are not production routes.
+
+## v5.7 Infographic Motion Engine routing
+
+Use the episode registry and cache before regenerating assets. Generate procedural scenes and timing with deterministic local code; use local TTS/transcription/alignment where needed. Reserve Claude Code/Codex tokens for creative direction, factual ambiguity, exception diagnosis and human-review summaries. Episode DNA repetition checks should be local deterministic comparisons, not an LLM call. Batch contact-sheet and QA summaries. Do not auto-install dependencies or render all scenes in parallel by default. Track cache hits, render time, peak memory and correction effort. See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md); it is a blueprint, not an installed tool.

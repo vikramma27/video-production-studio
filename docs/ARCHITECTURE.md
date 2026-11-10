@@ -93,3 +93,13 @@ Hard boundary: the upstream archive-photo/scanned-document/downloaded-image/AI-s
 Use selected 3D/craft skills to improve Blender modelling, character rigging, acting, mechanical cutaways, environments and camera/lighting craft. Use selected 2D skills for code-generated maps, charts, timelines, diagrams and editorial motion. Skills are optional craft guidance underneath Claude Code/Codex orchestration; they do not replace Blender + Python, Remotion, HyperFrames + GSAP, Three.js or FFmpeg.
 
 Do not install Watch Video or Design Sound in the first pilot. Do not introduce 67.js as a first-class renderer. Exclude photo-led modes, downloaded asset sourcing, scanned/stock imagery, downloaded video, generic B-roll, AI raster stills, hosted/paid generation and ElevenLabs. All final visuals remain original and code-generated; reference media remains isolated analysis-only. Test selected skills in one isolated agent workspace after pinning and auditing the source, dependencies, network/filesystem behaviour, licences and Windows compatibility.
+
+## v5.7 — Infographic Motion Engine (approved prototype blueprint)
+
+Read [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md). This specialist subsystem formalises versioned Channel DNA, bounded Episode DNA, procedural SVG/Canvas scenes, original 2D puppet rigs, reusable motion primitives, local narration alignment, deterministic chunked rendering, contact-sheet QA and an episode registry.
+
+It is not a new orchestrator or renderer. Map the shared narration beat contract into one existing first-class engine for the first prototype (Remotion or HyperFrames + GSAP); Blender remains the 3D path and FFmpeg the assembly/QA path. Do not build multiple adapters in parallel or introduce another first-class renderer without benchmark evidence.
+
+Permanent Channel DNA is curated and frozen by the user. Only bounded episode-level variation may use a recorded seed; recent-episode checks flag repetition but never silently mutate identity. Final visuals must be original and code-generated. No generated raster plates, stock/downloaded imagery/video, generic B-roll, hosted TTS, paid inference or ComfyUI. No automatic dependency installation or fixed concurrency/WPM assumptions.
+
+First benchmark: a 60-second centrifugal-pump explainer using original procedural diagrams, motion, annotations and approved local narration. Approved for specification and controlled prototyping only; no runtime implementation or benchmark is claimed.
