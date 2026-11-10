@@ -1,3 +1,13 @@
+## v5.8 — Givemotion controlled renderer pilot (2026-11-10)
+
+- Added a detailed Givemotion v0.1.5 adoption assessment and isolated comparative pilot plan.
+- Positioned Givemotion as an agent-native HTML/CSS/JS renderer candidate, not a new orchestrator or first-class production engine.
+- Preserved Remotion/HyperFrames parity, Blender's 3D role and the renderer-neutral Infographic Motion Engine.
+- Added Windows, dependency/licence, executable-composition security and network-blocked offline acceptance gates.
+- Added identical-brief comparisons for a centrifugal-pump explainer, data-led story and small vector-puppet probe.
+- Updated architecture, master playbook, skill decisions, roadmap, token policy, Claude/Codex handovers and landing page.
+- Explicitly recorded that Givemotion is not installed, executed, benchmarked by us or production-validated.
+
 ## v5.7 — Infographic Motion Engine blueprint (2026-11-10)
 - Translated the supplied infographic-channel mega-prompt into a specialist code-first subsystem rather than copying its image-heavy workflow or installer.
 - Added versioned human-approved Channel DNA, bounded seeded Episode DNA, procedural scene/puppet/motion layers, local narration alignment, deterministic rendering, checkpoints, QA and episode-history contracts.
