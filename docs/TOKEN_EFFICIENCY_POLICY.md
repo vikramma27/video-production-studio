@@ -88,3 +88,12 @@ This policy describes routing rules and pilot behaviour; it is not itself an ins
 - Cache rendered beats/contact sheets by script/audio hash, beat data, renderer revision, fonts and settings; rerun only invalidated beats.
 - Feed a minimal renderer-neutral VO beat contract into native engine-specific scene specs. Do not force Remotion/HyperFrames/Blender to share Skia's scene representation.
 - Exclude archive-photo discovery, downloads and AI raster stills from final-render paths. Preserve local TTS and offline execution.
+
+## v5.5 Creator Generalist routing controls
+- Invoke Creator Generalist only when a task needs its specific 2D/3D craft guidance; do not load the full skill pack for ordinary scripting, research or every episode.
+- Load one generalist plus only the craft references needed for the current shot/task. Avoid reading all reference files or invoking one agent call per frame.
+- Keep Blender/Remotion/HyperFrames/Three.js as native render targets; skill instructions map into existing engines and do not justify a new renderer by default.
+- Use deterministic local scripts for mesh checks, contact/foot-slip tests, map data, frame extraction, rendering and QA. Reserve agent reasoning for creative intent and exceptions.
+- Cache generated assets, playblasts, contact sheets and QA by source/spec hash, skill revision, renderer version and settings.
+- First pilot is isolated to one agent workspace. Do not bulk-install into Claude Code and Codex or load excluded Watch Video/Design Sound plugins.
+- Enforce the studio code-generated-only visual invariant; upstream asset-discovery and photo modes are not production routes.
