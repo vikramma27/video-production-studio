@@ -1,14 +1,17 @@
-# VIDEO PRODUCTION STUDIO — v5.5 direction
+# VIDEO PRODUCTION STUDIO — v5.7 direction
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 
-The landing page is a film-atelier front door: explore two original channel worlds, inspect the production engines, understand the Cinetic, Cinematic Skill and Creator Generalist pilots and navigate the full studio blueprint.
+The landing page is a film-atelier front door: explore two original channel worlds, inspect the production engines, understand the Cinetic, Cinematic Skill and Creator Generalist pilots and the Infographic Motion Engine blueprint and navigate the full studio blueprint.
 
 **Claude Code / Codex think. Local tools execute. Every repeatable task becomes automation.**
 
 [Enter Story Foundry](https://vikramma27.github.io/video-production-studio/) · [Landing Experience](docs/LANDING_PAGE_EXPERIENCE.md) · [Landing Critique](docs/LANDING_PAGE_CRITIQUE_V5_3.md) · [Master Playbook](docs/MASTER_PLAYBOOK.md) · [Architecture](docs/ARCHITECTURE.md) · [Skill Decisions](docs/SKILL_ADOPTION_DECISIONS.md) · [Changelog](CHANGELOG.md)
 
 
+
+## v5.7 — Infographic Motion Engine
+A code-first specialist subsystem for versioned Channel DNA, bounded episode variation, procedural vector scenes, 2D puppets, motion primitives, local narration alignment, deterministic rendering and QA. Approved for a controlled prototype; not implemented or benchmarked. Start with a 60-second centrifugal-pump explainer. See [Infographic Motion Engine Blueprint](docs/INFOGRAPHIC_MOTION_ENGINE.md).
 
 ## v5.5 — Editorial Production Atlas
 The landing page has been rebuilt with a new visual identity, responsive navigation, channel and renderer explorers, a searchable document library and current v5.2 decisions. The critique pass and implementation notes are in [Landing Page Critique](docs/LANDING_PAGE_CRITIQUE_V5_3.md).
@@ -94,6 +97,7 @@ A skill's existence or star count is not proof that it belongs in the production
 - Never claim planned automation or skill pilots are implemented until tested.
 
 ## Start here
+- [Infographic Motion Engine Blueprint](docs/INFOGRAPHIC_MOTION_ENGINE.md)
 - [Master Production Playbook](docs/MASTER_PLAYBOOK.md)
 - [Cinetic Adoption Assessment](docs/CINETIC_ADOPTION.md)
 - [Cinematic Skill Adoption Assessment](docs/CINEMATIC_SKILL_ADOPTION.md)
