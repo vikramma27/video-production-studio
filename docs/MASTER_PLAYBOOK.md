@@ -194,3 +194,13 @@ Read [Creator Generalist Adoption Assessment](CREATOR_GENERALIST_ADOPTION.md) be
 **Studio policy overrides upstream defaults:** use original/procedural geometry and code-generated visuals only. Do not use downloaded photographs, scans, stock assets, video clips, generic B-roll, AI raster stills, photo-led `photos` mode, or third-party pre-rendered visual assets in final output. Upstream CC0/CC BY asset sourcing is not automatically approved for this studio. No ComfyUI. Do not add 67.js as a renderer. Use only our approved local tools and local TTS. Maintain original character/channel identities and user approval/freeze gates.
 
 **Pilot sequence:** pin upstream SHA; audit selected skill instructions, scripts, dependencies, subprocess/network/filesystem calls and licences; stage in one isolated agent workspace (not global, not both agents); check Windows/Git Bash and toolchain; run the original-character, mechanical-cutaway and 2D-map/timeline benchmarks; inspect source, contact sheets and full playback; measure render time, peak RAM/VRAM, reproducibility and human correction time. Promote only skills that demonstrate measurable value without policy or dependency regressions. See the assessment for detailed gates.
+
+## v5.7 — Infographic Motion Engine (approved prototype blueprint)
+
+Read [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md). This specialist subsystem formalises versioned Channel DNA, bounded Episode DNA, procedural SVG/Canvas scenes, original 2D puppet rigs, reusable motion primitives, local narration alignment, deterministic chunked rendering, contact-sheet QA and an episode registry.
+
+It is not a new orchestrator or renderer. Map the shared narration beat contract into one existing first-class engine for the first prototype (Remotion or HyperFrames + GSAP); Blender remains the 3D path and FFmpeg the assembly/QA path. Do not build multiple adapters in parallel or introduce another first-class renderer without benchmark evidence.
+
+Permanent Channel DNA is curated and frozen by the user. Only bounded episode-level variation may use a recorded seed; recent-episode checks flag repetition but never silently mutate identity. Final visuals must be original and code-generated. No generated raster plates, stock/downloaded imagery/video, generic B-roll, hosted TTS, paid inference or ComfyUI. No automatic dependency installation or fixed concurrency/WPM assumptions.
+
+First benchmark: a 60-second centrifugal-pump explainer using original procedural diagrams, motion, annotations and approved local narration. Approved for specification and controlled prototyping only; no runtime implementation or benchmark is claimed.
