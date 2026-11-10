@@ -134,3 +134,36 @@ Evaluate [MCP for Blender](https://github.com/ahujasid/mcp-for-blender) at a pin
 
 ### Content board and local scheduler
 Generate a larger candidate pool, support accept/reject/revise/shortlist/defer/merge and lock a 30–60 idea backlog. Weekly/two-week batch selection is user-approved. Durable local job state, pause/resume/cancel, restart recovery and GPU-aware concurrency are mandatory. Publishing remains manual. See [Content Board](CONTENT_BOARD_AND_BATCH_OPERATIONS.md), [Operations](PRODUCTION_OPERATIONS.md) and [Acceptance Tests](IMPLEMENTATION_ACCEPTANCE_TESTS.md).
+
+
+## v5.2 — Remotion + HyperFrames first-class engines; Cinetic specialist skill
+
+### Renderer decision (supersedes earlier selective-Remotion wording)
+Remotion and HyperFrames + GSAP are co-equal first-class 2D/motion production engines. Choose per scene/project based on composition needs, deterministic behaviour, rendering performance, maintainability and reuse; do not force every shot through one renderer.
+
+- **Remotion:** full React composition system for component-driven scenes, data-driven visuals, reusable scene systems, complex layout/state, launch films and update videos. It is no longer restricted to occasional specialist use.
+- **HyperFrames + GSAP:** first-class timeline/motion engine for precise beat-based animation, editorial sequencing and web-native motion compositions.
+- **Blender + Python:** original 3D characters, rigs, environments, camera/lighting and cinematic shots.
+- **Three.js:** specialist interactive/realtime 3D scenes where justified.
+- **FFmpeg + ffprobe:** media inspection, audio/video assembly, encoding and final technical QA.
+
+A scene may combine engines only through explicit, tested interchange contracts. Prefer a renderer-native scene where possible; avoid needless cross-renderer handoffs. Both renderers must honour the final-visual invariant: all final visual content is authored/generated in code; no stock photos, downloaded video or generic B-roll.
+
+### Remotion licence and operating boundary
+The project owner/operator is currently one individual. Remotion's official Free License covers individuals for personal or commercial video creation, including automation, without registration or payment, subject to its terms. It includes full functionality. Remotion is source-available under a proprietary licence, not OSI open source. Recheck the official [License FAQ](https://convert.remotion.dev/docs/license/faq), [Terms](https://www.remotion.dev/docs/terms) and [LICENSE](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md) before any material change in project ownership, team composition or deployment.
+
+Do not confuse this personal studio with employer-owned work. If a future employer/client or other party jointly owns, controls or directly operates the same Remotion project, reassess the involved-party/headcount and project-ownership provisions before use. Delivering only a finished MP4 to a client who never accesses or operates the Remotion project is treated differently in the official terms. This is a licensing checkpoint, not a reason to restrict the present solo workflow.
+
+### Cinetic — approved for controlled pilot, not installed
+Source: [Leonxlnx/cinetic](https://github.com/Leonxlnx/cinetic). Cinetic is an agent skill for code-first launch films, product/update videos, teasers and social cut-downs. Its v1.5 line adds a 34-scene Remotion starter library. Cinetic itself is MIT-licensed; bundled scene assets, music and other dependencies require their own review.
+
+**Adopt as an optional specialist creative-direction/finishing workflow**, not as a replacement orchestrator, renderer, or our storytelling engine. Useful patterns to evaluate: brief/script-first planning, beat grids, scene selection, motion/sound QA, contact sheets, critic passes, sync checks and delivery manifests. It is especially relevant to channel launch films, channel identity reveals, season/series announcements, production updates and trailers. It is not the default engine for full narrative episodes.
+
+**Integration order:** Remotion first for the Cinetic pilot, with HyperFrames retained as an equal first-class alternative and possible target for independently adapted scene ideas. Do not assume Cinetic's 34 Remotion scenes run in HyperFrames. Port only after a separate implementation and quality test. Curate deterministic scene selection; do not accept random template assembly that erases the two channels' distinct visual identities.
+
+**Hard constraints:** Windows support is less proven than Linux; use Git Bash where required and validate on the actual Windows machine. Verify prerequisites at the pinned Cinetic revision (Node 22+, Python 3.11+, FFmpeg 6+, Chromium, Bash and documented earshot companion). Do not install until preflight and licence/dependency/network review are complete. Cinetic's documented music path requires licensed human-made instrumental music and excludes AI-generated tracks; keep this separate from the user's narrow approved Suno composition exception. Disable/exclude downloaded stock imagery/marks/B-roll from final renders. Motion blur can materially increase render time; benchmark before enabling broadly. Final render must be reproducible offline after approved dependencies/assets are present. Test one agent workflow first; do not install into both Claude and Codex automatically.
+
+### Cinetic pilot acceptance
+Create one 20–30 second original launch film for a channel concept using a fixed brief and approved brand/character assets. Compare Cinetic + Remotion with a hand-directed Remotion composition; add a HyperFrames equivalent if it helps isolate renderer value. Measure Windows setup reliability, reproducibility, scene-editability, render time, peak RAM/VRAM, motion quality, audio sync, QA findings, manual corrections and originality. Inspect contact sheets and watch the complete video. Promote only if Cinetic adds measurable value beyond direct Remotion authoring.
+
+Detailed constraints, preflight and test matrix: [Cinetic Adoption Assessment](CINETIC_ADOPTION.md).
