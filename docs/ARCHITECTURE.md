@@ -112,3 +112,10 @@ Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [gi
 Evaluate it against Remotion and HyperFrames + GSAP on identical 60-second centrifugal-pump and 30-second data-story briefs. Keep the v5.7 Infographic Motion Engine renderer-neutral. Blender remains primary for 3D character acting and environments.
 
 Run only in an isolated, trusted Windows workspace after source/script/dependency/licence review. Compositions are executable code: expose no secrets, sandbox filesystem access, block outbound network during rendering, and prohibit remote fonts/scripts/media/CDNs. Use original procedural visuals only, local TTS, reproducible dependencies and serial rendering until resource use is measured. Do not auto-install dependencies or add it to routine production until all acceptance gates pass and the user approves promotion.
+
+
+## v5.9 — YouTube intelligence plane (blueprint)
+
+Add a bounded editorial-intelligence subsystem above the existing production engines. It consumes public research observations and explicitly imported owner-exported YouTube Studio snapshots; validates provenance and reporting windows; produces cohort-aware descriptive reports; and proposes hypotheses for human approval. It does not access account credentials, publish, schedule, moderate comments or mutate channel settings.
+
+The upstream YouTube Agent Skill is an optional skill/method source, not a new orchestrator. Its script, packaging, edit-list, chapters, Shorts and retention methods may be adapted after pinning and auditing. Its six Python utilities must be tested on Windows fixtures before use. Existing Remotion, HyperFrames + GSAP, Blender/Three.js and FFmpeg execution responsibilities are unchanged. The local data store is proposed as SQLite with immutable raw-export archives; no runtime implementation is claimed. See [YouTube Performance Intelligence](YOUTUBE_PERFORMANCE_INTELLIGENCE.md) and [adoption assessment](YOUTUBE_AGENT_SKILL_ADOPTION.md).
