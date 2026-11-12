@@ -46,3 +46,16 @@ A roadmap item is complete only with recorded environment, pinned versions, comm
 - Preview/final settings documented.
 - Full video passes FFmpeg/ffprobe checks and human playback.
 - Human approves character appeal, voice identity, story, animation, thumbnail and complete viewer experience.
+
+## v5.9 YouTube intelligence acceptance gates
+
+- [ ] Pinned upstream revision and licence/provenance record exist.
+- [ ] Six Python utilities pass deterministic Windows fixture tests; malformed and Unicode inputs are handled safely.
+- [ ] No unapproved network, credential, cookie, browser-profile or external-upload behaviour is present.
+- [ ] EDL timecodes map to the cleaned timeline after edits; chapter timestamps fit final runtime.
+- [ ] Hook/title-thumbnail outputs are marked heuristic/advisory and never represented as predictions.
+- [ ] Owner-exported analytics imports are dated, idempotent, source-linked and preserve raw originals.
+- [ ] Cohort reports separate channel, format and reporting age/window; sample counts and missing values are visible.
+- [ ] No auto-publishing, scheduling, comment replies, channel mutations or automatic Channel DNA changes.
+- [ ] Human editorial approval and final full playback remain mandatory.
+- [ ] Documentation status is not upgraded to implemented until Windows/offline tests and representative reports are attached.

@@ -1,4 +1,9 @@
-# VIDEO PRODUCTION STUDIO — v5.8 direction
+# VIDEO PRODUCTION STUDIO — v5.9 direction
+
+## v5.9 — YouTube Intelligence Layer
+
+Selective evaluation of [YouTube Agent Skill](docs/YOUTUBE_AGENT_SKILL_ADOPTION.md) for hooks, scripts, packaging, edit decisions, chapters, Shorts and retention; plus a [local-first YouTube Performance Intelligence blueprint](docs/YOUTUBE_PERFORMANCE_INTELLIGENCE.md). Existing renderers and the Creator Generalist pilot remain unchanged. Documentation only: no skill installation, analytics connection or runtime implementation is claimed.
+
 
 ### Frame / Foundry — an editorial production atlas for an original, code-first animation studio.
 

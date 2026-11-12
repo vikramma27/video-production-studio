@@ -1,3 +1,10 @@
+## v5.9 — YouTube intelligence integration assessment (2026-11-12)
+- Added a source-reviewed selective adoption assessment for Jakeschincariol/youtube-agent-skill, covering all eleven skills, six Python utilities, heuristic limitations and Windows/security acceptance gates.
+- Added a local-first YouTube Performance Intelligence blueprint for owner-exported Studio snapshots, provenance, cohort-aware reporting and human-approved editorial hypotheses.
+- Preserved the existing Creator Generalist selective 2D/3D craft pilot and all renderer responsibilities; no new renderer or orchestrator introduced.
+- Updated README, architecture, master playbook, skill register, roadmap, token policy, acceptance tests, Claude/Codex handovers and GitHub Pages document library.
+- No upstream skill installation, analytics import, publishing automation, dashboard implementation or Windows benchmark is claimed.
+
 ## v5.8 — Givemotion controlled renderer pilot (2026-11-10)
 
 - Added a detailed Givemotion v0.1.5 adoption assessment and isolated comparative pilot plan.

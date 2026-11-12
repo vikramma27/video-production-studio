@@ -213,3 +213,14 @@ Read [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) before testing [gi
 Evaluate it against Remotion and HyperFrames + GSAP on identical 60-second centrifugal-pump and 30-second data-story briefs. Keep the v5.7 Infographic Motion Engine renderer-neutral. Blender remains primary for 3D character acting and environments.
 
 Run only in an isolated, trusted Windows workspace after source/script/dependency/licence review. Compositions are executable code: expose no secrets, sandbox filesystem access, block outbound network during rendering, and prohibit remote fonts/scripts/media/CDNs. Use original procedural visuals only, local TTS, reproducible dependencies and serial rendering until resource use is measured. Do not auto-install dependencies or add it to routine production until all acceptance gates pass and the user approves promotion.
+
+
+## v5.9 — YouTube intelligence and performance learning
+
+The YouTube Agent Skill is a selectively evaluated specialist source for hooks/scripts, title-thumbnail pairing, transcript-based edit suggestions, chapters, Shorts discovery and retention interpretation. It is not a renderer, orchestrator or publishing system. Follow [YouTube Agent Skill Adoption Assessment](YOUTUBE_AGENT_SKILL_ADOPTION.md); do not bulk-install it or mark it production-ready.
+
+The [YouTube Performance Intelligence blueprint](YOUTUBE_PERFORMANCE_INTELLIGENCE.md) defines a local-first evidence loop: owner-exported YouTube Studio snapshots → validated local store → cohort-aware reports → human-approved hypotheses → future episode briefs. SQLite is a proposed initial store, not implemented. Public competitor observations remain separate from private channel analytics. Hook scores and title/thumbnail lint are advisory heuristics, never virality guarantees.
+
+**Pipeline boundary:** research and script → human-approved hook/package → narration and cleaned-timeline EDL → existing renderers → human QA and manual publishing → dated performance import → evidence-linked next-episode hypothesis. Remotion, HyperFrames + GSAP, Blender/Three.js and FFmpeg remain unchanged. Creator Generalist remains a separate selective 2D/3D craft pilot. No auto-publishing, auto-replies, account mutations, credentials in Git, hosted analytics or paid inference in the default path.
+
+**Status:** documentation and adoption decision only. No upstream skill installation, Python utility execution, analytics import, SQLite implementation, dashboard or Windows benchmark is claimed.
