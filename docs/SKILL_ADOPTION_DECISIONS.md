@@ -133,3 +133,13 @@ See [Infographic Motion Engine Blueprint](INFOGRAPHIC_MOTION_ENGINE.md). Preserv
 | Givemotion security | Restricted execution | Compositions are executable HTML/JS. Use trusted code only, sandbox it, expose no secrets and block outbound network during render. |
 
 The upstream benchmark is author-run and small-sample; it is a test hypothesis, not proof. See [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md) for the benchmark matrix, version pin, Windows/offline preflight and acceptance gates.
+
+
+## v5.9 — YouTube intelligence
+
+| Repository | Decision | Why / boundary |
+|---|---|---|
+| [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill) | Selective isolated evaluation; adapt useful methods | Eleven YouTube workflow skills and six small Python utilities complement research, script/package, EDL, chapters, Shorts and retention. Do not bulk-install, auto-publish or treat heuristic scores/public outliers as causal evidence. Requires pinned revision, script/security review and Windows fixtures. See [assessment](YOUTUBE_AGENT_SKILL_ADOPTION.md). |
+| YouTube Performance Intelligence | Approved local-first blueprint; not implemented | Owner-exported Studio snapshots, provenance, SQLite proposal, cohort-aware reporting and human-approved hypotheses. No credentials, scraping or hosted analytics. See [blueprint](YOUTUBE_PERFORMANCE_INTELLIGENCE.md). |
+
+Creator Generalist remains governed by [its existing assessment](CREATOR_GENERALIST_ADOPTION.md): selected 3D craft and filtered code-generated 2D skills only, isolated pilot, no renderer replacement and no upstream photo/downloaded-asset paths in final renders. This v5.9 decision does not expand that scope.
