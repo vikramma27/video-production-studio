@@ -1,4 +1,4 @@
-# VIDEO PRODUCTION STUDIO — v5.8 direction
+# VIDEO PRODUCTION STUDIO — v5.9 direction
 
 ## v5.9 — YouTube Intelligence Layer
 
