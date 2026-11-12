@@ -188,3 +188,28 @@ Documentation is complete; installation, execution, Windows validation and bench
 - [ ] Review outputs with the user; promote only with explicit approval.
 
 **Status:** adoption blueprint and controlled pilot decision only. Givemotion is not installed, executed, benchmarked by us or production-validated. See [Givemotion Adoption Assessment](GIVEMOTION_ADOPTION.md).
+
+
+## v5.9 — YouTube intelligence backlog
+
+### P0 — upstream safety and reproducibility
+- [ ] Pin the YouTube Agent Skill commit and review its MIT licence, all skill instructions and six Python utilities.
+- [ ] Audit filesystem, subprocess, network, credential and prompt-injection surfaces; keep evaluation project-local and disposable.
+- [ ] Create synthetic SRT/CSV fixtures including malformed inputs, Unicode/Tamil, Windows paths and timeline edge cases.
+
+### P1 — deterministic utility evaluation
+- [ ] Test hook scoring, title/thumbnail lint, dead-air EDL, chapter validation, retention CSV and public outlier analysis.
+- [ ] Label heuristic outputs and public observations clearly; measure false positives, misses and human correction time.
+- [ ] Verify EDL timecodes against the cleaned timeline and final chapters against actual runtime.
+
+### P2 — local performance evidence store
+- [ ] Define owner-export import schemas and preserve raw exports with hashes and timestamps.
+- [ ] Implement SQLite migrations, idempotent import, provenance and CSV/JSON export.
+- [ ] Validate cohort reports by channel, format and age window with sample counts and missingness.
+
+### P3 — editorial feedback loop
+- [ ] Produce evidence-linked hypotheses; require human approval before script/package changes.
+- [ ] Link episode records to script version, render manifest and final metadata.
+- [ ] Keep publishing manual and preserve Channel DNA/character/voice locks.
+
+All items above are backlog. No installation, import pipeline, dashboard or benchmark is claimed until evidence is recorded.
